@@ -1,0 +1,82 @@
+/* 
+  Localizable.strings
+  Judo
+
+  Created by MacBook Pro on 4/2/20.
+  Copyright © 2020 rahma. All rights reserved.
+*/
+"SaudiـJudo " = "Saudi Judo Federation";
+"last_news" = "Last News";
+"more" = "More";
+"section" = "Sections";
+"fed_sections" = "Federation Sections";
+"about" = "About";
+"call_center" = "Contact with us";
+"traning_cources" = "Traning Cources";
+"fed_decleration" = "know about Federation ";
+"fed_msg" = "Federation mission";
+"fed_target" = "Federation Target";
+"Fed_group" = "Federation Establisher ";
+"manager" = "Managers";
+"player" = "Players";
+"trainer" = "Trainers";
+"judge" = "judges";
+"greeting" = "Thanks and all appreciation";
+"greeting_for_each" = "For everyone Participates to the development and establishing of the federation";
+"what_target" = "Our target?!";
+"fed_history" = "Federation History";
+"fed_achevements" = "Federation Achievements";
+"fed_special" = "The Special in Federation";
+"fed_mission" = "Federation Mission";
+"send_msg" = "Send Message";
+"send_msg_allthetime" = "Send a message to us at any time";
+"our_address" = "Address";
+"our_contacts" = "Contacts";
+"call_us" = "Call us";
+"send_themsg" = "Send message";
+"to_location" = "Location on the map";
+"call" = "Call";
+"full_name" = "Full name";
+"phone_number" = "Phone number";
+"msg" = "Write a message";
+"last_champ" = "Last Championships";
+"date" = "Date";
+"age" = "Age";
+"champ_location" = "Championship Location";
+"period" = "Period";
+"cost" = "Cost";
+"additional_detials" = "Additional Detials";
+"contact_us" = "Contact Us";
+"contact_from" = "You can contact us through our official account";
+"or_by" = "or";
+"call" = "Call";
+"training_courses" = "Training Courses";
+"new_courses" = "New Courses";
+"last_news" = "Last News";
+"latest" = "Latest";
+"federation_mission" = "Federation Mission";
+"federation_target" = "Federation target";
+"about_federation" = "About Federation";
+"first" = "First";
+"second" = "Second";
+"third" = "Third";
+"about_app" = "About application";
+"our_motto" = "Our Motto";
+"lang_ar" = "Language:Arabic";
+"share_app" = "Sharing Application";
+"rating_app" = "Rating Application";
+"select_lang" = "Select Application Language";
+"arabic" = "Arabic";
+"english" = "English";
+"apply" = "Apply";
+"formal" = "Formal";
+"friendly" = "Friendly";
+"gift" = "Gifts";
+
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="KLE-kh-nI0">
+                                <rect key="frame" x="30" y="94" width="354" height="160"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 62" translatesAutoresizingMaskIntoConstraints="NO" id="v6Q-cq-HKB">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="الهيئة-العامه-للرياضه" translatesAutoresizingMaskIntoConstraints="NO" id="qNA-iQ-fma">
+                                        <rect key="frame" x="194" y="0.0" width="160" height="160"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qNA-iQ-fma" firstAttribute="width" secondItem="v6Q-cq-HKB" secondAttribute="width" id="KQz-4R-sKl"/>
+                                    <constraint firstAttribute="height" constant="160" id="sJQ-z9-zy7"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoPath - Copy (2)" translatesAutoresizingMaskIntoConstraints="NO" id="a1l-WD-Hmi">
+                                <rect key="frame" x="99" y="333" width="216" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="iP4-PY-7yI"/>
+                                    <constraint firstAttribute="height" constant="230" id="xYz-hV-MN0"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="97" translatesAutoresizingMaskIntoConstraints="NO" id="Y1P-vS-uwj">
+                                <rect key="frame" x="40" y="672" width="334" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 64" translatesAutoresizingMaskIntoConstraints="NO" id="yqe-hg-R6c">
+                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="120"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 66" translatesAutoresizingMaskIntoConstraints="NO" id="tLY-oK-4z4">
+                                        <rect key="frame" x="215.5" y="0.0" width="118.5" height="120"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="KZz-f9-yT9"/>
+                                    <constraint firstAttribute="height" constant="120" id="Wu0-Sk-pmQ"/>
+                                    <constraint firstItem="tLY-oK-4z4" firstAttribute="width" secondItem="yqe-hg-R6c" secondAttribute="width" id="ai2-vW-1eP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Y1P-vS-uwj" secondAttribute="trailing" constant="40" id="3S3-rr-Akb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KLE-kh-nI0" secondAttribute="trailing" constant="30" id="3qJ-0C-Vnu"/>
+                            <constraint firstItem="a1l-WD-Hmi" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="aqR-Iu-2Qa"/>
+                            <constraint firstItem="KLE-kh-nI0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="e42-Vs-oJA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y1P-vS-uwj" secondAttribute="bottom" constant="70" id="kpS-AM-osR"/>
+                            <constraint firstItem="Y1P-vS-uwj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="rTf-ez-zT3"/>
+                            <constraint firstItem="KLE-kh-nI0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="t0M-ht-YKd"/>
+                            <constraint firstItem="a1l-WD-Hmi" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yi7-7U-Jz1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group 62" width="160" height="160"/>
+        <image name="Group 64" width="160" height="160"/>
+        <image name="Group 66" width="160" height="160"/>
+        <image name="NoPath - Copy (2)" width="216" height="230"/>
+        <image name="الهيئة-العامه-للرياضه" width="160" height="160"/>
+    </resources>
+</document>

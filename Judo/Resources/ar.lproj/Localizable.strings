@@ -1,0 +1,88 @@
+/* 
+  Localizable.strings
+  Judo
+
+  Created by MacBook Pro on 4/2/20.
+  Copyright © 2020 rahma. All rights reserved.
+*/
+"SaudiـJudo " = "الاتحاد السعودي للجودو";
+"last_news" = "آخر الأخبار";
+"more" = "المزيد";
+"section" = "الاقسام";
+"fed_sections" = "اقسام الاتحاد";
+"about" = "عن الاتحاد";
+"call_center" = "تواصل معنا ";
+"traning_cources" = "الدورات التدريبية";
+"fed_decleration" = "تعرف علي الاتحاد";
+"fed_msg" = "رسالة الاتحاد";
+"fed_target" = "أهداف الاتحاد";
+"Fed_group" = "مؤسسين الاتحاد";
+"manager" = "مدربين";
+"player" = "لاعبين";
+"trainer" = "مدربين";
+"judge" = "حكام";
+"greeting" = "شكر وتقدير";
+"greeting_for_each" = "لكل من ساهم في تطوير وبناء الاتحاد";
+"what_target" = " ما هي أهدافنا ؟";
+"fed_history" = "تاريخ الاتحاد";
+"fed_achevements" = "إنجازات الاتحاد";
+"fed_special" = "ما يميز الاتحاد";
+"fed_mission" = " ما هي رسالتنا؟";
+"send_msg" = "راسلنا";
+"send_msg_allthetime" = "قم بإرسال رسالة لنا في أي وقت";
+"our_address" = "عنواننا";
+"our_contacts" = "حسابتنا";
+"call_us" = "اتصل بنا";
+"send_themsg" = "إرسال رسالة";
+"to_location" = "الذهاب للموقع علي الخريطة";
+"call" = "الاتصال";
+"full_name" = "الاسم كامل";
+"phone_number" = "رقم الهاتف";
+"msg" = "كتابة الرسالة";
+"last_champ" = "آخر البطولات المقامة";
+"date" = "التاريخ";
+"age" = "السن";
+"champ_location" = "مكان البطولة";
+"period" = "المدة";
+"cost" = "التكلفة";
+"additional_detials" = "تفاصيل اخري";
+"contact_us" = "تواصل معنا";
+"contact_from" = "يمكنك التواصل معنا من خلال حسابتنا الرسمية";
+"or_by" = "او عن طريق";
+"call" = "الاتصال";
+"training_courses" = "الدورات التدربية";
+"new_courses" = "احدث الدورات";
+"last_news" = "اخر الاخبار";
+"latest" = "الاحدث";
+"federation_mission" = "رسالة الاتحاد";
+"federation_target" = "اهداف الاتحاد";
+"about_federation" = "تعرف علي الاتحاد";
+"first" = "المركز الاول";
+"second" = "المركز الثاني";
+"third" = "المركز الثالث";
+"about_app" = "عن التطبيق";
+"our_motto" = "شعارنا";
+"lang_ar" = "اللغة:العربية";
+"share_app" = "مشاركة التطبيق";
+"rating_app" = "تقييم التطبيق";
+"select_lang" = "حدد لغة التطبيق";
+"arabic" = "اللغة العربية";
+"english" = "اللغة الانجليزية";
+"apply" = "تطبيق";
+"formal" = "رسمية";
+"friendly" = "ودية";
+"gift" = "الجوائز";
+
+
+
+
+
+
+
+
+
+
+
+
+
+

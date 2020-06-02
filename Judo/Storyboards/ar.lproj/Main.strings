@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة"; ObjectID = "0HD-Xn-Joj"; */
+"0HD-Xn-Joj.text" = "بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة";
+
+/* Class = "UILabel"; text = "الاقسام"; ObjectID = "55v-j2-k7D"; */
+"55v-j2-k7D.text" = "الاقسام";
+
+/* Class = "UILabel"; text = "اقسام الاتحاد "; ObjectID = "AxQ-77-DYW"; */
+"AxQ-77-DYW.text" = "اقسام الاتحاد ";
+
+/* Class = "UILabel"; text = "اقسام الاتحاد "; ObjectID = "B4g-PU-iTf"; */
+"B4g-PU-iTf.text" = "اقسام الاتحاد ";
+
+/* Class = "UITabBarItem"; title = "more"; ObjectID = "Ilj-Le-xls"; */
+"Ilj-Le-xls.title" = "more";
+
+/* Class = "UILabel"; text = "اقسام الاتحاد "; ObjectID = "RDF-TA-L9V"; */
+"RDF-TA-L9V.text" = "اقسام الاتحاد ";
+
+/* Class = "UITabBarItem"; title = "win"; ObjectID = "TPn-aY-fqn"; */
+"TPn-aY-fqn.title" = "win";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "VE3-Nq-XlT"; */
+"VE3-Nq-XlT.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "video"; ObjectID = "cdV-Hy-KnS"; */
+"cdV-Hy-KnS.title" = "video";
+
+/* Class = "UIButton"; normalTitle = "المزيد"; ObjectID = "g3M-YU-Cpt"; */
+"g3M-YU-Cpt.normalTitle" = "المزيد";
+
+/* Class = "UILabel"; text = "اقسام الاتحاد "; ObjectID = "gNX-BS-L7g"; */
+"gNX-BS-L7g.text" = "اقسام الاتحاد ";
+
+/* Class = "UILabel"; text = "الاتحاد السعودي للجودو "; ObjectID = "psa-H1-nnb"; */
+"psa-H1-nnb.text" = "الاتحاد السعودي للجودو ";
+
+/* Class = "UILabel"; text = "آخر الأخبار"; ObjectID = "uSE-Lo-3gt"; */
+"uSE-Lo-3gt.text" = "آخر الأخبار";

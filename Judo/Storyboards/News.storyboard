@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Hanimation_Arabic_SemiBold.otf">
+            <string>HaniArb-SemiBold</string>
+        </array>
+        <array key="ae_Hani.ttf">
+            <string>Hani</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--NewsVC-->
+        <scene sceneID="Vp8-be-Q0e">
+            <objects>
+                <viewController storyboardIdentifier="NewsVC" id="m3I-KJ-6cJ" customClass="NewsVC" customModule="Judo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bke-Xc-6os">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاحدث" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8U-5Y-w8U">
+                                <rect key="frame" x="16" y="104" width="38" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="38" id="1Ss-yy-DY7"/>
+                                    <constraint firstAttribute="height" constant="26" id="jJn-61-1eN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="R9K-Hy-GCe">
+                                <rect key="frame" x="16" y="146" width="382" height="750"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rrV-KA-Fam">
+                                    <size key="itemSize" width="382" height="323"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newsCell" id="uX7-nH-XYG" customClass="NewsCell" customModule="Judo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="290"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UoF-cc-vuk">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="290"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXf-48-ZA3" customClass="RoundedShadowView" customModule="Judo" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="290"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o6K-aV-cYK" customClass="RoundedImageView" customModule="Judo" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="165"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="165" id="udk-IS-JcS"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاحدث" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sx9-93-7ZU">
+                                                            <rect key="frame" x="16" y="181" width="350" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="TjP-gS-JsF"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Hani" family="Hani" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="165" translatesAutoresizingMaskIntoConstraints="NO" id="5Fk-VH-Z3o">
+                                                            <rect key="frame" x="16" y="242" width="350" height="32"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 ابريل ٢٠٢٠" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d55-Ss-RXC">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="153" height="32"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="157" id="FP9-n9-U4G"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
+                                                                    <color key="textColor" red="0.50191473959999999" green="0.50199025870000002" blue="0.50189822910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ot2-Z2-RK2">
+                                                                    <rect key="frame" x="318" y="0.0" width="32" height="32"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="32" id="8ot-3k-3DX"/>
+                                                                        <constraint firstAttribute="height" constant="32" id="b1d-14-LRM"/>
+                                                                    </constraints>
+                                                                    <state key="normal" image="Group 20"/>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="32" id="UPW-xb-aVM"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Sx9-93-7ZU" firstAttribute="leading" secondItem="RXf-48-ZA3" secondAttribute="leading" constant="16" id="AqM-Ir-i9Z"/>
+                                                        <constraint firstAttribute="height" constant="290" id="Gtx-7R-CDx"/>
+                                                        <constraint firstAttribute="trailing" secondItem="o6K-aV-cYK" secondAttribute="trailing" id="OxN-JP-J0a"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Sx9-93-7ZU" secondAttribute="trailing" constant="16" id="WxE-WD-Bib"/>
+                                                        <constraint firstItem="o6K-aV-cYK" firstAttribute="top" secondItem="RXf-48-ZA3" secondAttribute="top" id="aCK-MO-2Q8"/>
+                                                        <constraint firstItem="Sx9-93-7ZU" firstAttribute="top" secondItem="o6K-aV-cYK" secondAttribute="bottom" constant="16" id="qXU-RL-U8c"/>
+                                                        <constraint firstAttribute="bottom" secondItem="5Fk-VH-Z3o" secondAttribute="bottom" constant="16" id="rvp-LE-Ihq"/>
+                                                        <constraint firstItem="5Fk-VH-Z3o" firstAttribute="leading" secondItem="RXf-48-ZA3" secondAttribute="leading" constant="16" id="vCo-yb-krB"/>
+                                                        <constraint firstAttribute="trailing" secondItem="5Fk-VH-Z3o" secondAttribute="trailing" constant="16" id="voP-mI-kOl"/>
+                                                        <constraint firstItem="o6K-aV-cYK" firstAttribute="leading" secondItem="RXf-48-ZA3" secondAttribute="leading" id="ysh-0C-nLx"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="RXf-48-ZA3" secondAttribute="bottom" id="0b8-yZ-zbp"/>
+                                                <constraint firstItem="RXf-48-ZA3" firstAttribute="leading" secondItem="UoF-cc-vuk" secondAttribute="leading" id="Ik9-TI-8uE"/>
+                                                <constraint firstAttribute="trailing" secondItem="RXf-48-ZA3" secondAttribute="trailing" id="SWq-7H-QhK"/>
+                                                <constraint firstItem="RXf-48-ZA3" firstAttribute="top" secondItem="UoF-cc-vuk" secondAttribute="top" id="W6B-cy-epF"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="382" height="290"/>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="d55-Ss-RXC" id="pzp-3F-uH7"/>
+                                            <outlet property="pictureImageView" destination="o6K-aV-cYK" id="XS0-Ko-sJg"/>
+                                            <outlet property="shareButton" destination="ot2-Z2-RK2" id="yXP-Cu-Oyd"/>
+                                            <outlet property="titleLabel" destination="Sx9-93-7ZU" id="xih-0j-fJu"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kv6-cL-TaE" firstAttribute="trailing" secondItem="R9K-Hy-GCe" secondAttribute="trailing" constant="16" id="TOn-R3-j6Z"/>
+                            <constraint firstAttribute="bottom" secondItem="R9K-Hy-GCe" secondAttribute="bottom" id="V9F-o4-3iq"/>
+                            <constraint firstItem="R9K-Hy-GCe" firstAttribute="top" secondItem="R8U-5Y-w8U" secondAttribute="bottom" constant="16" id="bL8-dD-bl3"/>
+                            <constraint firstItem="R9K-Hy-GCe" firstAttribute="leading" secondItem="kv6-cL-TaE" secondAttribute="leading" constant="16" id="gQa-Cp-Hjz"/>
+                            <constraint firstItem="R8U-5Y-w8U" firstAttribute="top" secondItem="kv6-cL-TaE" secondAttribute="top" constant="16" id="pv2-cF-Qqz"/>
+                            <constraint firstItem="R8U-5Y-w8U" firstAttribute="leading" secondItem="kv6-cL-TaE" secondAttribute="leading" constant="16" id="waC-q1-wMo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kv6-cL-TaE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iND-94-q6a">
+                        <leftBarButtonItems>
+                            <barButtonItem image="right" id="i46-3g-oeb">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="backButton:" destination="m3I-KJ-6cJ" id="Ydz-Zr-c8J"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="آخر الاخبار" id="IeM-aM-nQt">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localization" value="last_news"/>
+                                </userDefinedRuntimeAttributes>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="newsCollectionView" destination="R9K-Hy-GCe" id="aOS-2d-1JA"/>
+                        <outlet property="titleLabel" destination="R8U-5Y-w8U" id="DUV-hy-bac"/>
+                        <segue destination="fgs-jP-kQF" kind="show" identifier="NewsDetails" id="h6h-0C-PcL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="003-qy-n2l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089.8550724637682" y="19.419642857142858"/>
+        </scene>
+        <!--News DetailsVC-->
+        <scene sceneID="vKr-Fx-bnc">
+            <objects>
+                <viewController storyboardIdentifier="NewsDetailsVC" id="fgs-jP-kQF" customClass="NewsDetailsVC" customModule="Judo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hNF-Zr-6zg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="es_hc_dpgwaaeen_an" translatesAutoresizingMaskIntoConstraints="NO" id="G3m-DW-Ita">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="bah-5c-mZ2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="rectangle_217" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cq2-0b-bJU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="kgA-pJ-vpE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT7-zc-sfw">
+                                <rect key="frame" x="16" y="104" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lIk-1w-JC8"/>
+                                    <constraint firstAttribute="width" constant="46" id="srV-VI-pcf"/>
+                                </constraints>
+                                <state key="normal" image="right"/>
+                                <connections>
+                                    <action selector="backButton:" destination="fgs-jP-kQF" eventType="touchUpInside" id="Vi0-JP-Xdx"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="xkk-QD-Kzm">
+                                <rect key="frame" x="16" y="231" width="382" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفان" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYU-Ps-wfs">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="hDY-Yf-Mvn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEd-LH-NRa">
+                                        <rect key="frame" x="350" y="17" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="amr-ce-pgt"/>
+                                            <constraint firstAttribute="height" constant="32" id="trE-1f-MIK"/>
+                                        </constraints>
+                                        <state key="normal" image="Group 20"/>
+                                        <connections>
+                                            <action selector="onShareButtonTapped:" destination="fgs-jP-kQF" eventType="touchUpInside" id="Ubw-NG-aqj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="Yyn-cC-mGS"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9z-Sf-OrP">
+                                <rect key="frame" x="16" y="313" width="382" height="735.5"/>
+                                <string key="text">بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفان الأولى بمكة و المفاجأة سعفان </string>
+                                <fontDescription key="fontDescription" name="Hani" family="Hani" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cq2-0b-bJU" firstAttribute="trailing" secondItem="hdR-gP-pUs" secondAttribute="trailing" id="50A-sk-rYe"/>
+                            <constraint firstItem="cq2-0b-bJU" firstAttribute="leading" secondItem="hdR-gP-pUs" secondAttribute="leading" id="6Pp-rK-Jx1"/>
+                            <constraint firstItem="eT7-zc-sfw" firstAttribute="leading" secondItem="hdR-gP-pUs" secondAttribute="leading" constant="16" id="DyO-GQ-hpn"/>
+                            <constraint firstItem="G3m-DW-Ita" firstAttribute="trailing" secondItem="hdR-gP-pUs" secondAttribute="trailing" id="IfK-1F-smp"/>
+                            <constraint firstItem="G3m-DW-Ita" firstAttribute="leading" secondItem="hdR-gP-pUs" secondAttribute="leading" id="KwB-zl-43o"/>
+                            <constraint firstItem="hdR-gP-pUs" firstAttribute="trailing" secondItem="H9z-Sf-OrP" secondAttribute="trailing" constant="16" id="LhB-M1-l5M"/>
+                            <constraint firstItem="H9z-Sf-OrP" firstAttribute="top" secondItem="xkk-QD-Kzm" secondAttribute="bottom" constant="16" id="Qbt-s9-3zE"/>
+                            <constraint firstItem="hdR-gP-pUs" firstAttribute="trailing" secondItem="xkk-QD-Kzm" secondAttribute="trailing" constant="16" id="S50-W4-pfO"/>
+                            <constraint firstItem="cq2-0b-bJU" firstAttribute="top" secondItem="hNF-Zr-6zg" secondAttribute="top" id="ViH-Tt-C3X"/>
+                            <constraint firstItem="xkk-QD-Kzm" firstAttribute="top" secondItem="G3m-DW-Ita" secondAttribute="bottom" constant="16" id="Y8D-21-pbA"/>
+                            <constraint firstItem="H9z-Sf-OrP" firstAttribute="leading" secondItem="hdR-gP-pUs" secondAttribute="leading" constant="16" id="ao7-N1-IgT"/>
+                            <constraint firstItem="eT7-zc-sfw" firstAttribute="top" secondItem="hNF-Zr-6zg" secondAttribute="topMargin" constant="16" id="fuz-0L-2cX"/>
+                            <constraint firstItem="G3m-DW-Ita" firstAttribute="top" secondItem="hNF-Zr-6zg" secondAttribute="top" id="pNS-th-oPf"/>
+                            <constraint firstItem="xkk-QD-Kzm" firstAttribute="leading" secondItem="hdR-gP-pUs" secondAttribute="leading" constant="16" id="qnb-1b-vl5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hdR-gP-pUs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cN6-ow-Gxl"/>
+                    <connections>
+                        <outlet property="descLabel" destination="H9z-Sf-OrP" id="CRg-H8-aX5"/>
+                        <outlet property="newsImageView" destination="G3m-DW-Ita" id="7oh-mO-8Ki"/>
+                        <outlet property="titleLabel" destination="cYU-Ps-wfs" id="JNa-r4-kcZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xet-Xd-YBh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2194" y="19"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ccM-n6-knX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gPC-g5-7TA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4hD-Sa-abx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="App Color"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="m3I-KJ-6cJ" kind="relationship" relationship="rootViewController" id="Utu-hI-hfh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahA-aF-9uz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179.71014492753625" y="18.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group 20" width="32" height="32"/>
+        <image name="es_hc_dpgwaaeen_an" width="540" height="300"/>
+        <image name="rectangle_217" width="720" height="160"/>
+        <image name="right" width="29" height="24"/>
+        <namedColor name="App Color">
+            <color red="0.21600000560283661" green="0.69999998807907104" blue="0.289000004529953" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
