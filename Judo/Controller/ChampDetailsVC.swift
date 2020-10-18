@@ -10,6 +10,8 @@ import UIKit
 import  FirebaseDatabase
 import FirebaseFirestore
 import SDWebImage
+import SafariServices
+
 
 class ChampDetailsVC: BaseController {
 
@@ -37,19 +39,22 @@ class ChampDetailsVC: BaseController {
     //variables
     var champID = ""
     var type:Bool = false//formal is true
+    var phoneNumber: Int? 
+    var twitterUrl: String?
+    var snapChatUrl: String?
+
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hiddenNav = true
         hideView()
         setupLocalization()
         reteriveChampDetails()
-//        setValue()
-        print(type)
+        print(phoneNumber)
     }
     
     func hideView(){
+        self.hiddenNav = true
         firstContainerView.isHidden = false
         secondContainerView.isHidden = true
         thirdContainerView.isHidden = true
@@ -78,11 +83,13 @@ class ChampDetailsVC: BaseController {
                     if self.champID == document.documentID{
                         print("data for document")
                         print("\(document.documentID)")
-                        let imageURL = document["gPhoto1"] as? String
+                        let imageURL = document["mainPhoto"] as? String
                         let title = document["title"] as? String
                         let formal = document["formal"] as? Bool
                         let otherDetails = document["otherDetails"] as? String
-                        let url = URL(string: imageURL!)
+                        self.phoneNumber = document["phoneNumber"] as? Int
+                        self.twitterUrl = (document["twitterUrl"] as? String)
+                        self.snapChatUrl = document["snapChatUrl"] as? String
                         self.champName.text = title
                         self.champImageView.sd_setImage(with: URL(string: imageURL!))
                         self.additionalDetails2Label.text = otherDetails
@@ -186,14 +193,36 @@ class ChampDetailsVC: BaseController {
         
     }
     @IBAction func onTwitterButtonTapped(_ sender: Any) {
+        didTapWatch(url: twitterUrl!)
     }
     @IBAction func onSnapButtonTapped(_ sender: Any) {
+        didTapWatch(url: snapChatUrl!)
     }
     
     @IBAction func onWhatsappbuttonTapped(_ sender: Any) {
+        let appURL = URL(string: "https://wa.me/\(String(describing: phoneNumber))")!
+//                let appURL = URL(string: "\(String(describing: twitterUrl))")!
+
+        if UIApplication.shared.canOpenURL(appURL) {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(appURL)
+            }
+        }
     }
     @IBAction func onCallButtonTapped(_ sender: Any) {
+        let appURL = URL(string: "tel://\(String(describing: phoneNumber))")!
+        if UIApplication.shared.canOpenURL(appURL) {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(appURL)
+            }
+        }
+
     }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? ChampInfoVC,
             segue.identifier == "info" {
@@ -204,14 +233,12 @@ class ChampDetailsVC: BaseController {
             vc.champID = self.champID
             }
         if let vc = segue.destination as? ChampPictureVC,
-                
             segue.identifier == "photos" {
             vc.champID = self.champID
-                 }
+            }
         if let vc = segue.destination as? OrganiserVC,
                 segue.identifier == "organiser" {
                 vc.champID = self.champID
-                        
            }
     }
 
@@ -221,4 +248,3 @@ class ChampDetailsVC: BaseController {
 
     
 }
-

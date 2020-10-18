@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FederationSectionSVC: UIViewController {
+class FederationSectionSVC: BaseController {
 
 
     @IBOutlet weak var gradientView: GradientView!
@@ -26,6 +26,7 @@ class FederationSectionSVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hiddenNav = false
         setCornerRadius()
         setupLocalization()
         rotateImage()

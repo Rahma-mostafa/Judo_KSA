@@ -5,12 +5,7 @@
 //  Created by MacBook Pro on 4/9/20.
 //  Copyright © 2020 rahma. All rights reserved.
 //
-struct News {
-    var image: String?
-    var title: String?
-    var date: String?
-    var id: String?
-}
+
 
 import UIKit
 import FirebaseFirestore
@@ -48,7 +43,6 @@ class NewsVC: BaseController {
                     let title = document["title"] as? String
                     let date = document["date"] as? String
                     let id = document.documentID
-                    let url = URL(string: imageURL!)
                     let latestnewsObj = News(image: imageURL, title: title!, date: date!, id: id)
                     self.news.append(latestnewsObj)
                     self.newsCollectionView.reloadData()

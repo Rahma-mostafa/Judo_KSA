@@ -73,7 +73,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="165" translatesAutoresizingMaskIntoConstraints="NO" id="5Fk-VH-Z3o">
                                                             <rect key="frame" x="16" y="242" width="350" height="32"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 ابريل ٢٠٢٠" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d55-Ss-RXC">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 ابريل ٢٠٢٠" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d55-Ss-RXC">
                                                                     <rect key="frame" x="0.0" y="0.0" width="153" height="32"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="157" id="FP9-n9-U4G"/>
@@ -142,7 +142,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="iND-94-q6a">
                         <leftBarButtonItems>
-                            <barButtonItem image="right" id="i46-3g-oeb">
+                            <barButtonItem image="left" id="i46-3g-oeb">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="backButton:" destination="m3I-KJ-6cJ" id="Ydz-Zr-c8J"/>
@@ -192,7 +192,7 @@
                                     <constraint firstAttribute="height" constant="30" id="lIk-1w-JC8"/>
                                     <constraint firstAttribute="width" constant="46" id="srV-VI-pcf"/>
                                 </constraints>
-                                <state key="normal" image="right"/>
+                                <state key="normal" image="left"/>
                                 <connections>
                                     <action selector="backButton:" destination="fgs-jP-kQF" eventType="touchUpInside" id="Vi0-JP-Xdx"/>
                                 </connections>
@@ -285,9 +285,9 @@
     </scenes>
     <resources>
         <image name="Group 20" width="32" height="32"/>
-        <image name="es_hc_dpgwaaeen_an" width="540" height="300"/>
-        <image name="rectangle_217" width="720" height="160"/>
-        <image name="right" width="29" height="24"/>
+        <image name="es_hc_dpgwaaeen_an" width="360" height="200"/>
+        <image name="left" width="29" height="24"/>
+        <image name="rectangle_217" width="360" height="80"/>
         <namedColor name="App Color">
             <color red="0.21600000560283661" green="0.69999998807907104" blue="0.289000004529953" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

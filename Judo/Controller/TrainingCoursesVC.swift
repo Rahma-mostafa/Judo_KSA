@@ -5,22 +5,13 @@
 //  Created by MacBook Pro on 4/7/20.
 //  Copyright © 2020 rahma. All rights reserved.
 //
-struct Courses {
-    var image: String?
-    var title: String?
-    var date: String?
-    var id: String?
-}
-struct MainList {
-    var type: String
-}
 
 import UIKit
 import FirebaseDatabase
 import FirebaseFirestore
 import SDWebImage
 
-class TrainingCoursesVC: UIViewController {
+class TrainingCoursesVC: BaseController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var mainCollectionView: UICollectionView!
@@ -36,13 +27,18 @@ class TrainingCoursesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
           setup()
-          titleLabel.text = "new_courses".localized()
+        
     }
     func setup(){
+        self.hiddenNav = false
         traingCourcesCollectionView.delegate = self
         traingCourcesCollectionView.dataSource = self
         mainCollectionView.delegate = self
         mainCollectionView.dataSource = self
+    }
+    func setLocalize(){
+          titleLabel.text = "new_courses".localized()
+        
     }
    
 
@@ -190,7 +186,6 @@ extension TrainingCoursesVC{
                        let imageURL = document["photoUrl"] as? String
                        let title = document["title"] as? String
                        let date = document["date"] as? String
-                       let url = URL(string: imageURL!)
                        let latestnewsObj = Courses(image: imageURL!, title: title!, date: date!,id: id)
                        self.cources.append(latestnewsObj)
                        self.traingCourcesCollectionView.reloadData()

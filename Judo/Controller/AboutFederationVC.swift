@@ -8,41 +8,31 @@
 
 import UIKit
 
-class
-
-
-
-AboutFederationVC: UIViewController {
+class AboutFederationVC: BaseController {
     
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var gradientView: GradientView!
     @IBOutlet weak var fedDeclaraionLabel: UILabel!
-    
     @IBOutlet weak var contentView2: UIView!
     @IBOutlet weak var gradientView2: GradientView!
     @IBOutlet weak var msgLabel: UILabel!
-    
     @IBOutlet weak var contentView3: UIView!
     @IBOutlet weak var gradientView3: GradientView!
     @IBOutlet weak var targetLabel: UILabel!
-    
     @IBOutlet weak var contentView4: UIView!
     @IBOutlet weak var gradientView4: GradientView!
     @IBOutlet weak var groupLabel: UILabel!
-    
     @IBOutlet weak var pathImageView: UIImageView!
-    
     @IBOutlet weak var path2ImageView: UIImageView!
-    
     @IBOutlet weak var path3ImageView: UIImageView!
-    
     @IBOutlet weak var path4ImageView: UIImageView!
+    @IBOutlet var titleLabel: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.hiddenNav = false
         setCornerRadius()
         setupLocalization()
-        rotateImage()
+//        rotateImage()
         
     }
     func rotateImage(){
@@ -67,6 +57,7 @@ AboutFederationVC: UIViewController {
         msgLabel.text = "fed_msg".localized()
         targetLabel.text = "fed_target".localized()
         groupLabel.text = "Fed_group".localized()
+        titleLabel.title = "about_federation".localized()
     }
     
     @IBAction func onDeclerationButtonTapped(_ sender: Any) {

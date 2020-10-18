@@ -8,15 +8,15 @@
 
 import UIKit
 
-class KnowUsVC: UIViewController {
-
+class KnowUsVC: BaseController {
+    @IBOutlet var titleLabel: UIBarButtonItem!
     @IBOutlet weak var historyLabel: UILabel!
-    
     @IBOutlet weak var achievementLabel: UILabel!
-    
     @IBOutlet weak var specialLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hiddenNav = false
         setupLocalization()
 
     }
@@ -24,6 +24,8 @@ class KnowUsVC: UIViewController {
         historyLabel.text = "fed_history".localized()
         achievementLabel.text = "fed_achevements".localized()
         specialLabel.text = "fed_special".localized()
+        titleLabel.title = "know_us".localized()
+        
         
     }
     @IBAction func backButton(_ sender: Any) {

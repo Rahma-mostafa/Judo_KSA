@@ -11,10 +11,9 @@ import FirebaseDatabase
 import FirebaseFirestore
 
 
-class WinersOrderVC: UIViewController {
+class WinersOrderVC: BaseController {
 
     @IBOutlet weak var firstLabel: UILabel!
-    
     @IBOutlet weak var player1label: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var player2Label: UILabel!
@@ -26,6 +25,7 @@ class WinersOrderVC: UIViewController {
     var champID = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hiddenNav = false
         setupLocalization()
         reteriveOrder()
 

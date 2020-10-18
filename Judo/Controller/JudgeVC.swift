@@ -11,7 +11,7 @@ import FirebaseDatabase
 import FirebaseFirestore
 import SDWebImage
 
-class JudgeVC: UIViewController {
+class JudgeVC: BaseController {
 
     @IBOutlet weak var greetingLabel: UILabel!
     @IBOutlet weak var EachLabel: UILabel!
@@ -27,8 +27,10 @@ class JudgeVC: UIViewController {
     retreiveLatestNews()
   }
   func setup(){
+    self.hiddenNav = false
     TableView.delegate = self
     TableView.dataSource = self
+    
   }
   func setupLocalization(){
     greetingLabel.text = "greeting".localized()
@@ -40,7 +42,7 @@ class JudgeVC: UIViewController {
   }
     func retreiveLatestNews(){
         let db = Firestore.firestore()
-        db.collection("playersSection").getDocuments() { (querySnapshot, err) in
+        db.collection("refereesSection").getDocuments() { (querySnapshot, err) in
             print("1")
             if let err = err {
                 print("Error getting documents: \(err)")

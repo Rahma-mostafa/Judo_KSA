@@ -5,20 +5,13 @@
 //  Created by MacBook Pro on 4/12/20.
 //  Copyright © 2020 rahma. All rights reserved.
 //
-struct Champ {
-    var image: String?
-    var title: String?
-    var date: String?
-    var type: Bool?
-    var id: String?
-//    var cornerImage: String?
-}
+
 
 import UIKit
 import FirebaseFirestore
 import SDWebImage
 
-class ChampVC: UIViewController {
+class ChampVC: BaseController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var champCollectionView: UICollectionView!
     
@@ -32,14 +25,18 @@ class ChampVC: UIViewController {
         super.viewDidLoad()
         setup()
         retreiveChampShips()
-        self.titleLabel.text = "last_champ".localized()
-        print(type)
+        setLocalized()
 
     }
     func setup(){
+        self.hiddenNav = false
         champCollectionView.dataSource = self
         champCollectionView.delegate = self
         
+    }
+    func setLocalized(){
+        self.titleLabel.text = "last_champ".localized()
+
     }
     func retreiveChampShips(){
            let db = Firestore.firestore()
@@ -51,11 +48,10 @@ class ChampVC: UIViewController {
                    for document in querySnapshot!.documents {
                        print("\(document.documentID) => \(document.data())")
                        let id = document.documentID
-                       let imageURL = document["gPhoto1"] as? String
+                       let imageURL = document["mainPhoto"] as? String
                        let title = document["title"] as? String
                        let date = document["date"] as? String
                        let type = document["formal"] as? Bool
-                       let url = URL(string: imageURL!)
                        let champObj = Champ(image: imageURL!, title: title!,date: date!,type: type!, id: id)
                        self.champArray.append(champObj)
                        self.champCollectionView.reloadData()
@@ -100,11 +96,8 @@ extension ChampVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollect
             
         }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//           let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//           let scene = storyboard.instantiateViewController(identifier: "ChampDetailsVC")
-//           navigationController?.pushViewController(scene, animated: true)
         self.champID = champArray[indexPath.item].id!
-        print("MainID = \(champID)")
+//        print("MainID = \(champID)")
         performSegue(withIdentifier: "champDetails", sender: self)
        }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

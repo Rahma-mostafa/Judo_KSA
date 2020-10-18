@@ -37,7 +37,6 @@ class NewsDetailsVC: BaseController {
                         let imageURL = document["photoUrl"] as? String
                         let title = document["title"] as? String
                         let desc = document["description"] as? String
-                        let url = URL(string: imageURL!)
                         let latestnewsObj = News(image: imageURL!, title: title!,date: desc)
                         self.news.append(latestnewsObj)
                         self.newsImageView.sd_setImage(with: URL(string: imageURL!))

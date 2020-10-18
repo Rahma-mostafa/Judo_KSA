@@ -98,7 +98,6 @@ extension CourseDetailsVC{
                         let period = document["period"] as? String
                         let location = document["location"] as? String
                         let otherDetails = document["otherDetails"] as? String
-                        let url = URL(string: imageURL!)
                         self.titleLabel.text = title
                         self.date2Label.text = date
                         self.age2Label.text = "\(age ?? 0)"
@@ -131,7 +130,6 @@ extension CourseDetailsVC{
                         let period = document["period"] as? String
                         let location = document["location"] as? String
                         let otherDetails = document["otherDetails"] as? String
-                        let url = URL(string: imageURL!)
                         self.titleLabel.text = title
                         self.date2Label.text = date
                         self.age2Label.text = "\(age ?? 0)"
@@ -164,7 +162,6 @@ extension CourseDetailsVC{
                         let period = document["period"] as? String
                         let location = document["location"] as? String
                         let otherDetails = document["otherDetails"] as? String
-                        let url = URL(string: imageURL!)
                         self.titleLabel.text = title
                         self.date2Label.text = date
                         self.age2Label.text = "\(age ?? 0)"
@@ -197,7 +194,6 @@ extension CourseDetailsVC{
                         let period = document["period"] as? String
                         let location = document["location"] as? String
                         let otherDetails = document["otherDetails"] as? String
-                        let url = URL(string: imageURL!)
                         self.titleLabel.text = title
                         self.date2Label.text = date
                         self.age2Label.text = "\(age ?? 0)"

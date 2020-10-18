@@ -11,7 +11,7 @@ import FirebaseDatabase
 import FirebaseFirestore
 import SDWebImage
 
-class TrainerVC: UIViewController {
+class TrainerVC: BaseController {
 
     @IBOutlet weak var greetingLabel: UILabel!
     @IBOutlet weak var EachLabel: UILabel!
@@ -28,6 +28,7 @@ class TrainerVC: UIViewController {
     
     }
     func setup(){
+        self.hiddenNav = false
         TableView.delegate = self
         TableView.dataSource = self
     }
@@ -47,7 +48,6 @@ class TrainerVC: UIViewController {
                     let imageURL = document["avatarUrl"] as? String
                     let name = document["name"] as? String
                     let club = document["club"] as? String
-                    let url = URL(string: imageURL!)
                     let latestnewsObj = Managers(image: imageURL!, name: name!, role: club!)
                     self.manager.append(latestnewsObj)
                     self.TableView.reloadData()

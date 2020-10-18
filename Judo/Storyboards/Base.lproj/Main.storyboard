@@ -57,7 +57,7 @@
                                         <rect key="frame" x="0.0" y="80" width="414" height="653"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="آخر الأخبار" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSE-Lo-3gt">
-                                                <rect key="frame" x="20" y="20" width="64" height="24"/>
+                                                <rect key="frame" x="20" y="20" width="64.5" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="9iW-6h-OHL"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="oip-jr-uJx"/>
@@ -175,7 +175,7 @@
                                                                 <rect key="frame" x="26.5" y="17.5" width="130" height="140"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Uqj-Hh-wCL">
-                                                                        <rect key="frame" x="29" y="13.5" width="72" height="113"/>
+                                                                        <rect key="frame" x="29" y="17" width="72" height="106"/>
                                                                         <subviews>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 19" translatesAutoresizingMaskIntoConstraints="NO" id="l47-2S-373">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="72" height="71"/>
@@ -185,7 +185,7 @@
                                                                                 </constraints>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عن الاتحاد" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4g-PU-iTf">
-                                                                                <rect key="frame" x="8" y="87" width="56.5" height="26"/>
+                                                                                <rect key="frame" x="6.5" y="87" width="59.5" height="19"/>
                                                                                 <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
@@ -233,7 +233,7 @@
                                                                 <rect key="frame" x="26.5" y="17.5" width="130" height="140"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اقسام الاتحاد " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDF-TA-L9V">
-                                                                        <rect key="frame" x="0.0" y="94" width="130" height="26"/>
+                                                                        <rect key="frame" x="0.0" y="101" width="130" height="19"/>
                                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -424,7 +424,6 @@
                                             <constraint firstItem="uSE-Lo-3gt" firstAttribute="leading" secondItem="6eR-ew-xXz" secondAttribute="leading" constant="20" id="pkO-WP-hwI"/>
                                             <constraint firstItem="SD5-bY-xlv" firstAttribute="leading" secondItem="6eR-ew-xXz" secondAttribute="leading" constant="20" id="qea-eI-tmy"/>
                                             <constraint firstItem="RbL-vV-Cw1" firstAttribute="leading" secondItem="6eR-ew-xXz" secondAttribute="leading" id="rv8-7n-Snp"/>
-                                            <constraint firstAttribute="height" constant="653" id="sBj-kl-o9L"/>
                                             <constraint firstItem="55v-j2-k7D" firstAttribute="top" secondItem="RbL-vV-Cw1" secondAttribute="bottom" constant="33" id="tRN-Ax-Woa"/>
                                         </constraints>
                                     </view>
@@ -433,6 +432,7 @@
                                 <constraints>
                                     <constraint firstItem="JlH-IO-9gF" firstAttribute="top" secondItem="d8G-eD-go1" secondAttribute="top" constant="20" id="66P-LW-7ud"/>
                                     <constraint firstItem="JlH-IO-9gF" firstAttribute="leading" secondItem="d8G-eD-go1" secondAttribute="leading" constant="20" id="Bzd-mI-lba"/>
+                                    <constraint firstItem="6eR-ew-xXz" firstAttribute="height" secondItem="d8G-eD-go1" secondAttribute="height" multiplier="0.90069" id="C9s-dt-8Sr"/>
                                     <constraint firstItem="6eR-ew-xXz" firstAttribute="leading" secondItem="d8G-eD-go1" secondAttribute="leading" id="W0J-6j-Hej"/>
                                     <constraint firstItem="6eR-ew-xXz" firstAttribute="top" secondItem="JlH-IO-9gF" secondAttribute="bottom" constant="20" id="WWB-gq-IoY"/>
                                     <constraint firstAttribute="bottom" secondItem="6eR-ew-xXz" secondAttribute="bottom" id="XKz-YY-FzS"/>
@@ -441,7 +441,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="App Color"/>
                         <constraints>
                             <constraint firstItem="d8G-eD-go1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="h93-wn-srC"/>
                             <constraint firstItem="d8G-eD-go1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kYR-H6-cO2"/>
@@ -472,7 +472,7 @@
             </objects>
             <point key="canvasLocation" x="2676.811594202899" y="-1045.3125"/>
         </scene>
-        <!--البطولات-->
+        <!--Win-->
         <scene sceneID="9nt-4O-s9s">
             <objects>
                 <viewController storyboardIdentifier="ChampVC" id="6xi-Ma-Uya" customClass="ChampVC" customModule="Judo" customModuleProvider="target" sceneMemberID="viewController">
@@ -589,7 +589,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wjF-V9-qeX"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="البطولات" image="win" id="TPn-aY-fqn"/>
+                    <tabBarItem key="tabBarItem" title="Win" image="win" id="TPn-aY-fqn"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -630,7 +630,7 @@
             </objects>
             <point key="canvasLocation" x="850.72463768115949" y="81.696428571428569"/>
         </scene>
-        <!--فيديو-->
+        <!--Video-->
         <scene sceneID="36p-Ou-HeH">
             <objects>
                 <viewController storyboardIdentifier="VideoVC" id="gDl-9B-09Q" customClass="VideoVC" customModule="Judo" customModuleProvider="target" sceneMemberID="viewController">
@@ -684,27 +684,27 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ETd-gQ-pYr">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETd-gQ-pYr">
                                                             <rect key="frame" x="16" y="242" width="311" height="32"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 ابريل ٢٠٢٠" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFO-4g-a7h">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="157" height="32"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="157" id="XgV-pj-M1V"/>
-                                                                    </constraints>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 ابريل ٢٠٢٠" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFO-4g-a7h">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="155.5" height="32"/>
                                                                     <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
                                                                     <color key="textColor" red="0.50191473959999999" green="0.50199025870000002" blue="0.50189822910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:30 دقيقة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6S-HA-VPo">
-                                                                    <rect key="frame" x="177" y="0.0" width="134" height="32"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:30 دقيقة" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6S-HA-VPo">
+                                                                    <rect key="frame" x="155.5" y="0.0" width="155.5" height="32"/>
                                                                     <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
                                                                     <color key="textColor" name="text"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                             <constraints>
+                                                                <constraint firstItem="C6S-HA-VPo" firstAttribute="width" secondItem="kFO-4g-a7h" secondAttribute="width" id="09I-Db-Xcp"/>
                                                                 <constraint firstAttribute="height" constant="32" id="7qa-kW-Kci"/>
+                                                                <constraint firstItem="kFO-4g-a7h" firstAttribute="leading" secondItem="ETd-gQ-pYr" secondAttribute="leading" id="NdP-lX-FRg"/>
+                                                                <constraint firstAttribute="trailing" secondItem="C6S-HA-VPo" secondAttribute="trailing" id="kLF-0C-BUF"/>
                                                             </constraints>
                                                         </stackView>
                                                     </subviews>
@@ -753,7 +753,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IxP-oE-OrH"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="فيديو" image="video" id="cdV-Hy-KnS"/>
+                    <tabBarItem key="tabBarItem" title="Video" image="video" id="cdV-Hy-KnS"/>
                     <connections>
                         <outlet property="videoCollectionView" destination="iIn-H4-dWw" id="4PE-Qn-5y1"/>
                     </connections>
@@ -815,61 +815,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0nk-z8-8Nb">
-                                                <rect key="frame" x="16" y="314" width="382" height="176"/>
+                                                <rect key="frame" x="16" y="314" width="382" height="48"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLn-NX-pni" customClass="RoundedView" customModule="Judo" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="48"/>
-                                                        <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="In7-lM-mFB">
-                                                                <rect key="frame" x="16" y="15" width="99" height="18"/>
-                                                                <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="X1j-yb-QTF">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="18" id="9vc-aq-qhx"/>
-                                                                            <constraint firstAttribute="height" constant="18" id="Ndn-G4-C7O"/>
-                                                                        </constraints>
-                                                                    </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اللغة : العربية" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Alp-QX-7J7">
-                                                                        <rect key="frame" x="34" y="0.0" width="65" height="18"/>
-                                                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
-                                                                        <color key="textColor" red="0.21596634387969971" green="0.70025205612182617" blue="0.28937608003616333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                            </stackView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Path 3393" translatesAutoresizingMaskIntoConstraints="NO" id="1V8-6n-ziK">
-                                                                <rect key="frame" x="357" y="16" width="9" height="16"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="9" id="6e0-pb-ZQf"/>
-                                                                    <constraint firstAttribute="height" constant="16" id="k6q-fC-YeL"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6j-ry-cKx">
-                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="48"/>
-                                                                <connections>
-                                                                    <action selector="onLanguageButtonTapped:" destination="1Iv-4M-h7S" eventType="touchUpInside" id="R2r-G3-kXe"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                        <color key="backgroundColor" red="0.72412276268005371" green="0.89520174264907837" blue="0.74691182374954224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="tintColor" name="App Color"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="1V8-6n-ziK" secondAttribute="trailing" constant="16" id="4ou-vC-rh6"/>
-                                                            <constraint firstItem="In7-lM-mFB" firstAttribute="top" secondItem="GLn-NX-pni" secondAttribute="top" constant="15" id="Nog-BL-YY3"/>
-                                                            <constraint firstItem="In7-lM-mFB" firstAttribute="leading" secondItem="GLn-NX-pni" secondAttribute="leading" constant="16" id="PFg-Di-KdU"/>
-                                                            <constraint firstItem="N6j-ry-cKx" firstAttribute="top" secondItem="GLn-NX-pni" secondAttribute="top" id="Q6e-Nm-Nae"/>
-                                                            <constraint firstAttribute="bottom" secondItem="N6j-ry-cKx" secondAttribute="bottom" id="Xvh-E4-OuP"/>
-                                                            <constraint firstItem="N6j-ry-cKx" firstAttribute="leading" secondItem="GLn-NX-pni" secondAttribute="leading" id="aV4-wQ-eEA"/>
-                                                            <constraint firstItem="1V8-6n-ziK" firstAttribute="centerY" secondItem="GLn-NX-pni" secondAttribute="centerY" id="koM-Qu-LM8"/>
-                                                            <constraint firstAttribute="trailing" secondItem="N6j-ry-cKx" secondAttribute="trailing" id="oKH-Cl-NjX"/>
-                                                            <constraint firstAttribute="bottom" secondItem="In7-lM-mFB" secondAttribute="bottom" constant="15" id="u4C-fM-RT6"/>
-                                                            <constraint firstAttribute="height" constant="48" id="zPL-QJ-Vq8"/>
-                                                        </constraints>
-                                                    </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQr-cp-PTf" customClass="RoundedView" customModule="Judo" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="64" width="382" height="48"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="48"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4qT-1x-U6e">
                                                                 <rect key="frame" x="16" y="15" width="109" height="18"/>
@@ -922,62 +871,6 @@
                                                             <constraint firstAttribute="trailing" secondItem="ck3-Ub-blH" secondAttribute="trailing" id="vvu-q9-WIP"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jT-Hw-ElY" customClass="RoundedView" customModule="Judo" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="128" width="382" height="48"/>
-                                                        <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="b28-YJ-RGq">
-                                                                <rect key="frame" x="16" y="15" width="97" height="18"/>
-                                                                <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star (7)" translatesAutoresizingMaskIntoConstraints="NO" id="2q4-FH-Z4d">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="18" id="Srr-kE-AXU"/>
-                                                                            <constraint firstAttribute="width" constant="18" id="ZQi-T7-VUd"/>
-                                                                        </constraints>
-                                                                    </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تقييم التطبيق" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2i-fE-XIO">
-                                                                        <rect key="frame" x="34" y="0.0" width="63" height="18"/>
-                                                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
-                                                                        <color key="textColor" red="0.99077695608139038" green="0.76721376180648804" blue="0.12824749946594238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                            </stackView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Path 3343" translatesAutoresizingMaskIntoConstraints="NO" id="U5q-R7-Kde">
-                                                                <rect key="frame" x="357" y="16" width="9" height="16"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <color key="tintColor" red="0.99077695608139038" green="0.76721376180648804" blue="0.12824749946594238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="16" id="0ct-KR-uZE"/>
-                                                                    <constraint firstAttribute="width" constant="9" id="jMq-pY-B5H"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hX-kV-yPl">
-                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="48"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="48" id="9tW-6i-E4z"/>
-                                                                </constraints>
-                                                                <connections>
-                                                                    <action selector="onRateButtonTapped:" destination="1Iv-4M-h7S" eventType="touchUpInside" id="1KI-wq-eQW"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                        <color key="backgroundColor" red="0.99077695608139038" green="0.76721376180648804" blue="0.12824749946594238" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="tintColor" red="0.99077695610000005" green="0.7672137618" blue="0.1282474995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <constraints>
-                                                            <constraint firstItem="b28-YJ-RGq" firstAttribute="top" secondItem="5jT-Hw-ElY" secondAttribute="top" constant="15" id="29J-cd-5Ug"/>
-                                                            <constraint firstAttribute="bottom" secondItem="6hX-kV-yPl" secondAttribute="bottom" id="9a8-XW-MAJ"/>
-                                                            <constraint firstAttribute="trailing" secondItem="6hX-kV-yPl" secondAttribute="trailing" id="KSw-tH-yYL"/>
-                                                            <constraint firstItem="U5q-R7-Kde" firstAttribute="top" secondItem="5jT-Hw-ElY" secondAttribute="top" constant="16" id="MdS-pZ-75T"/>
-                                                            <constraint firstAttribute="bottom" secondItem="b28-YJ-RGq" secondAttribute="bottom" constant="15" id="N03-RC-7wz"/>
-                                                            <constraint firstItem="b28-YJ-RGq" firstAttribute="leading" secondItem="5jT-Hw-ElY" secondAttribute="leading" constant="16" id="aaO-pr-Lif"/>
-                                                            <constraint firstAttribute="trailing" secondItem="U5q-R7-Kde" secondAttribute="trailing" constant="16" id="gMh-gx-Y1f"/>
-                                                            <constraint firstItem="6hX-kV-yPl" firstAttribute="leading" secondItem="5jT-Hw-ElY" secondAttribute="leading" id="j22-Cw-2ni"/>
-                                                            <constraint firstItem="6hX-kV-yPl" firstAttribute="top" secondItem="5jT-Hw-ElY" secondAttribute="top" id="vQU-os-b7z"/>
-                                                            <constraint firstAttribute="height" constant="48" id="w7i-E6-WdI"/>
-                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="wDU-Zl-x4j"/>
-                                                        </constraints>
-                                                    </view>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -1026,126 +919,14 @@
                     <connections>
                         <outlet property="aboutAppLabel" destination="yNK-WQ-rs9" id="2uQ-Qt-div"/>
                         <outlet property="aboutAppLabel2" destination="UkW-JE-j0C" id="Rjl-uO-TP4"/>
-                        <outlet property="langLabel" destination="Alp-QX-7J7" id="yga-nT-WYQ"/>
-                        <outlet property="motto2Label" destination="Alp-QX-7J7" id="mCV-IA-Ncp"/>
                         <outlet property="mottoLabel" destination="s4D-OY-r5d" id="qet-kf-j6u"/>
                         <outlet property="path2ImageView" destination="p31-YO-2xD" id="j8z-Iv-Bk1"/>
-                        <outlet property="path3ImageView" destination="U5q-R7-Kde" id="TVW-tQ-FzP"/>
-                        <outlet property="pathImageView" destination="1V8-6n-ziK" id="Chf-Zc-gJk"/>
-                        <outlet property="rateLabel" destination="m2i-fE-XIO" id="fx0-i2-5If"/>
                         <outlet property="shareLabel" destination="zdi-Q2-cDT" id="1Ie-Jn-kAN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZSc-Ye-KY3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2685.507246376812" y="1095.5357142857142"/>
-        </scene>
-        <!--LanguageVC-->
-        <scene sceneID="t4Y-od-K8A">
-            <objects>
-                <viewController storyboardIdentifier="LanguageVC" id="rwo-6P-mLS" customClass="LanguageVC" customModule="Judo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mHS-rp-g7K">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsg-eI-P3O">
-                                <rect key="frame" x="16" y="60" width="24" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="3NX-dv-utQ"/>
-                                    <constraint firstAttribute="height" constant="24" id="K5F-us-U0r"/>
-                                </constraints>
-                                <state key="normal" image="cancel (1)"/>
-                                <connections>
-                                    <action selector="onCancelButtonTapped:" destination="rwo-6P-mLS" eventType="touchUpInside" id="G3t-Ac-VNU"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QL8-dk-cz1">
-                                <rect key="frame" x="16" y="367.5" width="382" height="161"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حدد لغة التطبيق" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcQ-yn-kxP">
-                                        <rect key="frame" x="147" y="0.0" width="88.5" height="33"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="33" id="mxr-Wd-wvw"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJE-Uh-AK1">
-                                        <rect key="frame" x="0.0" y="49" width="382" height="48"/>
-                                        <color key="backgroundColor" name="Color"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="dXv-gS-Vno"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
-                                        <state key="normal" title="اللغة العربية">
-                                            <color key="titleColor" name="text"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onArabicButtonTapped:" destination="rwo-6P-mLS" eventType="touchUpInside" id="EwX-bJ-oLx"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4J-5Z-MNw">
-                                        <rect key="frame" x="0.0" y="113" width="382" height="48"/>
-                                        <color key="backgroundColor" name="Color"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="B2e-JF-sT5"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
-                                        <state key="normal" title="English">
-                                            <color key="titleColor" name="text"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onEnglishButtonTapped:" destination="rwo-6P-mLS" eventType="touchUpInside" id="IlB-ns-YLs"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="B4J-5Z-MNw" secondAttribute="bottom" id="Cen-dn-lAJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="B4J-5Z-MNw" secondAttribute="trailing" id="Oi1-Sy-RAV"/>
-                                    <constraint firstItem="B4J-5Z-MNw" firstAttribute="leading" secondItem="QL8-dk-cz1" secondAttribute="leading" id="VFi-s3-nIx"/>
-                                    <constraint firstAttribute="trailing" secondItem="oJE-Uh-AK1" secondAttribute="trailing" id="VmK-NR-C0U"/>
-                                    <constraint firstItem="oJE-Uh-AK1" firstAttribute="leading" secondItem="QL8-dk-cz1" secondAttribute="leading" id="niq-jZ-zpB"/>
-                                </constraints>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBD-2p-8JE">
-                                <rect key="frame" x="16" y="806" width="382" height="48"/>
-                                <color key="backgroundColor" name="App Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="xef-ZJ-P5F"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
-                                <color key="tintColor" name="Color"/>
-                                <state key="normal" title="تطبيق"/>
-                                <connections>
-                                    <action selector="onApplyButtonTapped:" destination="rwo-6P-mLS" eventType="touchUpInside" id="3k6-Hg-Tcx"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="cBD-2p-8JE" firstAttribute="leading" secondItem="XUk-Fs-ndO" secondAttribute="leading" constant="16" id="EYC-Mn-vrL"/>
-                            <constraint firstItem="QL8-dk-cz1" firstAttribute="centerY" secondItem="mHS-rp-g7K" secondAttribute="centerY" id="Gnm-Pr-hnT"/>
-                            <constraint firstItem="XUk-Fs-ndO" firstAttribute="bottom" secondItem="cBD-2p-8JE" secondAttribute="bottom" constant="8" id="ICH-E4-5Go"/>
-                            <constraint firstItem="XUk-Fs-ndO" firstAttribute="trailing" secondItem="QL8-dk-cz1" secondAttribute="trailing" constant="16" id="IPR-YG-Mbh"/>
-                            <constraint firstItem="XUk-Fs-ndO" firstAttribute="trailing" secondItem="cBD-2p-8JE" secondAttribute="trailing" constant="16" id="JM9-T0-NI2"/>
-                            <constraint firstItem="Jsg-eI-P3O" firstAttribute="leading" secondItem="XUk-Fs-ndO" secondAttribute="leading" constant="16" id="Lk1-PC-wfa"/>
-                            <constraint firstItem="QL8-dk-cz1" firstAttribute="leading" secondItem="XUk-Fs-ndO" secondAttribute="leading" constant="16" id="Sxj-Yo-BHY"/>
-                            <constraint firstItem="Jsg-eI-P3O" firstAttribute="top" secondItem="XUk-Fs-ndO" secondAttribute="top" constant="16" id="yhz-iF-kDj"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="XUk-Fs-ndO"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="SmD-k7-GR5"/>
-                    <connections>
-                        <outlet property="applyButton" destination="cBD-2p-8JE" id="AV1-h8-b4f"/>
-                        <outlet property="arabicButton" destination="oJE-Uh-AK1" id="mbc-Zb-0uA"/>
-                        <outlet property="englishButton" destination="B4J-5Z-MNw" id="h4j-BN-yXY"/>
-                        <outlet property="langaugeLabel" destination="lcQ-yn-kxP" id="iP4-Z6-4O2"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AZS-K6-FA4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3461" y="1096"/>
         </scene>
         <!--Champ DetailsVC-->
         <scene sceneID="Lhs-Fi-A3i">
@@ -1172,7 +953,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="29" id="XKL-lt-BvB"/>
                                                 </constraints>
-                                                <state key="normal" image="right"/>
+                                                <state key="normal" image="left"/>
                                                 <connections>
                                                     <action selector="backButton:" destination="Z7B-UC-hNa" eventType="touchUpInside" id="edV-hh-tD7"/>
                                                 </connections>
@@ -1989,22 +1770,30 @@
             <objects>
                 <viewController storyboardIdentifier="FullPictureVC" id="c8Q-cZ-7YI" customClass="FullPictureVC" customModule="Judo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q1m-xB-eNk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="168"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="e_scusn_1_uea_ac_8_kp" translatesAutoresizingMaskIntoConstraints="NO" id="MrM-re-BFW">
-                                <rect key="frame" x="62" y="182" width="290" height="570"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="e_scusn_1_uea_ac_8_kp" translatesAutoresizingMaskIntoConstraints="NO" id="MrM-re-BFW">
+                                <rect key="frame" x="62" y="182" width="290" height="440"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeh-Kt-f4p">
+                                <rect key="frame" x="16" y="60" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="E9p-O0-3SP"/>
+                                    <constraint firstAttribute="width" constant="24" id="KSu-2C-s41"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.67052823305130005" green="0.67062669992446899" blue="0.67050671577453613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Kxo-u2-8CT" firstAttribute="trailing" secondItem="MrM-re-BFW" secondAttribute="trailing" constant="62" id="PxL-Mx-mml"/>
-                            <constraint firstItem="MrM-re-BFW" firstAttribute="leading" secondItem="Kxo-u2-8CT" secondAttribute="leading" constant="62" id="Rts-iA-6Ys"/>
-                            <constraint firstItem="MrM-re-BFW" firstAttribute="top" secondItem="Kxo-u2-8CT" secondAttribute="top" constant="138" id="cXn-fZ-rwe"/>
-                            <constraint firstItem="Kxo-u2-8CT" firstAttribute="bottom" secondItem="MrM-re-BFW" secondAttribute="bottom" constant="110" id="ggO-ef-kcj"/>
+                            <constraint firstItem="aeh-Kt-f4p" firstAttribute="leading" secondItem="Kxo-u2-8CT" secondAttribute="leading" constant="16" id="gK0-VV-54W"/>
+                            <constraint firstItem="aeh-Kt-f4p" firstAttribute="top" secondItem="Kxo-u2-8CT" secondAttribute="top" constant="16" id="v3T-ZC-Ash"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kxo-u2-8CT"/>
                     </view>
+                    <navigationItem key="navigationItem" id="scu-as-3XF"/>
                     <connections>
                         <outlet property="fullImage" destination="MrM-re-BFW" id="2Nx-OE-MOT"/>
                     </connections>
@@ -2072,11 +1861,12 @@
                     </view>
                     <connections>
                         <outlet property="pictureCollectionView" destination="wzD-H1-BOr" id="nnF-2e-HcS"/>
+                        <segue destination="c8Q-cZ-7YI" kind="show" identifier="showPhoto" id="JGf-rY-oZJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9bI-Ua-5Zq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3187" y="-184"/>
+            <point key="canvasLocation" x="3187" y="-177"/>
         </scene>
         <!--OrganiserVC-->
         <scene sceneID="Fi5-Gs-86U">
@@ -2172,11 +1962,11 @@
             </objects>
             <point key="canvasLocation" x="3187" y="10"/>
         </scene>
-        <!--المزيد-->
+        <!--More-->
         <scene sceneID="pU9-Ll-sEj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hbY-Hb-mJc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="المزيد" image="more" id="Ilj-Le-xls"/>
+                    <tabBarItem key="tabBarItem" title="More" image="more" id="Ilj-Le-xls"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nTD-KQ-jFL">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -2192,11 +1982,11 @@
             </objects>
             <point key="canvasLocation" x="1775.3623188405797" y="1095.5357142857142"/>
         </scene>
-        <!--الرئيسية-->
+        <!--Home-->
         <scene sceneID="08n-lz-i27">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r52-ve-kvT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="الرئيسية" image="home" id="VE3-Nq-XlT"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="VE3-Nq-XlT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="y8k-32-WLL">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -2219,24 +2009,20 @@
         <image name="Group 52" width="69" height="69"/>
         <image name="Group 7" width="160" height="156"/>
         <image name="Page-1" width="18" height="18"/>
-        <image name="Path 3343" width="9.5" height="16"/>
         <image name="Path 3393" width="9.5" height="16"/>
-        <image name="cancel (1)" width="24" height="24"/>
         <image name="data" width="44" height="44"/>
-        <image name="e_scusn_1_uea_ac_8_kp" width="1440" height="880"/>
+        <image name="e_scusn_1_uea_ac_8_kp" width="168" height="168"/>
         <image name="first" width="32" height="44"/>
         <image name="first-1" width="32" height="44"/>
         <image name="first-2" width="32" height="44"/>
         <image name="home" width="24" height="24"/>
         <image name="judo" width="72" height="72"/>
+        <image name="left" width="29" height="24"/>
         <image name="map- 1" width="44" height="44"/>
         <image name="more" width="24.5" height="24"/>
-        <image name="right" width="29" height="24"/>
         <image name="service" width="72" height="72"/>
         <image name="share" width="18" height="18"/>
         <image name="snap" width="72" height="72"/>
-        <image name="star" width="18" height="18"/>
-        <image name="star (7)" width="18" height="17.5"/>
         <image name="tag en" width="50" height="50"/>
         <image name="twitter" width="72" height="72"/>
         <image name="video" width="24.5" height="24.5"/>
@@ -2248,9 +2034,6 @@
         </namedColor>
         <namedColor name="BUttonBackGround">
             <color red="0.21600000560283661" green="0.69999998807907104" blue="0.289000004529953" alpha="0.34999999403953552" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Color">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextColor">
             <color red="0.21600000560283661" green="0.69999998807907104" blue="0.289000004529953" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

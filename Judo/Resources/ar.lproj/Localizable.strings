@@ -17,7 +17,7 @@
 "fed_msg" = "رسالة الاتحاد";
 "fed_target" = "أهداف الاتحاد";
 "Fed_group" = "مؤسسين الاتحاد";
-"manager" = "مدربين";
+"manager" = "اداريين";
 "player" = "لاعبين";
 "trainer" = "مدربين";
 "judge" = "حكام";
@@ -72,6 +72,17 @@
 "formal" = "رسمية";
 "friendly" = "ودية";
 "gift" = "الجوائز";
+"know_us" = "تعرف علي الاتحاد";
+"federation_mission" = "رسالة الاتحاد";
+"federation_targets" = "اهداف الاتحاد";
+"federation_establishers" = "مؤسسين الاتحاد";
+"about_federation" = "عن الاتحاد";
+"Home" = "الرئيسية";
+
+
+
+
+
 
 
 

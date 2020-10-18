@@ -11,7 +11,7 @@ import FirebaseFirestore
 import FirebaseDatabase
 import SDWebImage
 
-class ChampInfoVC: UIViewController {
+class ChampInfoVC: BaseController {
 
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var dateValueLabel: UILabel!
@@ -26,9 +26,8 @@ class ChampInfoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hiddenNav = false
         setupLocalization()
-        print("infoId = \(champID)")
-        print("hjgf")
         reteriveChampInfo()
 
     }

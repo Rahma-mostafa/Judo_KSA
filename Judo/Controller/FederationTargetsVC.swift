@@ -8,13 +8,20 @@
 
 import UIKit
 
-class FederationTargetsVC: UIViewController {
+class FederationTargetsVC: BaseController {
 
     @IBOutlet weak var label: UILabel!
+    @IBOutlet var titleLabel: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = "what_target".localized()
+        self.hiddenNav = false
+        setLocalize()
+       
 
+    }
+    func setLocalize(){
+        label.text = "what_target".localized()
+        titleLabel.title = "federation_targets".localized()
     }
     
     @IBAction func backButton(_ sender: Any) {

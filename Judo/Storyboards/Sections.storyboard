@@ -321,7 +321,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="e2s-2s-oeB">
                         <leftBarButtonItems>
-                            <barButtonItem image="right" id="ObR-R8-9fZ">
+                            <barButtonItem image="left" id="ObR-R8-9fZ">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="BackButton:" destination="KUh-RN-Fvw" id="qcf-Bg-kaY"/>
@@ -490,7 +490,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="zqr-5H-lfD">
                         <leftBarButtonItems>
-                            <barButtonItem image="right" id="T0P-p5-qLl">
+                            <barButtonItem image="left" id="T0P-p5-qLl">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="backButton:" destination="YjK-HT-YiD" id="K07-QB-naX"/>
@@ -509,7 +509,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5s-Ka-Tyg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2655.072463768116" y="-695.08928571428567"/>
+            <point key="canvasLocation" x="4506" y="-695"/>
         </scene>
         <!--TrainerVC-->
         <scene sceneID="uXq-hN-pDN">
@@ -631,7 +631,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Exi-hT-X7V">
                         <leftBarButtonItems>
-                            <barButtonItem image="right" id="zuR-tn-K6i">
+                            <barButtonItem image="left" id="zuR-tn-K6i">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="backButton:" destination="oQP-RC-nD0" id="Tbz-5i-AdT"/>
@@ -650,7 +650,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wY-pr-DsN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3423.1884057971015" y="-695.08928571428567"/>
+            <point key="canvasLocation" x="5230" y="-695"/>
         </scene>
         <!--JudgeVC-->
         <scene sceneID="zNf-eh-xj0">
@@ -772,7 +772,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="6gi-k0-iAj">
                         <leftBarButtonItems>
-                            <barButtonItem image="right" id="nda-ND-0c6">
+                            <barButtonItem image="left" id="nda-ND-0c6">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="backButton:" destination="rCI-36-jMh" id="6JQ-ld-Wi8"/>
@@ -791,7 +791,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vmg-sw-h5f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4128.985507246377" y="-695.08928571428567"/>
+            <point key="canvasLocation" x="5933" y="-695"/>
         </scene>
         <!--PlayersVC-->
         <scene sceneID="kEd-4p-ybS">
@@ -962,7 +962,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="HIU-Nn-cfI">
                         <leftBarButtonItems>
-                            <barButtonItem image="right" id="5yR-w8-X00">
+                            <barButtonItem image="left" id="5yR-w8-X00">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="backbutton:" destination="rNI-ng-c4f" id="0xa-Gv-diC"/>
@@ -980,7 +980,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TyO-eo-KOL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4773.913043478261" y="-695.08928571428567"/>
+            <point key="canvasLocation" x="6641" y="-695"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3p9-3h-22V">
@@ -999,14 +999,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSf-jN-bn9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744.9275362318842" y="-695.08928571428567"/>
+            <point key="canvasLocation" x="3561" y="-695"/>
         </scene>
     </scenes>
     <resources>
         <image name="Path 3346" width="9.5" height="16"/>
+        <image name="left" width="29" height="24"/>
         <image name="manger" width="44" height="46.5"/>
         <image name="men" width="44" height="44"/>
-        <image name="right" width="29" height="24"/>
         <image name="setting" width="44" height="44"/>
         <image name="winer" width="44" height="48"/>
         <namedColor name="App Color">

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class BaseController: UIViewController {
     var hiddenNav: Bool = false
@@ -38,5 +39,31 @@ class BaseController: UIViewController {
                self.navigationController?.setNavigationBarHidden(false, animated: false)
            }
        }
+    func didTapWatch(url: String){
+        guard let url = URL(string: url) else {
+            print("url")
+            return //be safe
+          }
 
+          if #available(iOS 10.0, *) {
+              UIApplication.shared.open(url, options: [:], completionHandler: nil)
+          } else {
+              UIApplication.shared.openURL(url)
+          }
+//        let appURL = URL(string: url)!
+//        if UIApplication.shared.canOpenURL(appURL) {
+//            if #available(iOS 10.0, *) {
+//                UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
+//            } else {
+//                UIApplication.shared.openURL(appURL)
+//            }
+//        }
+     
+     }
+    func openWebsite(website: String){
+             let url = URL(string: website)!
+
+             UIApplication.shared.open(url)
+         }
+  
 }

@@ -11,7 +11,7 @@ import SafariServices
 import FirebaseFirestore
 import SDWebImage
 
-class VideoVC: UIViewController {
+class VideoVC: BaseController {
     var videos:[Video] = [Video]()
 
     @IBOutlet weak var videoCollectionView: UICollectionView!
@@ -21,6 +21,7 @@ class VideoVC: UIViewController {
         setup()
     }
     func setup(){
+        self.hiddenNav = false
         videoCollectionView.dataSource = self
         videoCollectionView.delegate = self
     }
@@ -34,7 +35,6 @@ class VideoVC: UIViewController {
                 for document in querySnapshot!.documents {
                     print("\(document.documentID) => \(document.data())")
                     let docImageURL = document["videoImg"] as? String
-                    let url = URL(string: docImageURL!)
                     let docTitle = document["title"] as? String
                     let docLinkUrl = document["videoUrl"] as? String
                     let date = document["date"] as? String
@@ -58,6 +58,7 @@ extension VideoVC: videoCellDelegate{
         let safariVC = SFSafariViewController(url: videoURL)
         self.present(safariVC, animated: true, completion: nil)
     }
+    
 }
 
 extension VideoVC: UICollectionViewDelegate,UICollectionViewDataSource{

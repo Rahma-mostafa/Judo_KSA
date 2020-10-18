@@ -7,24 +7,18 @@
 //
 
 
-struct Managers {
-    var image: String?
-    var name: String?
-    var role: String?
-}
+
 
 import UIKit
 import FirebaseDatabase
 import FirebaseFirestore
 import SDWebImage
 
-class ManagersVC: UIViewController {
+class ManagersVC: BaseController {
 
 
     @IBOutlet weak var greetingLabel: UILabel!
-    
     @IBOutlet weak var EachLabel: UILabel!
-    
     @IBOutlet weak var TableView: UITableView!
     
     //    variabls
@@ -39,6 +33,7 @@ class ManagersVC: UIViewController {
             
         }
         func setup(){
+            self.hiddenNav = false
             TableView.delegate = self
             TableView.dataSource = self
         }
@@ -63,7 +58,6 @@ class ManagersVC: UIViewController {
                     let imageURL = document["avatarUrl"] as? String
                     let title = document["name"] as? String
                     let club = document["club"] as? String
-                    let url = URL(string: imageURL!)
                     let latestnewsObj = Managers(image: imageURL!, name: title!, role: club!)
                     self.manager.append(latestnewsObj)
                     self.TableView.reloadData()

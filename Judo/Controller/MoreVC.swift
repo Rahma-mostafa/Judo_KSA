@@ -8,31 +8,24 @@
 
 import UIKit
 
-class MoreVC: UIViewController {
+class MoreVC: BaseController {
     @IBOutlet weak var aboutAppLabel: UILabel!
     @IBOutlet weak var aboutAppLabel2: UILabel!
     @IBOutlet weak var mottoLabel: UILabel!
-    @IBOutlet weak var motto2Label: UILabel!
-    @IBOutlet weak var langLabel: UILabel!
     @IBOutlet weak var shareLabel: UILabel!
-    @IBOutlet weak var rateLabel: UILabel!
-    @IBOutlet weak var pathImageView: UIImageView!
     @IBOutlet weak var path2ImageView: UIImageView!
-    @IBOutlet weak var path3ImageView: UIImageView!
        
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.hiddenNav = true
+        self.hiddenNav = false
         setupLocalization()
         rotateImage()
 
     }
     func rotateImage(){
         if LocalizationSystem.sharedInstance.getLanguage() == "en" {
-            pathImageView.transform = pathImageView.transform.rotated(by: CGFloat(Double.pi)) //180 degree
             path2ImageView.transform = path2ImageView.transform.rotated(by: CGFloat(Double.pi))
-            path3ImageView.transform = path3ImageView.transform.rotated(by: CGFloat(Double.pi))
         }else{
         }
         
@@ -41,9 +34,7 @@ class MoreVC: UIViewController {
     func setupLocalization(){
         aboutAppLabel.text = "about_app".localized()
         mottoLabel.text = "our_motto".localized()
-        langLabel.text = "lang_ar".localized()
         shareLabel.text = "share_app".localized()
-        rateLabel.text = "rating_app".localized()
         
     }
     
@@ -58,8 +49,6 @@ class MoreVC: UIViewController {
         let activityVC = UIActivityViewController(activityItems:["www.google.com"], applicationActivities: nil)
         activityVC.popoverPresentationController?.sourceView = self.view
         self.present(activityVC, animated: true, completion: nil)
-    }
-    @IBAction func onRateButtonTapped(_ sender: Any) {
     }
     
 }

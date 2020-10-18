@@ -17,14 +17,19 @@ class LanguageVC: BaseController {
     //variabls
     var index = 0
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hiddenNav = true
-        applyButton.layer.cornerRadius = 12
+        setup()
         setNormalArabicButton()
         setNormalEnglishButton()
         setLocalization()
 
+    }
+    func setup(){
+        self.hiddenNav = true
+        applyButton.layer.cornerRadius = 12
+        
     }
 
     func setNormalArabicButton(){
@@ -75,12 +80,14 @@ class LanguageVC: BaseController {
         if index == 1{
             LocalizationSystem.sharedInstance.setLanguage(languageCode: "ar")
             UIView.appearance().semanticContentAttribute = .forceRightToLeft
-            UITabBar.appearance().semanticContentAttribute = .forceLeftToRight
+            UITabBar.appearance().semanticContentAttribute = .forceRightToLeft
+            UINavigationBar.appearance().semanticContentAttribute = .forceRightToLeft
+
 
         }else if index == 2{
             LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
             UIView.appearance().semanticContentAttribute = .forceLeftToRight
-            UITabBar.appearance().semanticContentAttribute = .forceRightToLeft
+            UITabBar.appearance().semanticContentAttribute = .forceLeftToRight
             UINavigationBar.appearance().semanticContentAttribute = .forceLeftToRight
 
         }else{

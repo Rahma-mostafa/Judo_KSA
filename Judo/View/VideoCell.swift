@@ -14,20 +14,16 @@ protocol videoCellDelegate {
 class VideoCell: UICollectionViewCell {
     
     @IBOutlet weak var videoImageView: RoundedImageView!
-    
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var dateLabel: UILabel!
-    
     @IBOutlet weak var periodLabel: UILabel!
-    
+    // variables
     var videoItem: Video!
     var delegate: videoCellDelegate?
     
     func setVideo(video: Video){
         videoItem = video
-//        videoImageView.image = UIImage(contentsOfFile: video.image)
         titleLabel.text = video.title
         
     }

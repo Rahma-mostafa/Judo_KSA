@@ -72,6 +72,11 @@
 "formal" = "Formal";
 "friendly" = "Friendly";
 "gift" = "Gifts";
+"know_us" = "About federation";
+"federation_mission" = "Federation Mission";
+"federation_targets" = "Federation Targets";
+"federation_establishers" = "Federation Establisher";
+"about_federation" = "About Federation";
 
 
 

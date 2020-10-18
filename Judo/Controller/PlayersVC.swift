@@ -11,11 +11,8 @@ import FirebaseDatabase
 import FirebaseFirestore
 import SDWebImage
 
-struct Players {
-    var type: String
-}
 
-class PlayersVC: UIViewController {
+class PlayersVC: BaseController {
 
      @IBOutlet weak var TableView: UITableView!
      @IBOutlet weak var mainCollectionView: UICollectionView!
@@ -24,7 +21,7 @@ class PlayersVC: UIViewController {
     //    variabls
     var manager:[Managers] = [Managers]()
     var players:[Players] = [Players]()
-    var userSelectedCategory = "newPlayers"
+    var userSelectedCategory = ""
     var selectedIndex = -1
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +29,7 @@ class PlayersVC: UIViewController {
         playersMainList()
     }
     func setup(){
+        self.hiddenNav = false
          TableView.delegate = self
          TableView.dataSource = self
          mainCollectionView.delegate = self
@@ -69,7 +67,7 @@ extension PlayersVC :UITableViewDelegate,UITableViewDataSource,UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedIndex = indexPath.item
         collectionView.reloadData()
-        collectionView.scrollToItem(at: indexPath, at: .right, animated: false)
+        collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
         self.userSelectedCategory = players[indexPath.item].type
         retreivePlayersDetails()
         self.manager.removeAll()
@@ -126,7 +124,6 @@ extension PlayersVC{
                     let imageURL = document["avatarUrl"] as? String
                     let title = document["name"] as? String
                     let club = document["club"] as? String
-                    let url = URL(string: imageURL!)
                     let obj = Managers(image: imageURL!, name: title!, role: club! )
                     self.manager.append(obj)
                     self.TableView.reloadData()

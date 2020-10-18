@@ -290,7 +290,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Fok-ss-jUG">
                         <leftBarButtonItems>
-                            <barButtonItem image="right" id="QEb-tA-NE0">
+                            <barButtonItem image="left" id="QEb-tA-NE0">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="backButton:" destination="MPP-cv-EXg" id="nQj-lV-E0t"/>
@@ -374,7 +374,7 @@
     </scenes>
     <resources>
         <image name="Page-1" width="18" height="18"/>
-        <image name="right" width="29" height="24"/>
+        <image name="left" width="29" height="24"/>
         <image name="snap" width="72" height="72"/>
         <image name="twitter" width="72" height="72"/>
         <image name="whatsapp" width="72" height="72"/>

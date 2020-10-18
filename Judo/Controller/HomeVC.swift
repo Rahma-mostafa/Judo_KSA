@@ -13,7 +13,7 @@ import FirebaseFirestore
 import SDWebImage
 
 
-class HomeVC: UIViewController {
+class HomeVC: BaseController {
     
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -32,10 +32,12 @@ class HomeVC: UIViewController {
     
     //variables
     var latestNewsArray:[LatestNews] = [LatestNews]()
+    var newsID = ""
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.hiddenNav = true
+        self.hiddenNav = true
         rounded()
         setupLocalication()
         setup()
@@ -67,7 +69,6 @@ class HomeVC: UIViewController {
     func retreiveLatestNews(){
         let db = Firestore.firestore()
         db.collection("news").getDocuments() { (querySnapshot, err) in
-            print("1")
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
@@ -75,8 +76,8 @@ class HomeVC: UIViewController {
                     print("\(document.documentID) => \(document.data())")
                     let imageURL = document["photoUrl"] as? String
                     let title = document["title"] as? String
-                    let url = URL(string: imageURL!)
-                    let latestnewsObj = LatestNews(image: imageURL!, title: title!)
+                    let id = document.documentID
+                    let latestnewsObj = LatestNews(image: imageURL!, title: title!, id: id)
                     self.latestNewsArray.append(latestnewsObj)
                     self.latestNewCollectionView.reloadData()
                 }
@@ -141,13 +142,25 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-//        let width = view.frame.width
-//        let cellWidth = (width - 50) /
-//        let cellHeight = cellWidth * 1.5
 
         return CGSize(width: 256, height: 128)
 
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.newsID = latestNewsArray[indexPath.item].id!
+        let storyboard = UIStoryboard(name: "News", bundle: nil)
+        let scene = storyboard.instantiateViewController(identifier: "NewsDetailsVC") as NewsDetailsVC
+        scene.newsID = self.newsID
+        navigationController?.pushViewController(scene, animated: true)
+        
+//            performSegue(withIdentifier: "NewsDetails", sender: self)
+           }
+//        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//              let vc = segue.destination as! NewsDetailsVC
+//               vc.newsID = self.newsID
+//
+//         }
+//
 
     
 }

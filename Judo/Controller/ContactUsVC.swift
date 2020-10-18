@@ -10,7 +10,7 @@ import UIKit
 import FirebaseFirestore
 import FirebaseDatabase
 
-class ContactUsVC: UIViewController,UITextFieldDelegate {
+class ContactUsVC: BaseController,UITextFieldDelegate {
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
@@ -24,13 +24,20 @@ class ContactUsVC: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var contactLabel: UILabel!
     @IBOutlet weak var callUsLabel: UILabel!
     @IBOutlet weak var callButton: RoundedButton!
+    // variables
+    var phoneNumber: Int?
+    var twitterUrl: String?
+    var snapChatUrl: String?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLocalization()
         setup()
         setCornerRadius()
+        setContacts()
     }
     func setup(){
+        self.hiddenNav = false
         nameTextField.delegate = self
         phoneTextField.delegate = self
         msgTextField.delegate = self
@@ -81,11 +88,18 @@ class ContactUsVC: UIViewController,UITextFieldDelegate {
         }
     }
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if string.rangeOfCharacter(from: NSCharacterSet.decimalDigits) != nil {
-             return true
-          } else {
-          return false
-       }
+
+        if textField == nameTextField {
+            return true
+        }else if textField == msgTextField{
+            return true
+        }else{
+            if string.rangeOfCharacter(from: NSCharacterSet.decimalDigits) != nil {
+                return true
+            }else{
+                return false
+            }
+        }
     }
     func setMessage(){
         // Add a new document with a generated id.
@@ -103,6 +117,22 @@ class ContactUsVC: UIViewController,UITextFieldDelegate {
                 print("Error adding document: \(err)")
             } else {
                 print("Document added with ID: \(ref!.documentID)")
+            }
+        }
+    }
+    func setContacts(){
+        let db = Firestore.firestore()
+        db.collection("contacts").getDocuments() { (querySnapshot, err) in
+            print("connected")
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                    self.phoneNumber = document["phoneNumber"] as? Int
+                    self.twitterUrl = document["twitterUrl"] as? String
+                    self.snapChatUrl = document["snapChatUrl"] as? String
+                }
             }
         }
     }
@@ -135,13 +165,33 @@ class ContactUsVC: UIViewController,UITextFieldDelegate {
         
     }
     @IBAction func onTwitterButtonTapped(_ sender: Any) {
+        didTapWatch(url: twitterUrl!)
+//        let url = URL(string: twitterUrl!)!
+//        UIApplication.shared.open(url)
     }
     @IBAction func onSnapButtonTapped(_ sender: Any) {
+        didTapWatch(url: snapChatUrl!)
     }
     @IBAction func onWhatsappButtonTapped(_ sender: Any) {
+        let appURL = URL(string: "https://wa.me/\(String(describing: phoneNumber))")!
+        if UIApplication.shared.canOpenURL(appURL) {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(appURL)
+            }
+        }
     }
     
     @IBAction func onCallButtonTapped(_ sender: Any) {
+        let appURL = URL(string: "tel://\(String(describing: phoneNumber))")!
+        if UIApplication.shared.canOpenURL(appURL) {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(appURL)
+            }
+        }
     }
     
 

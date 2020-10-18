@@ -10,20 +10,23 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MapVC: UIViewController,CLLocationManagerDelegate {
+class MapVC: BaseController,CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     var locationManager = CLLocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        locationManager.requestAlwaysAuthorization()
-        locationManager.startUpdatingLocation()
-        locationManager.delegate = self
-        mapView.centerToLocation(initialLocation)
+        setup()
 //        cameraZoomRange()
        
+    }
+    func setup(){
+          self.hiddenNav = false
+          locationManager.requestAlwaysAuthorization()
+          locationManager.startUpdatingLocation()
+          locationManager.delegate = self
+          mapView.centerToLocation(initialLocation)
     }
     // Set initial location
     let initialLocation = CLLocation(latitude: 29.976480 , longitude: 31.131302)

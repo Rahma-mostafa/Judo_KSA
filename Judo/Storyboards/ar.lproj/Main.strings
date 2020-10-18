@@ -12,19 +12,19 @@
 "B4g-PU-iTf.text" = "اقسام الاتحاد ";
 
 /* Class = "UITabBarItem"; title = "more"; ObjectID = "Ilj-Le-xls"; */
-"Ilj-Le-xls.title" = "more";
+"Ilj-Le-xls.title" = "المزيد";
 
 /* Class = "UILabel"; text = "اقسام الاتحاد "; ObjectID = "RDF-TA-L9V"; */
 "RDF-TA-L9V.text" = "اقسام الاتحاد ";
 
 /* Class = "UITabBarItem"; title = "win"; ObjectID = "TPn-aY-fqn"; */
-"TPn-aY-fqn.title" = "win";
+"TPn-aY-fqn.title" = "البطولات";
 
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "VE3-Nq-XlT"; */
-"VE3-Nq-XlT.title" = "Item";
+"VE3-Nq-XlT.title" = "الرئيسية";
 
 /* Class = "UITabBarItem"; title = "video"; ObjectID = "cdV-Hy-KnS"; */
-"cdV-Hy-KnS.title" = "video";
+"cdV-Hy-KnS.title" = "فيديو";
 
 /* Class = "UIButton"; normalTitle = "المزيد"; ObjectID = "g3M-YU-Cpt"; */
 "g3M-YU-Cpt.normalTitle" = "المزيد";

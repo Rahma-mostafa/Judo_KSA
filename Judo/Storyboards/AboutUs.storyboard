@@ -115,7 +115,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="EL1-fX-0Pn">
                         <leftBarButtonItems>
-                            <barButtonItem image="right" id="Rwg-ed-EvS">
+                            <barButtonItem image="left" id="Rwg-ed-EvS">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="backButton:" destination="Ut8-yb-wjS" id="q1Q-jl-Mqz"/>
@@ -134,6 +134,7 @@
                         <outlet property="achievementLabel" destination="kKa-XQ-Dbm" id="yIs-Im-IPV"/>
                         <outlet property="historyLabel" destination="Ufp-aO-H5V" id="txR-pP-n1O"/>
                         <outlet property="specialLabel" destination="Mic-px-Yb3" id="Svn-ve-ea2"/>
+                        <outlet property="titleLabel" destination="jeW-XK-XWY" id="Rg5-sA-iVO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D3d-eI-nt8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -231,7 +232,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Bqc-7O-1Pb">
                         <leftBarButtonItems>
-                            <barButtonItem image="right" id="GuH-fL-wJB">
+                            <barButtonItem image="left" id="GuH-fL-wJB">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="backButton:" destination="K5x-Zq-MMh" id="1Wb-t8-K6I"/>
@@ -248,6 +249,7 @@
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="mission" destination="dCX-M1-WSG" id="RSM-YY-weY"/>
+                        <outlet property="titleLabel" destination="Gsd-q3-AKH" id="2Kt-RL-PPS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ldc-27-tH2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -326,7 +328,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="pXf-gh-vc6">
                         <leftBarButtonItems>
-                            <barButtonItem image="right" id="toa-88-HdS">
+                            <barButtonItem image="left" id="toa-88-HdS">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="backButton:" destination="ZzP-LG-eLN" id="ahD-GQ-FF6"/>
@@ -337,15 +339,20 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="localization" value="federation_target"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="titleLabel:" destination="x1y-ML-aro" id="gzN-ju-hbx"/>
+                                </connections>
                             </barButtonItem>
                         </leftBarButtonItems>
                     </navigationItem>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="label" destination="JO2-E6-dXe" id="7ja-uj-MpH"/>
+                        <outlet property="titleLabel" destination="fEY-13-hc0" id="VCi-j4-Ukt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DVd-2G-9bn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="x1y-ML-aro" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5126.0869565217399" y="211.60714285714286"/>
         </scene>
@@ -467,7 +474,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="8oz-dP-iqh">
                         <leftBarButtonItems>
-                            <barButtonItem image="right" id="NuE-3V-hGd">
+                            <barButtonItem image="left" id="NuE-3V-hGd">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="backButton:" destination="uVp-SC-bxh" id="VfY-hq-RDy"/>
@@ -482,6 +489,7 @@
                         <outlet property="EachEstablisherLabel" destination="msV-NQ-VHe" id="EmG-Pl-pnC"/>
                         <outlet property="establisherTableView" destination="4W2-TX-Ayb" id="SWS-1h-vzL"/>
                         <outlet property="greetingLabel" destination="Rh1-TA-vKg" id="7YL-cJ-Ojq"/>
+                        <outlet property="titleLabel" destination="09i-7G-gWg" id="u3g-ie-8me"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3va-7y-239" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -794,7 +802,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="8qD-eQ-wbF">
                         <leftBarButtonItems>
-                            <barButtonItem image="right" id="X2M-GP-Wk7">
+                            <barButtonItem image="left" id="X2M-GP-Wk7">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="backButton:" destination="Juq-x2-Aex" id="7fK-sF-qiL"/>
@@ -825,6 +833,7 @@
                         <outlet property="path4ImageView" destination="RvZ-6r-syh" id="r2n-fy-OIi"/>
                         <outlet property="pathImageView" destination="5OZ-Ma-H2m" id="RSb-r8-IqE"/>
                         <outlet property="targetLabel" destination="WTK-Y9-498" id="30K-x2-JKh"/>
+                        <outlet property="titleLabel" destination="z7o-Ms-xO1" id="4u9-CZ-WsH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRf-J5-gDh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -910,12 +919,12 @@
     </scenes>
     <resources>
         <image name="Path 3346" width="9.5" height="16"/>
+        <image name="left" width="29" height="24"/>
         <image name="logo" width="32" height="32"/>
         <image name="men" width="44" height="44"/>
         <image name="msg" width="44" height="44"/>
         <image name="msg-1" width="120" height="120"/>
         <image name="photo" width="44" height="44"/>
-        <image name="right" width="29" height="24"/>
         <image name="target-1" width="120" height="120"/>
         <namedColor name="App Color">
             <color red="0.21600000560283661" green="0.69999998807907104" blue="0.289000004529953" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
