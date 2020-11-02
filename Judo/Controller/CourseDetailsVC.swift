@@ -31,13 +31,19 @@ class CourseDetailsVC: BaseController {
     @IBOutlet weak var contactUsfromLabel: UILabel!
     @IBOutlet weak var orByLabel: UILabel!
     @IBOutlet weak var callButton: RoundedButton!
+    // variables
     var courseID = ""
     var courseType = ""
+    var phoneNumber: Int?
+    var twitterUrl: String?
+    var snapChatUrl: String?
+    var location: String?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hiddenNav = true
         setupLocaliztion()
         retreiveDetails()
+        setContacts()
     }
     func retreiveDetails(){
         if courseType == "amateur"{
@@ -68,13 +74,33 @@ class CourseDetailsVC: BaseController {
     }
     
     @IBAction func onTwitterButtonTapped(_ sender: Any) {
+        didTapWatch(url: twitterUrl!)
+
     }
     @IBAction func onSnapButtonTapped(_ sender: Any) {
+        didTapWatch(url: snapChatUrl!)
+
     }
     
     @IBAction func onWhatsappbuttonTapped(_ sender: Any) {
+        let appURL = URL(string: "https://wa.me/\(phoneNumber ?? 0)")!
+        if UIApplication.shared.canOpenURL(appURL) {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(appURL)
+            }
+        }
     }
     @IBAction func onCallButtonTapped(_ sender: Any) {
+        let appURL = URL(string: "tel://\(phoneNumber ?? 0)")!
+        if UIApplication.shared.canOpenURL(appURL) {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(appURL)
+            }
+        }
     }
     
 }
@@ -203,6 +229,23 @@ extension CourseDetailsVC{
                         self.champLocation2Label.text = location
                         self.additionalDetails2Label.text = otherDetails
                     }
+                }
+            }
+        }
+    }
+    func setContacts(){
+        let db = Firestore.firestore()
+        db.collection("contacts").getDocuments() { (querySnapshot, err) in
+            print("connected")
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                    self.phoneNumber = document["phoneNumber"] as? Int
+                    self.twitterUrl = document["twitterUrl"] as? String
+                    self.snapChatUrl = document["snapChatUrl"] as? String
+                    self.location = document["location"] as? String
                 }
             }
         }

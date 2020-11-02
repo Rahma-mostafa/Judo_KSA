@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Hanimation_Arabic_SemiBold.otf">
+            <string>HaniArb-SemiBold</string>
+        </array>
+        <array key="ae_Hani.ttf">
+            <string>Hani</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideosCell" id="gTV-IL-0wX" customClass="VideosCellCollectionViewCell" customModule="Judo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="290"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="290"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0c-F6-AO3">
+                        <rect key="frame" x="0.0" y="0.0" width="328" height="290"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwc-jy-UUA" customClass="RoundedShadowView" customModule="Judo" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="312" height="274"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iPc-y3-mmJ" customClass="RoundedImageView" customModule="Judo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="312" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="ULO-tv-xMw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rML-m5-AOO">
+                                        <rect key="frame" x="121.5" y="29.5" width="69" height="69"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="69" id="4fr-wr-xwX"/>
+                                            <constraint firstAttribute="height" constant="69" id="MuG-Ek-8Li"/>
+                                        </constraints>
+                                        <state key="normal" image="Group 52"/>
+                                        <connections>
+                                            <action selector="onPlayButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="xaR-Tk-h3D"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفان" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qih-CX-fFL">
+                                        <rect key="frame" x="16" y="144" width="280" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Aib-nG-aGo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Hani" family="Hani" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sN0-OA-XEH">
+                                        <rect key="frame" x="16" y="226" width="280" height="32"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 ابريل ٢٠٢٠" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7Y-Rr-vdX">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="32"/>
+                                                <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
+                                                <color key="textColor" red="0.50191473959999999" green="0.50199025870000002" blue="0.50189822910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:30 دقيقة" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j60-jB-6JB">
+                                                <rect key="frame" x="140" y="0.0" width="140" height="32"/>
+                                                <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
+                                                <color key="textColor" name="text"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="24K-sO-CcT"/>
+                                            <constraint firstAttribute="trailing" secondItem="j60-jB-6JB" secondAttribute="trailing" id="H5f-LK-Q2F"/>
+                                            <constraint firstItem="A7Y-Rr-vdX" firstAttribute="leading" secondItem="sN0-OA-XEH" secondAttribute="leading" id="MG7-Ke-3rJ"/>
+                                            <constraint firstItem="j60-jB-6JB" firstAttribute="width" secondItem="A7Y-Rr-vdX" secondAttribute="width" id="odh-p6-xzt"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Qih-CX-fFL" secondAttribute="trailing" constant="16" id="0iY-0d-qMg"/>
+                                    <constraint firstItem="rML-m5-AOO" firstAttribute="centerY" secondItem="iPc-y3-mmJ" secondAttribute="centerY" id="Cwm-j2-Ipi"/>
+                                    <constraint firstItem="iPc-y3-mmJ" firstAttribute="top" secondItem="bwc-jy-UUA" secondAttribute="top" id="JTU-KL-zBg"/>
+                                    <constraint firstItem="rML-m5-AOO" firstAttribute="centerX" secondItem="iPc-y3-mmJ" secondAttribute="centerX" id="N84-XG-ZaK"/>
+                                    <constraint firstAttribute="bottom" secondItem="sN0-OA-XEH" secondAttribute="bottom" constant="16" id="O0Z-fO-vhy"/>
+                                    <constraint firstItem="Qih-CX-fFL" firstAttribute="top" secondItem="iPc-y3-mmJ" secondAttribute="bottom" constant="16" id="QZY-G9-awF"/>
+                                    <constraint firstItem="Qih-CX-fFL" firstAttribute="leading" secondItem="bwc-jy-UUA" secondAttribute="leading" constant="16" id="UHA-Es-U2c"/>
+                                    <constraint firstAttribute="trailing" secondItem="sN0-OA-XEH" secondAttribute="trailing" constant="16" id="gpa-Gg-Cyx"/>
+                                    <constraint firstItem="iPc-y3-mmJ" firstAttribute="leading" secondItem="bwc-jy-UUA" secondAttribute="leading" id="hgv-FF-f6B"/>
+                                    <constraint firstItem="sN0-OA-XEH" firstAttribute="leading" secondItem="bwc-jy-UUA" secondAttribute="leading" constant="16" id="ksz-Mg-wUW"/>
+                                    <constraint firstAttribute="trailing" secondItem="iPc-y3-mmJ" secondAttribute="trailing" id="qQw-DY-DN0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bwc-jy-UUA" firstAttribute="leading" secondItem="S0c-F6-AO3" secondAttribute="leading" constant="8" id="07S-gz-1Tf"/>
+                            <constraint firstAttribute="height" constant="290" id="KHL-JF-Bcl"/>
+                            <constraint firstAttribute="bottom" secondItem="bwc-jy-UUA" secondAttribute="bottom" constant="8" id="Lgt-uO-gVg"/>
+                            <constraint firstAttribute="trailing" secondItem="bwc-jy-UUA" secondAttribute="trailing" constant="8" id="ZAS-Yh-X18"/>
+                            <constraint firstItem="bwc-jy-UUA" firstAttribute="top" secondItem="S0c-F6-AO3" secondAttribute="top" constant="8" id="avh-AV-Lar"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="S0c-F6-AO3" secondAttribute="trailing" id="Dyt-dq-ABe"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="S0c-F6-AO3" secondAttribute="bottom" id="VVm-t6-1If"/>
+                <constraint firstItem="S0c-F6-AO3" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="oWL-IU-npZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="328" height="290"/>
+            <connections>
+                <outlet property="dateLabel" destination="A7Y-Rr-vdX" id="eNe-k5-RUd"/>
+                <outlet property="periodLabel" destination="j60-jB-6JB" id="UCz-Hy-2e3"/>
+                <outlet property="playButton" destination="rML-m5-AOO" id="8PB-kH-4lw"/>
+                <outlet property="titleLabel" destination="Qih-CX-fFL" id="VIe-Av-AsM"/>
+                <outlet property="videoImageView" destination="iPc-y3-mmJ" id="h3y-Vc-9K9"/>
+            </connections>
+            <point key="canvasLocation" x="330.43478260869568" y="-113.16964285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Group 52" width="69" height="69"/>
+        <namedColor name="text">
+            <color red="0.50199997425079346" green="0.50199997425079346" blue="0.50199997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -39,7 +39,7 @@ struct Champ {
     var image: String?
     var title: String?
     var date: String?
-    var type: Bool?
+    var type: String?
     var id: String?
 }
 struct FullPicutre {

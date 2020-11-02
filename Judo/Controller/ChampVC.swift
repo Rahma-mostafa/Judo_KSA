@@ -17,7 +17,7 @@ class ChampVC: BaseController {
     
     //variables
     var champArray:[Champ] = [Champ]()
-    var type:Bool = true  //formal is true
+    var type = ""  //formal is true
     var champID = ""
 
     
@@ -51,7 +51,7 @@ class ChampVC: BaseController {
                        let imageURL = document["mainPhoto"] as? String
                        let title = document["title"] as? String
                        let date = document["date"] as? String
-                       let type = document["formal"] as? Bool
+                       let type = document["status"] as? String
                        let champObj = Champ(image: imageURL!, title: title!,date: date!,type: type!, id: id)
                        self.champArray.append(champObj)
                        self.champCollectionView.reloadData()
@@ -75,21 +75,28 @@ extension ChampVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollect
                 cell.champImageView.sd_setImage(with: URL(string: champArray[indexPath.item].image!))
                 cell.nameLabel.text = champArray[indexPath.item].title
                 cell.dateLabel.text = champArray[indexPath.item].date
-                if champArray[indexPath.item].type == true{
-                   if LocalizationSystem.sharedInstance.getLanguage() == "en"{
-                    cell.cornerImageView.image = UIImage(named: "tag en")
-                   }else{
-                    cell.cornerImageView.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 2)
-                    cell.cornerImageView.image = UIImage(named: "tag")
-                    }
+                if champArray[indexPath.item].type == "رسمية" || champArray[indexPath.item].type ==  "رسميه"{
+                    cell.cornerImageView.image = UIImage(named:"tag")
+
                 }else{
-                    if LocalizationSystem.sharedInstance.getLanguage() == "en"{
-                        cell.cornerImageView.image = UIImage(named: "tag en2")
-                    }else{
-                        cell.cornerImageView.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 2)
-                        cell.cornerImageView.image = UIImage(named: "tag2")
-                    }
+                    cell.cornerImageView.image = UIImage(named:"tag2")
                 }
+    
+//                if champArray[indexPath.item].type == true{
+//                   if LocalizationSystem.sharedInstance.getLanguage() == "en"{
+//                    cell.cornerImageView.image = UIImage(named: "tag en")
+//                   }else{
+//                    cell.cornerImageView.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 2)
+//                    cell.cornerImageView.image = UIImage(named: "tag")
+//                    }
+//                }else{
+//                    if LocalizationSystem.sharedInstance.getLanguage() == "en"{
+//                        cell.cornerImageView.image = UIImage(named: "tag en2")
+//                    }else{
+//                        cell.cornerImageView.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 2)
+//                        cell.cornerImageView.image = UIImage(named: "tag2")
+//                    }
+//                }
                 return cell
             }
             return UICollectionViewCell()

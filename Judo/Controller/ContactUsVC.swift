@@ -28,6 +28,7 @@ class ContactUsVC: BaseController,UITextFieldDelegate {
     var phoneNumber: Int?
     var twitterUrl: String?
     var snapChatUrl: String?
+    var location: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -132,10 +133,12 @@ class ContactUsVC: BaseController,UITextFieldDelegate {
                     self.phoneNumber = document["phoneNumber"] as? Int
                     self.twitterUrl = document["twitterUrl"] as? String
                     self.snapChatUrl = document["snapChatUrl"] as? String
+                    self.location = document["location"] as? String
+                    self.addressDetailsLabel.text = self.location
                 }
             }
         }
-    }
+    } 
     
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -173,7 +176,7 @@ class ContactUsVC: BaseController,UITextFieldDelegate {
         didTapWatch(url: snapChatUrl!)
     }
     @IBAction func onWhatsappButtonTapped(_ sender: Any) {
-        let appURL = URL(string: "https://wa.me/\(String(describing: phoneNumber))")!
+        let appURL = URL(string: "https://wa.me/\(phoneNumber ?? 0)")!
         if UIApplication.shared.canOpenURL(appURL) {
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
@@ -184,7 +187,7 @@ class ContactUsVC: BaseController,UITextFieldDelegate {
     }
     
     @IBAction func onCallButtonTapped(_ sender: Any) {
-        let appURL = URL(string: "tel://\(String(describing: phoneNumber))")!
+        let appURL = URL(string: "tel://\(phoneNumber ?? 0)")!
         if UIApplication.shared.canOpenURL(appURL) {
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(appURL, options: [:], completionHandler: nil)

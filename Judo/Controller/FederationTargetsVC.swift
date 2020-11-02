@@ -7,21 +7,39 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseFirestore
 
 class FederationTargetsVC: BaseController {
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet var titleLabel: UIBarButtonItem!
+    @IBOutlet weak var contentLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hiddenNav = false
         setLocalize()
+        retreiveContent()
        
 
     }
     func setLocalize(){
         label.text = "what_target".localized()
         titleLabel.title = "federation_targets".localized()
+    }
+    func retreiveContent(){
+        let db = Firestore.firestore()
+        db.collection("ourGoal").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                    let message = document["message"] as? String
+                    self.contentLabel.text = message
+                }
+            }
+        }
     }
     
     @IBAction func backButton(_ sender: Any) {

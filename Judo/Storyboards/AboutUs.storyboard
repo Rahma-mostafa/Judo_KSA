@@ -132,7 +132,10 @@
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="achievementLabel" destination="kKa-XQ-Dbm" id="yIs-Im-IPV"/>
-                        <outlet property="historyLabel" destination="Ufp-aO-H5V" id="txR-pP-n1O"/>
+                        <outlet property="content2Label" destination="k45-JR-KZd" id="NTg-jw-91G"/>
+                        <outlet property="content3Label" destination="2vO-mC-5Pw" id="3p3-q4-rA9"/>
+                        <outlet property="contentLabel" destination="pQC-oe-BjT" id="XU4-Lh-sUe"/>
+                        <outlet property="historyLabel" destination="Ufp-aO-H5V" id="6e4-rG-jLC"/>
                         <outlet property="specialLabel" destination="Mic-px-Yb3" id="Svn-ve-ea2"/>
                         <outlet property="titleLabel" destination="jeW-XK-XWY" id="Rg5-sA-iVO"/>
                     </connections>
@@ -248,6 +251,7 @@
                     </navigationItem>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
+                        <outlet property="contentLabel" destination="ypE-0b-KjV" id="R7H-By-2Zg"/>
                         <outlet property="mission" destination="dCX-M1-WSG" id="RSM-YY-weY"/>
                         <outlet property="titleLabel" destination="Gsd-q3-AKH" id="2Kt-RL-PPS"/>
                     </connections>
@@ -347,6 +351,7 @@
                     </navigationItem>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
+                        <outlet property="contentLabel" destination="fYh-Yg-2La" id="OKQ-8Z-jLB"/>
                         <outlet property="label" destination="JO2-E6-dXe" id="7ja-uj-MpH"/>
                         <outlet property="titleLabel" destination="fEY-13-hc0" id="VCi-j4-Ukt"/>
                     </connections>

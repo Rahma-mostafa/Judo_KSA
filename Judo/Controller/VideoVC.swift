@@ -19,6 +19,8 @@ class VideoVC: BaseController {
         super.viewDidLoad()
         retreiveChampShips()
         setup()
+        videoCollectionView.register(UINib(nibName: "VideoCell", bundle: nil), forCellWithReuseIdentifier: "VideoCell") //register with nib
+
     }
     func setup(){
         self.hiddenNav = false
@@ -28,7 +30,6 @@ class VideoVC: BaseController {
     func retreiveChampShips(){
         let db = Firestore.firestore()
         db.collection("videos").getDocuments() { (querySnapshot, err) in
-            print("1")
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
@@ -39,8 +40,7 @@ class VideoVC: BaseController {
                     let docLinkUrl = document["videoUrl"] as? String
                     let date = document["date"] as? String
                     let time = document["period"] as? String
-                    let videoObj = Video(image: docImageURL!, url: docLinkUrl!, title: docTitle!, date: date!,
-                                         period: time!)
+                    let videoObj = Video(image: docImageURL ?? "", url: docLinkUrl ?? "", title: docTitle ?? "", date: date ?? "",period: time ?? "")
                     self.videos.append(videoObj)
                     self.videoCollectionView.reloadData()
                 }
@@ -78,6 +78,12 @@ extension VideoVC: UICollectionViewDelegate,UICollectionViewDataSource{
             return cell
         }
         return UICollectionViewCell()
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+
+        return CGSize(width: videoCollectionView.frame.size.width, height: 128)
+
     }
     
     

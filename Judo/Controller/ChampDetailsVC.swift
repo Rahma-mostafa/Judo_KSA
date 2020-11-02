@@ -38,7 +38,7 @@ class ChampDetailsVC: BaseController {
     @IBOutlet weak var callButton: RoundedButton!
     //variables
     var champID = ""
-    var type:Bool = false//formal is true
+    var type = ""
     var phoneNumber: Int? 
     var twitterUrl: String?
     var snapChatUrl: String?
@@ -49,8 +49,8 @@ class ChampDetailsVC: BaseController {
         super.viewDidLoad()
         hideView()
         setupLocalization()
+        setContacts()
         reteriveChampDetails()
-        print(phoneNumber)
     }
     
     func hideView(){
@@ -72,6 +72,22 @@ class ChampDetailsVC: BaseController {
         self.orByLabel.text = "or_by".localized()
         self.callButton.setTitle("call".localized(), for: .normal)
     }
+    func setContacts(){
+        let db = Firestore.firestore()
+        db.collection("contacts").getDocuments() { (querySnapshot, err) in
+            print("connected")
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                    self.phoneNumber = document["phoneNumber"] as? Int
+                    self.twitterUrl = document["twitterUrl"] as? String
+                    self.snapChatUrl = document["snapChatUrl"] as? String
+                }
+            }
+        }
+    }
     func reteriveChampDetails(){
         let db = Firestore.firestore()
         db.collection("cships").getDocuments() { (querySnapshot, err) in
@@ -85,33 +101,23 @@ class ChampDetailsVC: BaseController {
                         print("\(document.documentID)")
                         let imageURL = document["mainPhoto"] as? String
                         let title = document["title"] as? String
-                        let formal = document["formal"] as? Bool
+                        let status = document["status"] as? String
                         let otherDetails = document["otherDetails"] as? String
-                        self.phoneNumber = document["phoneNumber"] as? Int
-                        self.twitterUrl = (document["twitterUrl"] as? String)
-                        self.snapChatUrl = document["snapChatUrl"] as? String
                         self.champName.text = title
                         self.champImageView.sd_setImage(with: URL(string: imageURL!))
                         self.additionalDetails2Label.text = otherDetails
-                        self.type = formal!
-                        if self.type == true {
-                                   self.champTypeLabel.text = "formal".localized()
-                               }else{
-                                   self.champTypeLabel.text = "friendly".localized()
-                               }
+                        self.type = status!
+//                        if self.type == true {
+//                                   self.champTypeLabel.text = "formal".localized()
+//                               }else{
+//                                   self.champTypeLabel.text = "friendly".localized()
+//                               }
                     }
                 }
             }
         }
     }
-    func setValue(){
-        if type == true {
-            self.champTypeLabel.text = "formal".localized()
-        }else{
-            self.champTypeLabel.text = "friendly".localized()
-        }
-        
-    }
+
     
    
     @IBAction func backButton(_ sender: Any) {
@@ -200,7 +206,7 @@ class ChampDetailsVC: BaseController {
     }
     
     @IBAction func onWhatsappbuttonTapped(_ sender: Any) {
-        let appURL = URL(string: "https://wa.me/\(String(describing: phoneNumber))")!
+        let appURL = URL(string: "https://wa.me/\(phoneNumber ?? 0)")!
 //                let appURL = URL(string: "\(String(describing: twitterUrl))")!
 
         if UIApplication.shared.canOpenURL(appURL) {
@@ -212,7 +218,7 @@ class ChampDetailsVC: BaseController {
         }
     }
     @IBAction func onCallButtonTapped(_ sender: Any) {
-        let appURL = URL(string: "tel://\(String(describing: phoneNumber))")!
+        let appURL = URL(string: "tel://\( phoneNumber ?? 0)")!
         if UIApplication.shared.canOpenURL(appURL) {
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(appURL, options: [:], completionHandler: nil)

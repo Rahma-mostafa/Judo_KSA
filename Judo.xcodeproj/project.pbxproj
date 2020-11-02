@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B488EDF254F7B6400B7682D /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B488EDD254F7B6400B7682D /* VideoCell.swift */; };
+		0B488EE0254F7B6400B7682D /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B488EDE254F7B6400B7682D /* VideoCell.xib */; };
 		0B4A07D12534BC3700D31E1A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4A07D02534BC3700D31E1A /* Models.swift */; };
 		52174667243B5FCA00B15DA3 /* ManagersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52174666243B5FCA00B15DA3 /* ManagersVC.swift */; };
 		5217466B243B641200B15DA3 /* ManagerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217466A243B641200B15DA3 /* ManagerCell.swift */; };
@@ -44,7 +46,6 @@
 		52688408243BAA8000985FF5 /* PlayersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52688407243BAA8000985FF5 /* PlayersCell.swift */; };
 		5268840A243BB2AF00985FF5 /* mainPlayerslistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52688409243BB2AF00985FF5 /* mainPlayerslistCell.swift */; };
 		528A6711244623CE00FD3BC0 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528A6710244623CE00FD3BC0 /* VideoVC.swift */; };
-		528A67132446240200FD3BC0 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528A67122446240200FD3BC0 /* VideoCell.swift */; };
 		528A67152446286500FD3BC0 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528A67142446286500FD3BC0 /* Video.swift */; };
 		528A671724465C5C00FD3BC0 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528A671624465C5C00FD3BC0 /* MoreVC.swift */; };
 		52A55331243C851E0076CC76 /* Training.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A55330243C851E0076CC76 /* Training.storyboard */; };
@@ -74,6 +75,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B488EDD254F7B6400B7682D /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		0B488EDE254F7B6400B7682D /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
 		0B4A07D02534BC3700D31E1A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		2FC43FFD06472090A2E2F1C3 /* Pods-Judo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Judo.debug.xcconfig"; path = "Target Support Files/Pods-Judo/Pods-Judo.debug.xcconfig"; sourceTree = "<group>"; };
 		52174666243B5FCA00B15DA3 /* ManagersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagersVC.swift; sourceTree = "<group>"; };
@@ -114,7 +117,6 @@
 		52688407243BAA8000985FF5 /* PlayersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersCell.swift; sourceTree = "<group>"; };
 		52688409243BB2AF00985FF5 /* mainPlayerslistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPlayerslistCell.swift; sourceTree = "<group>"; };
 		528A6710244623CE00FD3BC0 /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
-		528A67122446240200FD3BC0 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		528A67142446286500FD3BC0 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		528A671624465C5C00FD3BC0 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
 		52A55330243C851E0076CC76 /* Training.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Training.storyboard; sourceTree = "<group>"; };
@@ -211,7 +213,6 @@
 			children = (
 				52183C1E24339B800035D796 /* LatestNewsCell.swift */,
 				52B07324243A08B300E28883 /* EstablisherCell.swift */,
-				5217466A243B641200B15DA3 /* ManagerCell.swift */,
 				5217466E243B7A6600B15DA3 /* TrainerCell.swift */,
 				52688403243B7D5400985FF5 /* JudgeCell.swift */,
 				52688407243BAA8000985FF5 /* PlayersCell.swift */,
@@ -221,8 +222,9 @@
 				52CD18B82442B78500492591 /* ChampCell.swift */,
 				5230C0A82444E43D002D7858 /* PictureCell.swift */,
 				5230C0AE2444F151002D7858 /* OrganiserCell.swift */,
-				528A67122446240200FD3BC0 /* VideoCell.swift */,
 				52265A1024679BC200331C68 /* coursesTypeCell.swift */,
+				0B488EDD254F7B6400B7682D /* VideoCell.swift */,
+				0B488EDE254F7B6400B7682D /* VideoCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +253,7 @@
 				52CD18B62442B4E500492591 /* ChampVC.swift */,
 				5230C0A02444677E002D7858 /* ChampDetailsVC.swift */,
 				5230C0A22444BCE9002D7858 /* ChampInfoVC.swift */,
+				5217466A243B641200B15DA3 /* ManagerCell.swift */,
 				5230C0A42444C347002D7858 /* WinersOrderVC.swift */,
 				5230C0A62444E0DE002D7858 /* ChampPictureVC.swift */,
 				5230C0AA2444ED1C002D7858 /* FullPictureVC.swift */,
@@ -399,6 +402,7 @@
 				52315D56243244A8007AC941 /* LaunchScreen.storyboard in Resources */,
 				52315D53243244A8007AC941 /* Assets.xcassets in Resources */,
 				5228EEF824400AB500E37475 /* News.storyboard in Resources */,
+				0B488EE0254F7B6400B7682D /* VideoCell.xib in Resources */,
 				5253601C245FE618003F92CD /* GoogleService-Info.plist in Resources */,
 				52A55331243C851E0076CC76 /* Training.storyboard in Resources */,
 				52315D51243244A4007AC941 /* Main.storyboard in Resources */,
@@ -463,6 +467,7 @@
 				5228EEFC24400CC400E37475 /* NewsDetailsVC.swift in Sources */,
 				52265A1124679BC200331C68 /* coursesTypeCell.swift in Sources */,
 				52183C1B243397220035D796 /* HomeVC.swift in Sources */,
+				0B488EDF254F7B6400B7682D /* VideoCell.swift in Sources */,
 				52183C1F24339B800035D796 /* LatestNewsCell.swift in Sources */,
 				5230C0A32444BCE9002D7858 /* ChampInfoVC.swift in Sources */,
 				52C517842436A82F0077BED1 /* GradientView.swift in Sources */,
@@ -491,7 +496,6 @@
 				5230C0AD2444EFFF002D7858 /* OrganiserVC.swift in Sources */,
 				52B07327243A3C1800E28883 /* FederationMissionVC.swift in Sources */,
 				52B4E7E4245C61B5000F98B8 /* LatestNews.swift in Sources */,
-				528A67132446240200FD3BC0 /* VideoCell.swift in Sources */,
 				5230C0A12444677E002D7858 /* ChampDetailsVC.swift in Sources */,
 				52A55339243D8AB30076CC76 /* CourseDetailsVC.swift in Sources */,
 				52315D4C243244A4007AC941 /* SceneDelegate.swift in Sources */,

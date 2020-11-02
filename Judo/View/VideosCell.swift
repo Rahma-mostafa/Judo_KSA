@@ -1,8 +1,8 @@
 //
-//  VideoCell.swift
+//  VideosCellCollectionViewCell.swift
 //  Judo
 //
-//  Created by Rahma on 11/2/20.
+//  Created by Rahma on 11/1/20.
 //  Copyright © 2020 rahma. All rights reserved.
 //
 
@@ -13,22 +13,24 @@ protocol videoCellDelegate {
     func didTapWatchNow(url: String)
 }
 
-class VideoCell: UICollectionViewCell {
-       @IBOutlet weak var videoImageView: RoundedImageView!
-          @IBOutlet weak var playButton: UIButton!
-          @IBOutlet weak var titleLabel: UILabel!
-          @IBOutlet weak var dateLabel: UILabel!
-          @IBOutlet weak var periodLabel: UILabel!
-    @IBOutlet weak var contentRoundedView: RoundedView!
+class VideosCellCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var videoImageView: RoundedImageView!
+       @IBOutlet weak var playButton: UIButton!
+       @IBOutlet weak var titleLabel: UILabel!
+       @IBOutlet weak var dateLabel: UILabel!
+       @IBOutlet weak var periodLabel: UILabel!
     var videoItem: Video!
-       var delegate: videoCellDelegate?
-         
-    
+    var delegate: videoCellDelegate?
+      
+ 
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        contentRoundedView.layer.cornerRadius = 12
+        // Initialization code
     }
+
+
+    
     func setVideo(video: Video){
         videoItem = video
         titleLabel.text = video.title
@@ -39,5 +41,4 @@ class VideoCell: UICollectionViewCell {
         
         
     }
-
 }
