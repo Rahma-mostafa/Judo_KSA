@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -26,100 +28,86 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IeD-ac-HAs" userLabel="ContentView" customClass="RoundedView" customModule="Judo" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="382" height="290"/>
+                        <rect key="frame" x="0.0" y="24" width="382" height="266"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nZ-b6-wqt" customClass="RoundedShadowView" customModule="Judo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="382" height="290"/>
+                                <rect key="frame" x="20" y="20" width="342" height="226"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9bF-yV-cWb" customClass="RoundedImageView" customModule="Judo" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="16" width="350" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="1Fc-ie-WAa"/>
-                                        </constraints>
-                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="ncq-VD-mz8">
+                                        <rect key="frame" x="16" y="16" width="310" height="202"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9bF-yV-cWb" customClass="RoundedImageView" customModule="Judo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="Ek2-47-m0T"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفان" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPx-4c-XZa">
+                                                <rect key="frame" x="0.0" y="150" width="310" height="13.5"/>
+                                                <fontDescription key="fontDescription" name="Hani" family="Hani" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKM-pA-FKb">
+                                                <rect key="frame" x="0.0" y="185.5" width="310" height="16.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="20 ابريل ٢٠٢٠" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjy-1h-gLv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="246.5" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
+                                                        <color key="textColor" red="0.50191473959999999" green="0.50199025870000002" blue="0.50189822910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:30 دقيقة" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz4-hL-dUj">
+                                                        <rect key="frame" x="246.5" y="0.0" width="63.5" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
+                                                        <color key="textColor" name="text"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vy0-8a-LTQ">
-                                        <rect key="frame" x="156.5" y="45.5" width="69" height="69"/>
+                                        <rect key="frame" x="136.5" y="45.5" width="69" height="69"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="69" id="7w6-hv-ufW"/>
-                                            <constraint firstAttribute="height" constant="69" id="QBD-ED-xk9"/>
+                                            <constraint firstAttribute="width" constant="69" id="JHp-ci-71O"/>
+                                            <constraint firstAttribute="height" constant="69" id="R6Y-L2-IXA"/>
                                         </constraints>
                                         <state key="normal" image="Group 52"/>
                                         <connections>
                                             <action selector="onPlayButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="inU-J0-hie"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKM-pA-FKb">
-                                        <rect key="frame" x="16" y="255" width="350" height="19"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="20 ابريل ٢٠٢٠" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjy-1h-gLv">
-                                                <rect key="frame" x="0.0" y="0.0" width="175" height="19"/>
-                                                <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
-                                                <color key="textColor" red="0.50191473959999999" green="0.50199025870000002" blue="0.50189822910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:30 دقيقة" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz4-hL-dUj">
-                                                <rect key="frame" x="175" y="0.0" width="175" height="19"/>
-                                                <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
-                                                <color key="textColor" name="text"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="Hz4-hL-dUj" firstAttribute="width" secondItem="Qjy-1h-gLv" secondAttribute="width" id="Jbz-EB-h0f"/>
-                                        </constraints>
-                                    </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفان" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPx-4c-XZa">
-                                        <rect key="frame" x="16" y="152" width="350" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="eTM-Hl-Cnr"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Hani" family="Hani" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="9bF-yV-cWb" secondAttribute="trailing" constant="16" id="8EX-R3-SnW"/>
-                                    <constraint firstItem="Vy0-8a-LTQ" firstAttribute="centerX" secondItem="9bF-yV-cWb" secondAttribute="centerX" id="8iN-mI-v0F"/>
-                                    <constraint firstItem="9bF-yV-cWb" firstAttribute="top" secondItem="8nZ-b6-wqt" secondAttribute="top" constant="16" id="Jyt-rh-UmY"/>
-                                    <constraint firstItem="Vy0-8a-LTQ" firstAttribute="centerY" secondItem="9bF-yV-cWb" secondAttribute="centerY" id="UTN-vc-pmP"/>
-                                    <constraint firstItem="PPx-4c-XZa" firstAttribute="leading" secondItem="8nZ-b6-wqt" secondAttribute="leading" constant="16" id="UhP-x8-gBv"/>
-                                    <constraint firstItem="9bF-yV-cWb" firstAttribute="leading" secondItem="8nZ-b6-wqt" secondAttribute="leading" constant="16" id="YEd-sK-0ci"/>
-                                    <constraint firstItem="PPx-4c-XZa" firstAttribute="top" secondItem="9bF-yV-cWb" secondAttribute="bottom" constant="8" id="Zt0-B6-rXg"/>
-                                    <constraint firstAttribute="trailing" secondItem="PPx-4c-XZa" secondAttribute="trailing" constant="16" id="i8U-bD-VbQ"/>
-                                    <constraint firstItem="9bF-yV-cWb" firstAttribute="width" secondItem="8nZ-b6-wqt" secondAttribute="width" multiplier="0.91623" id="qoo-HN-cXt"/>
-                                    <constraint firstAttribute="trailing" secondItem="MKM-pA-FKb" secondAttribute="trailing" constant="16" id="tIm-AX-xoN"/>
-                                    <constraint firstItem="MKM-pA-FKb" firstAttribute="leading" secondItem="8nZ-b6-wqt" secondAttribute="leading" constant="16" id="x8y-l4-Tos"/>
-                                    <constraint firstAttribute="bottom" secondItem="MKM-pA-FKb" secondAttribute="bottom" constant="16" id="zg9-pz-n4Q"/>
+                                    <constraint firstItem="ncq-VD-mz8" firstAttribute="leading" secondItem="8nZ-b6-wqt" secondAttribute="leading" constant="16" id="1rC-0d-Czv"/>
+                                    <constraint firstAttribute="bottom" secondItem="ncq-VD-mz8" secondAttribute="bottom" constant="8" id="3e6-0p-vB1"/>
+                                    <constraint firstItem="Vy0-8a-LTQ" firstAttribute="centerX" secondItem="ncq-VD-mz8" secondAttribute="centerX" id="BKf-n6-2aP"/>
+                                    <constraint firstItem="Vy0-8a-LTQ" firstAttribute="top" secondItem="8nZ-b6-wqt" secondAttribute="top" constant="45.5" id="HKF-mp-uDx"/>
+                                    <constraint firstItem="ncq-VD-mz8" firstAttribute="top" secondItem="8nZ-b6-wqt" secondAttribute="top" constant="16" id="aIO-3s-Cmz"/>
+                                    <constraint firstAttribute="trailing" secondItem="ncq-VD-mz8" secondAttribute="trailing" constant="16" id="yCC-nL-JU9"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="8nZ-b6-wqt" secondAttribute="bottom" id="6kE-2u-B0t"/>
-                            <constraint firstAttribute="height" constant="290" id="A9A-PI-5GT"/>
-                            <constraint firstAttribute="trailing" secondItem="8nZ-b6-wqt" secondAttribute="trailing" id="UE0-kU-koL"/>
-                            <constraint firstItem="8nZ-b6-wqt" firstAttribute="leading" secondItem="IeD-ac-HAs" secondAttribute="leading" id="dsS-oW-m3r"/>
-                            <constraint firstItem="8nZ-b6-wqt" firstAttribute="width" secondItem="IeD-ac-HAs" secondAttribute="width" id="lEx-X7-JYV"/>
-                            <constraint firstItem="8nZ-b6-wqt" firstAttribute="top" secondItem="IeD-ac-HAs" secondAttribute="top" id="v4C-xh-oYS"/>
+                            <constraint firstAttribute="bottom" secondItem="8nZ-b6-wqt" secondAttribute="bottom" constant="20" id="6fa-Xd-e0h"/>
+                            <constraint firstAttribute="trailing" secondItem="8nZ-b6-wqt" secondAttribute="trailing" constant="20" id="Ao5-UB-FwQ"/>
+                            <constraint firstItem="8nZ-b6-wqt" firstAttribute="leading" secondItem="IeD-ac-HAs" secondAttribute="leading" constant="20" id="BlQ-yq-DR6"/>
+                            <constraint firstItem="8nZ-b6-wqt" firstAttribute="top" secondItem="IeD-ac-HAs" secondAttribute="top" constant="20" id="vMq-zV-SvV"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
-            <color key="backgroundColor" name="Color"/>
-            <constraints>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="IeD-ac-HAs" secondAttribute="trailing" id="2kz-7v-q76"/>
-                <constraint firstItem="IeD-ac-HAs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IXO-aM-ukU"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="IeD-ac-HAs" secondAttribute="bottom" id="IhO-le-Ydo"/>
-                <constraint firstAttribute="bottom" secondItem="IeD-ac-HAs" secondAttribute="bottom" id="KTl-rP-eIJ"/>
-                <constraint firstItem="IeD-ac-HAs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Rzt-OA-bVZ"/>
-                <constraint firstItem="IeD-ac-HAs" firstAttribute="width" secondItem="ZTg-uK-7eu" secondAttribute="width" id="U7j-WK-SXf"/>
-                <constraint firstItem="IeD-ac-HAs" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="ZZe-Tg-atC"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="IeD-ac-HAs" secondAttribute="top" constant="44" id="jbx-it-Qdb"/>
-                <constraint firstAttribute="trailing" secondItem="IeD-ac-HAs" secondAttribute="trailing" id="uGF-C8-XwT"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="IeD-ac-HAs" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="J47-8p-uGm"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="IeD-ac-HAs" secondAttribute="bottom" id="Jt8-zI-J9c"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="IeD-ac-HAs" secondAttribute="top" constant="20" id="cZO-Qa-jX6"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="IeD-ac-HAs" secondAttribute="trailing" id="mlJ-9e-FKk"/>
+            </constraints>
             <size key="customSize" width="500" height="360"/>
             <connections>
                 <outlet property="contentRoundedView" destination="IeD-ac-HAs" id="D4G-Nh-9yz"/>
@@ -129,16 +117,16 @@
                 <outlet property="titleLabel" destination="PPx-4c-XZa" id="k4h-PF-fBZ"/>
                 <outlet property="videoImageView" destination="9bF-yV-cWb" id="aSg-Lw-7Gm"/>
             </connections>
-            <point key="canvasLocation" x="169.56521739130437" y="145.98214285714286"/>
+            <point key="canvasLocation" x="140.57971014492756" y="148.66071428571428"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="Group 52" width="69" height="69"/>
-        <namedColor name="Color">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="text">
             <color red="0.50199997425079346" green="0.50199997425079346" blue="0.50199997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
