@@ -42,7 +42,12 @@ class MapVC: BaseController,CLLocationManagerDelegate {
 //
 //                  let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 200000)
 //                  mapView.setCameraZoomRange(zoomRange, animated: true)
-//       }
+    //       }
+    @IBAction func onCancel(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+
+    
     
 }
 private extension MKMapView {

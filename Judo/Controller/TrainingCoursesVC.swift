@@ -27,6 +27,7 @@ class TrainingCoursesVC: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
           setup()
+        self.retreiveYoungTrainings()
         
     }
     func setup(){
@@ -106,13 +107,19 @@ extension TrainingCoursesVC :UICollectionViewDataSource,UICollectionViewDelegate
 
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.view.frame.width * 0.20 , height: 100.0)
+        if collectionView == mainCollectionView{
+            return CGSize(width: self.view.frame.width * 0.20 , height: 100.0)
+        }else{
+            return CGSize(width: self.view.frame.size.width, height: 112)
+        }
+
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! CourseDetailsVC
         vc.courseID = self.courseID
         vc.courseType = self.courseType
     }
+
    
 }
 extension TrainingCoursesVC{

@@ -27,36 +27,48 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8G-eD-go1">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JlH-IO-9gF">
-                                        <rect key="frame" x="20" y="20" width="236" height="40"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FsD-sR-C2X">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 19" translatesAutoresizingMaskIntoConstraints="NO" id="xgu-qZ-POO">
-                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JlH-IO-9gF">
+                                                <rect key="frame" x="20" y="20" width="236" height="40"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 19" translatesAutoresizingMaskIntoConstraints="NO" id="xgu-qZ-POO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="U8r-dy-h3y"/>
+                                                            <constraint firstAttribute="height" constant="40" id="sgM-wm-IFf"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاتحاد السعودي للجودو " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psa-H1-nnb">
+                                                        <rect key="frame" x="60" y="0.0" width="176" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="M3c-pv-hfo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="40" id="U8r-dy-h3y"/>
-                                                    <constraint firstAttribute="height" constant="40" id="sgM-wm-IFf"/>
+                                                    <constraint firstAttribute="height" constant="40" id="fHl-0k-f6M"/>
+                                                    <constraint firstItem="psa-H1-nnb" firstAttribute="centerY" secondItem="xgu-qZ-POO" secondAttribute="centerY" id="hDM-kM-fX9"/>
+                                                    <constraint firstAttribute="width" constant="236" id="nO0-Nj-YiY"/>
                                                 </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاتحاد السعودي للجودو " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psa-H1-nnb">
-                                                <rect key="frame" x="60" y="0.0" width="176" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="M3c-pv-hfo"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            </stackView>
                                         </subviews>
+                                        <color key="backgroundColor" name="App Color"/>
                                         <constraints>
-                                            <constraint firstItem="psa-H1-nnb" firstAttribute="centerY" secondItem="xgu-qZ-POO" secondAttribute="centerY" id="hDM-kM-fX9"/>
-                                            <constraint firstAttribute="width" constant="236" id="nO0-Nj-YiY"/>
+                                            <constraint firstItem="JlH-IO-9gF" firstAttribute="top" secondItem="FsD-sR-C2X" secondAttribute="top" constant="20" symbolic="YES" id="7hG-wo-ef7"/>
+                                            <constraint firstItem="JlH-IO-9gF" firstAttribute="leading" secondItem="FsD-sR-C2X" secondAttribute="leading" constant="20" id="HIw-GY-5lq"/>
+                                            <constraint firstAttribute="bottom" secondItem="JlH-IO-9gF" secondAttribute="bottom" constant="20" symbolic="YES" id="oL4-Iq-ufN"/>
                                         </constraints>
-                                    </stackView>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eR-ew-xXz">
                                         <rect key="frame" x="0.0" y="80" width="414" height="653"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="آخر الأخبار" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSE-Lo-3gt">
-                                                <rect key="frame" x="20" y="20" width="64" height="24"/>
+                                                <rect key="frame" x="20" y="20" width="64.5" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="9iW-6h-OHL"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="oip-jr-uJx"/>
@@ -164,17 +176,17 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SD5-bY-xlv">
                                                 <rect key="frame" x="20" y="271" width="374" height="175"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngl-ch-BmQ">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngl-ch-BmQ" customClass="RoundedView" customModule="Judo" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="183" height="175"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 7" translatesAutoresizingMaskIntoConstraints="NO" id="So2-Kq-Jcv">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 7" translatesAutoresizingMaskIntoConstraints="NO" id="So2-Kq-Jcv" customClass="RoundedImageView" customModule="Judo" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="175"/>
                                                             </imageView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="duf-CB-BN3">
                                                                 <rect key="frame" x="26.5" y="17.5" width="130" height="140"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Uqj-Hh-wCL">
-                                                                        <rect key="frame" x="29" y="13.5" width="72" height="113"/>
+                                                                        <rect key="frame" x="29" y="17" width="72" height="106"/>
                                                                         <subviews>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 19" translatesAutoresizingMaskIntoConstraints="NO" id="l47-2S-373">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="72" height="71"/>
@@ -184,7 +196,7 @@
                                                                                 </constraints>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عن الاتحاد" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4g-PU-iTf">
-                                                                                <rect key="frame" x="8" y="87" width="56.5" height="26"/>
+                                                                                <rect key="frame" x="6.5" y="87" width="59.5" height="19"/>
                                                                                 <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
@@ -222,17 +234,17 @@
                                                             <constraint firstAttribute="height" constant="175" id="qvO-pO-tmG"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="scW-Qs-UC2">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="scW-Qs-UC2" customClass="RoundedView" customModule="Judo" customModuleProvider="target">
                                                         <rect key="frame" x="191" y="0.0" width="183" height="175"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 7" translatesAutoresizingMaskIntoConstraints="NO" id="md2-JQ-tfl">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 7" translatesAutoresizingMaskIntoConstraints="NO" id="md2-JQ-tfl" customClass="RoundedImageView" customModule="Judo" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="175"/>
                                                             </imageView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apt-tz-fuW">
                                                                 <rect key="frame" x="26.5" y="17.5" width="130" height="140"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اقسام الاتحاد " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDF-TA-L9V">
-                                                                        <rect key="frame" x="0.0" y="94" width="130" height="26"/>
+                                                                        <rect key="frame" x="0.0" y="101" width="130" height="19"/>
                                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -283,10 +295,10 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nwo-lF-yJ0">
                                                 <rect key="frame" x="20" y="454" width="374" height="175"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3AD-7A-8hV">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3AD-7A-8hV" customClass="RoundedView" customModule="Judo" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="183" height="175"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 7" translatesAutoresizingMaskIntoConstraints="NO" id="fBo-K4-Hdx">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 7" translatesAutoresizingMaskIntoConstraints="NO" id="fBo-K4-Hdx" customClass="RoundedImageView" customModule="Judo" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="175"/>
                                                             </imageView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Tq-5S-by5">
@@ -342,10 +354,10 @@
                                                             <constraint firstAttribute="height" constant="175" id="vuj-Tc-PT8"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMJ-j8-UJf">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMJ-j8-UJf" customClass="RoundedView" customModule="Judo" customModuleProvider="target">
                                                         <rect key="frame" x="191" y="0.0" width="183" height="175"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 7" translatesAutoresizingMaskIntoConstraints="NO" id="KH2-PA-y5e">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 7" translatesAutoresizingMaskIntoConstraints="NO" id="KH2-PA-y5e" customClass="RoundedImageView" customModule="Judo" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="175"/>
                                                             </imageView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBD-dv-nlJ">
@@ -413,6 +425,7 @@
                                             <constraint firstItem="nwo-lF-yJ0" firstAttribute="top" secondItem="SD5-bY-xlv" secondAttribute="bottom" constant="8" id="IEu-TJ-OgV"/>
                                             <constraint firstAttribute="trailing" secondItem="nwo-lF-yJ0" secondAttribute="trailing" constant="20" id="JlX-NO-U9J"/>
                                             <constraint firstItem="55v-j2-k7D" firstAttribute="leading" secondItem="6eR-ew-xXz" secondAttribute="leading" constant="20" id="Xm2-6e-UXr"/>
+                                            <constraint firstAttribute="bottom" secondItem="nwo-lF-yJ0" secondAttribute="bottom" constant="24" id="Ycr-dr-8bL"/>
                                             <constraint firstItem="SD5-bY-xlv" firstAttribute="top" secondItem="55v-j2-k7D" secondAttribute="bottom" constant="20" id="b8n-0B-ggV"/>
                                             <constraint firstItem="RbL-vV-Cw1" firstAttribute="top" secondItem="uSE-Lo-3gt" secondAttribute="bottom" constant="20" id="eUe-bj-O0c"/>
                                             <constraint firstItem="g3M-YU-Cpt" firstAttribute="top" secondItem="6eR-ew-xXz" secondAttribute="top" constant="20" id="fMd-0T-saE"/>
@@ -427,15 +440,16 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" name="App Color"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="JlH-IO-9gF" firstAttribute="top" secondItem="d8G-eD-go1" secondAttribute="top" constant="20" id="66P-LW-7ud"/>
-                                    <constraint firstItem="JlH-IO-9gF" firstAttribute="leading" secondItem="d8G-eD-go1" secondAttribute="leading" constant="20" id="Bzd-mI-lba"/>
-                                    <constraint firstItem="6eR-ew-xXz" firstAttribute="height" secondItem="d8G-eD-go1" secondAttribute="height" multiplier="0.90069" id="C9s-dt-8Sr"/>
+                                    <constraint firstAttribute="trailing" secondItem="FsD-sR-C2X" secondAttribute="trailing" id="6rr-Hd-9lE"/>
+                                    <constraint firstItem="6eR-ew-xXz" firstAttribute="height" secondItem="d8G-eD-go1" secondAttribute="height" multiplier="0.90069" priority="250" id="C9s-dt-8Sr"/>
+                                    <constraint firstItem="FsD-sR-C2X" firstAttribute="top" secondItem="d8G-eD-go1" secondAttribute="top" id="Eh0-Lb-ywL"/>
+                                    <constraint firstItem="6eR-ew-xXz" firstAttribute="top" secondItem="FsD-sR-C2X" secondAttribute="bottom" id="NF9-Hk-dtc"/>
                                     <constraint firstItem="6eR-ew-xXz" firstAttribute="leading" secondItem="d8G-eD-go1" secondAttribute="leading" id="W0J-6j-Hej"/>
-                                    <constraint firstItem="6eR-ew-xXz" firstAttribute="top" secondItem="JlH-IO-9gF" secondAttribute="bottom" constant="20" id="WWB-gq-IoY"/>
-                                    <constraint firstAttribute="bottom" secondItem="6eR-ew-xXz" secondAttribute="bottom" id="XKz-YY-FzS"/>
                                     <constraint firstAttribute="trailing" secondItem="6eR-ew-xXz" secondAttribute="trailing" id="erA-DT-e2J"/>
+                                    <constraint firstAttribute="bottom" secondItem="6eR-ew-xXz" secondAttribute="bottom" id="gEB-8v-4nj"/>
+                                    <constraint firstItem="FsD-sR-C2X" firstAttribute="leading" secondItem="d8G-eD-go1" secondAttribute="leading" id="hjx-MB-ACt"/>
                                     <constraint firstItem="6eR-ew-xXz" firstAttribute="centerX" secondItem="d8G-eD-go1" secondAttribute="centerX" id="nfd-EA-fhx"/>
                                 </constraints>
                             </scrollView>
@@ -492,7 +506,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ifr-6e-xnD">
                                 <rect key="frame" x="16" y="106" width="382" height="658"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0v6-LX-7sx">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0v6-LX-7sx">
                                     <size key="itemSize" width="374" height="153"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -507,19 +521,19 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eja-iw-Zgr" customClass="RoundedShadowView" customModule="Judo" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="116"/>
+                                                    <rect key="frame" x="16" y="0.0" width="342" height="116"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zSc-0M-nEg">
-                                                            <rect key="frame" x="132" y="8" width="162" height="92"/>
+                                                            <rect key="frame" x="132" y="8" width="130" height="92"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbs-D2-eZw">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="162" height="69"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="69"/>
                                                                     <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sn-Dt-O1x">
-                                                                    <rect key="frame" x="0.0" y="69" width="162" height="23"/>
+                                                                    <rect key="frame" x="0.0" y="69" width="130" height="23"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="23" id="qGj-5U-bGb"/>
                                                                     </constraints>
@@ -536,7 +550,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tag en" translatesAutoresizingMaskIntoConstraints="NO" id="Spz-Qc-KEU">
-                                                            <rect key="frame" x="324" y="0.0" width="50" height="50"/>
+                                                            <rect key="frame" x="292" y="0.0" width="50" height="50"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="YG2-02-zG9"/>
                                                                 <constraint firstAttribute="width" constant="50" id="d0t-bm-wMH"/>
@@ -559,10 +573,10 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Eja-iw-Zgr" firstAttribute="leading" secondItem="4il-mV-RWL" secondAttribute="leading" id="1pL-6N-aaP"/>
+                                                <constraint firstItem="Eja-iw-Zgr" firstAttribute="leading" secondItem="4il-mV-RWL" secondAttribute="leading" constant="16" id="1pL-6N-aaP"/>
                                                 <constraint firstItem="Eja-iw-Zgr" firstAttribute="top" secondItem="4il-mV-RWL" secondAttribute="top" id="F4O-Nx-yVR"/>
                                                 <constraint firstAttribute="bottom" secondItem="Eja-iw-Zgr" secondAttribute="bottom" id="HpA-mU-WVy"/>
-                                                <constraint firstAttribute="trailing" secondItem="Eja-iw-Zgr" secondAttribute="trailing" id="MrL-8Z-bmr"/>
+                                                <constraint firstAttribute="trailing" secondItem="Eja-iw-Zgr" secondAttribute="trailing" constant="16" id="MrL-8Z-bmr"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="374" height="116"/>
@@ -638,9 +652,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iIn-H4-dWw">
-                                <rect key="frame" x="16" y="104" width="382" height="709"/>
+                                <rect key="frame" x="0.0" y="104" width="414" height="709"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BcK-By-bk4">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BcK-By-bk4">
                                     <size key="itemSize" width="343" height="290"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -652,8 +666,8 @@
                         <viewLayoutGuide key="safeArea" id="IxP-oE-OrH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="IxP-oE-OrH" firstAttribute="trailing" secondItem="iIn-H4-dWw" secondAttribute="trailing" constant="16" id="22t-4m-jWu"/>
-                            <constraint firstItem="iIn-H4-dWw" firstAttribute="leading" secondItem="IxP-oE-OrH" secondAttribute="leading" constant="16" id="aPQ-ov-6I1"/>
+                            <constraint firstItem="IxP-oE-OrH" firstAttribute="trailing" secondItem="iIn-H4-dWw" secondAttribute="trailing" id="22t-4m-jWu"/>
+                            <constraint firstItem="iIn-H4-dWw" firstAttribute="leading" secondItem="IxP-oE-OrH" secondAttribute="leading" id="aPQ-ov-6I1"/>
                             <constraint firstItem="iIn-H4-dWw" firstAttribute="bottom" secondItem="IxP-oE-OrH" secondAttribute="bottom" id="rPn-2r-ajm"/>
                             <constraint firstItem="iIn-H4-dWw" firstAttribute="top" secondItem="IxP-oE-OrH" secondAttribute="top" constant="60" id="z2i-cZ-xtq"/>
                         </constraints>
@@ -700,7 +714,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkW-JE-j0C">
-                                                <rect key="frame" x="16" y="69" width="382" height="180.5"/>
+                                                <rect key="frame" x="16" y="69" width="382" height="112"/>
                                                 <string key="text">تطبيق الاتحاد السعودي للجودي هو التطبيق الرسمي لرياضة الجودو بالسعودية يتيح للمستخدم كل المعلومات عن الاتحاد والأخبار الجديدة
 كذلك البطولات والدورات وغيرها من المزايا تطبيق الاتحاد السعودي للجودي هو التطبيق الرسمي لرياضة الجودو بالسعودية يتيح للمستخدم كل المعلومات عن الاتحاد والأخبار الجديدة
 كذلك البطولات والدورات وغيرها من المزايا</string>
@@ -709,7 +723,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="شعارنا" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4D-OY-r5d">
-                                                <rect key="frame" x="16" y="281.5" width="76" height="33"/>
+                                                <rect key="frame" x="16" y="213" width="76" height="33"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="KU1-8e-rDz"/>
                                                     <constraint firstAttribute="height" constant="33" id="TAb-jb-Xf7"/>
@@ -719,7 +733,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="شعارنا نصنع أبطال من الصغار للكبار" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddc-6W-WIO">
-                                                <rect key="frame" x="16" y="322.5" width="382" height="28"/>
+                                                <rect key="frame" x="16" y="254" width="382" height="28"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="HCs-v1-Zju"/>
                                                 </constraints>
@@ -728,13 +742,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0nk-z8-8Nb">
-                                                <rect key="frame" x="16" y="382.5" width="382" height="48"/>
+                                                <rect key="frame" x="16" y="314" width="382" height="48"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQr-cp-PTf" customClass="RoundedView" customModule="Judo" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="48"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4qT-1x-U6e">
-                                                                <rect key="frame" x="16" y="15" width="115.5" height="18"/>
+                                                                <rect key="frame" x="16" y="15" width="109" height="18"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share" translatesAutoresizingMaskIntoConstraints="NO" id="ECi-dy-mvy">
                                                                         <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
@@ -744,7 +758,7 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مشاركة التطبيق" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdi-Q2-cDT">
-                                                                        <rect key="frame" x="34" y="0.0" width="81.5" height="18"/>
+                                                                        <rect key="frame" x="34" y="0.0" width="75" height="18"/>
                                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
                                                                         <color key="textColor" red="0.2159663439" green="0.70025205609999996" blue="0.28937607999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -846,7 +860,7 @@
             <objects>
                 <viewController storyboardIdentifier="ChampDetailsVC" id="Z7B-UC-hNa" customClass="ChampDetailsVC" customModule="Judo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Tz-rk-UGf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="916"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="970"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPk-zb-yvI">
@@ -999,14 +1013,14 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7GZ-G7-moo">
-                                                <rect key="frame" x="0.0" y="531.5" width="414" height="8"/>
+                                                <rect key="frame" x="0.0" y="544" width="414" height="8"/>
                                                 <color key="backgroundColor" red="0.85090553759999998" green="0.85102838280000004" blue="0.8508786559" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="8" id="kjg-c8-RVD"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تفاصيل أخرى" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJv-gG-jXP">
-                                                <rect key="frame" x="16" y="555.5" width="76" height="33"/>
+                                                <rect key="frame" x="16" y="568" width="78.5" height="33"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33" id="0TQ-sv-gmc"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="eOA-mo-9Ld"/>
@@ -1016,7 +1030,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="characterWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYF-hy-pJ6">
-                                                <rect key="frame" x="16" y="604.5" width="382" height="45.5"/>
+                                                <rect key="frame" x="16" y="617" width="382" height="33"/>
                                                 <string key="text">يتم هنا كتابة تفاصيل عن البطولة مثلا أو ملحوظة عن الدورة مثلا : كانت بحضور الأمير علاء الدين ونخبة من الرياضيين العالمين برياضة الجودو وهكذا </string>
                                                 <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
                                                 <nil key="textColor"/>
@@ -1030,7 +1044,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تفاصيل أخرى" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vg-Dq-Qh6">
-                                                <rect key="frame" x="16" y="690" width="76" height="33"/>
+                                                <rect key="frame" x="16" y="690" width="78.5" height="33"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33" id="TUL-bH-h8k"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="mbJ-vr-64P"/>
@@ -1819,13 +1833,13 @@
                                                             <rect key="frame" x="76" y="8" width="322" height="44"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="ك/ محمد بن علاء الكبير" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxJ-Yl-DaG">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="112" height="23.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="113" height="29"/>
                                                                     <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
                                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مدرب السعودية للجودو" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDW-EV-MZB">
-                                                                    <rect key="frame" x="0.0" y="24.5" width="100" height="19.5"/>
+                                                                    <rect key="frame" x="0.0" y="30" width="91.5" height="14"/>
                                                                     <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="12"/>
                                                                     <color key="textColor" name="text"/>
                                                                     <nil key="highlightedColor"/>

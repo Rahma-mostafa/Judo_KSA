@@ -112,6 +112,12 @@ extension ChampVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollect
            vc.champID = self.champID
            vc.type = self.type
      }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+
+        return CGSize(width: self.view.frame.size.width, height: 116)
+
+    }
     
        
     
