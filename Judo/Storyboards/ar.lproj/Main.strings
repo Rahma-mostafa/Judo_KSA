@@ -6,31 +6,31 @@
 "55v-j2-k7D.text" = "الاقسام";
 
 /* Class = "UILabel"; text = "اقسام الاتحاد "; ObjectID = "AxQ-77-DYW"; */
-"AxQ-77-DYW.text" = "اقسام الاتحاد ";
+//"AxQ-77-DYW.text" = "اقسام الاتحاد ";
 
 /* Class = "UILabel"; text = "اقسام الاتحاد "; ObjectID = "B4g-PU-iTf"; */
-"B4g-PU-iTf.text" = "اقسام الاتحاد ";
+//"B4g-PU-iTf.text" = "اقسام الاتحاد ";
 
 /* Class = "UITabBarItem"; title = "more"; ObjectID = "Ilj-Le-xls"; */
 "Ilj-Le-xls.title" = "المزيد";
 
 /* Class = "UILabel"; text = "اقسام الاتحاد "; ObjectID = "RDF-TA-L9V"; */
-"RDF-TA-L9V.text" = "اقسام الاتحاد ";
+//"RDF-TA-L9V.text" = "اقسام الاتحاد ";
 
 /* Class = "UITabBarItem"; title = "win"; ObjectID = "TPn-aY-fqn"; */
-"TPn-aY-fqn.title" = "البطولات";
+//"TPn-aY-fqn.title" = "البطولات";
 
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "VE3-Nq-XlT"; */
-"VE3-Nq-XlT.title" = "الرئيسية";
+//"VE3-Nq-XlT.title" = "الرئيسية";
 
 /* Class = "UITabBarItem"; title = "video"; ObjectID = "cdV-Hy-KnS"; */
-"cdV-Hy-KnS.title" = "فيديو";
+//"cdV-Hy-KnS.title" = "فيديو";
 
 /* Class = "UIButton"; normalTitle = "المزيد"; ObjectID = "g3M-YU-Cpt"; */
-"g3M-YU-Cpt.normalTitle" = "المزيد";
+//"g3M-YU-Cpt.normalTitle" = "المزيد";
 
 /* Class = "UILabel"; text = "اقسام الاتحاد "; ObjectID = "gNX-BS-L7g"; */
-"gNX-BS-L7g.text" = "اقسام الاتحاد ";
+//"gNX-BS-L7g.text" = "اقسام الاتحاد ";
 
 /* Class = "UILabel"; text = "الاتحاد السعودي للجودو "; ObjectID = "psa-H1-nnb"; */
 "psa-H1-nnb.text" = "الاتحاد السعودي للجودو ";

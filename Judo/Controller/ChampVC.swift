@@ -25,7 +25,7 @@ class ChampVC: BaseController {
         super.viewDidLoad()
         setup()
         retreiveChampShips()
-        setLocalized()
+//        setLocalized()
 
     }
     func setup(){

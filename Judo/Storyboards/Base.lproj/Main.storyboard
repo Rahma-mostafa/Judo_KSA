@@ -485,7 +485,7 @@
             </objects>
             <point key="canvasLocation" x="2676.811594202899" y="-1045.3125"/>
         </scene>
-        <!--Win-->
+        <!--البطولات-->
         <scene sceneID="9nt-4O-s9s">
             <objects>
                 <viewController storyboardIdentifier="ChampVC" id="6xi-Ma-Uya" customClass="ChampVC" customModule="Judo" customModuleProvider="target" sceneMemberID="viewController">
@@ -602,7 +602,7 @@
                             <constraint firstItem="UAj-Fk-c7Z" firstAttribute="leading" secondItem="wjF-V9-qeX" secondAttribute="leading" constant="16" id="ogs-6E-x2S"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Win" image="win" id="TPn-aY-fqn"/>
+                    <tabBarItem key="tabBarItem" title="البطولات" image="win" id="TPn-aY-fqn"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -643,7 +643,7 @@
             </objects>
             <point key="canvasLocation" x="850.72463768115949" y="81.696428571428569"/>
         </scene>
-        <!--Video-->
+        <!--فيديو-->
         <scene sceneID="36p-Ou-HeH">
             <objects>
                 <viewController storyboardIdentifier="VideoVC" id="gDl-9B-09Q" customClass="VideoVC" customModule="Judo" customModuleProvider="target" sceneMemberID="viewController">
@@ -680,7 +680,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Video" image="video" id="cdV-Hy-KnS"/>
+                    <tabBarItem key="tabBarItem" title="فيديو" image="video" id="cdV-Hy-KnS"/>
                     <connections>
                         <outlet property="videoCollectionView" destination="iIn-H4-dWw" id="4PE-Qn-5y1"/>
                     </connections>
@@ -923,11 +923,11 @@
                                                     <constraint firstAttribute="height" constant="2" id="psc-F4-1eR"/>
                                                 </constraints>
                                             </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="b7h-vs-rsz" userLabel="Button Stack View">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="b7h-vs-rsz" userLabel="Button Stack View">
                                                 <rect key="frame" x="30" y="297" width="354" height="48"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9a-o9-NsC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="58.5" height="48"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="48"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
                                                         <state key="normal" title="المعلومات">
@@ -938,7 +938,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srb-s0-k6H">
-                                                        <rect key="frame" x="98.5" y="0.0" width="58.5" height="48"/>
+                                                        <rect key="frame" x="88.5" y="0.0" width="88.5" height="48"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
                                                         <state key="normal" title="المراكز">
@@ -949,7 +949,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="840-nE-TFF">
-                                                        <rect key="frame" x="197" y="0.0" width="58.5" height="48"/>
+                                                        <rect key="frame" x="177" y="0.0" width="88.5" height="48"/>
                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
                                                         <state key="normal" title="الصور">
                                                             <color key="titleColor" red="0.50191473960876465" green="0.50199025869369507" blue="0.50189822912216187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -959,7 +959,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuo-hx-N4V">
-                                                        <rect key="frame" x="295.5" y="0.0" width="58.5" height="48"/>
+                                                        <rect key="frame" x="265.5" y="0.0" width="88.5" height="48"/>
                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
                                                         <state key="normal" title="المنظمون">
                                                             <color key="titleColor" red="0.50191473960876465" green="0.50199025869369507" blue="0.50189822912216187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -977,23 +977,23 @@
                                                     <constraint firstItem="Srb-s0-k6H" firstAttribute="width" secondItem="j9a-o9-NsC" secondAttribute="width" id="xPK-qT-qMp"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="uFf-wE-3uj" userLabel="Underline Stack View">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uFf-wE-3uj" userLabel="Underline Stack View">
                                                 <rect key="frame" x="28" y="345" width="358" height="2"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDp-dE-Kig">
-                                                        <rect key="frame" x="0.0" y="0.0" width="54.5" height="2"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="2"/>
                                                         <color key="backgroundColor" red="0.50191473959999999" green="0.50199025870000002" blue="0.50189822910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gpn-X1-YpC">
-                                                        <rect key="frame" x="101.5" y="0.0" width="54" height="2"/>
+                                                        <rect key="frame" x="91.5" y="0.0" width="83.5" height="2"/>
                                                         <color key="backgroundColor" red="0.50191473959999999" green="0.50199025870000002" blue="0.50189822910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hP-j7-RJZ">
-                                                        <rect key="frame" x="202.5" y="0.0" width="54.5" height="2"/>
+                                                        <rect key="frame" x="183" y="0.0" width="83.5" height="2"/>
                                                         <color key="backgroundColor" red="0.50191473959999999" green="0.50199025870000002" blue="0.50189822910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UeD-kD-jm1">
-                                                        <rect key="frame" x="304" y="0.0" width="54" height="2"/>
+                                                        <rect key="frame" x="274.5" y="0.0" width="83.5" height="2"/>
                                                         <color key="backgroundColor" red="0.50191473959999999" green="0.50199025870000002" blue="0.50189822910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
                                                 </subviews>
@@ -1895,11 +1895,11 @@
             </objects>
             <point key="canvasLocation" x="3187" y="10"/>
         </scene>
-        <!--More-->
+        <!--المزيد-->
         <scene sceneID="pU9-Ll-sEj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hbY-Hb-mJc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="More" image="more" id="Ilj-Le-xls"/>
+                    <tabBarItem key="tabBarItem" title="المزيد" image="more" id="Ilj-Le-xls"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nTD-KQ-jFL">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1915,11 +1915,11 @@
             </objects>
             <point key="canvasLocation" x="1775.3623188405797" y="1095.5357142857142"/>
         </scene>
-        <!--Home-->
+        <!--الرئيسية-->
         <scene sceneID="08n-lz-i27">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r52-ve-kvT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="home" id="VE3-Nq-XlT"/>
+                    <tabBarItem key="tabBarItem" title="الرئيسية" image="home" id="VE3-Nq-XlT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="y8k-32-WLL">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

@@ -23,7 +23,7 @@ class FederationEstablishersVC: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        setupLocalization()
+//        setupLocalization()
         retreiveEstalisher()
         
     }

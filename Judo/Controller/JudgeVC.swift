@@ -23,7 +23,7 @@ class JudgeVC: BaseController {
   override func viewDidLoad() {
      super.viewDidLoad()
      setup()
-    setupLocalization()
+//    setupLocalization()
     retreiveLatestNews()
   }
   func setup(){

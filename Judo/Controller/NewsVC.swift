@@ -23,7 +23,7 @@ class NewsVC: BaseController {
         super.viewDidLoad()
         setup()
         retreiveLatestNews()
-        titleLabel.text = "latest".localized()
+//        titleLabel.text = "latest".localized()
     }
     func setup(){
        newsCollectionView.delegate = self

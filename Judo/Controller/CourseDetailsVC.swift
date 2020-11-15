@@ -41,7 +41,7 @@ class CourseDetailsVC: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hiddenNav = true
-        setupLocaliztion()
+//        setupLocaliztion()
         retreiveDetails()
         setContacts()
     }

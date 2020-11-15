@@ -28,7 +28,7 @@ class FederationSectionSVC: BaseController {
         super.viewDidLoad()
         self.hiddenNav = false
         setCornerRadius()
-        setupLocalization()
+//        setupLocalization()
         rotateImage()
     }
     func rotateImage(){

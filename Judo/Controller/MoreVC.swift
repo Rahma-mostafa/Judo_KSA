@@ -19,7 +19,7 @@ class MoreVC: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hiddenNav = false
-        setupLocalization()
+//        setupLocalization()
         rotateImage()
 
     }

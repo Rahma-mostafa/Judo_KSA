@@ -23,7 +23,7 @@ class TrainerVC: BaseController {
   override func viewDidLoad() {
         super.viewDidLoad()
             setup()
-            setupLocalization()
+//            setupLocalization()
             retreiveCoacehsList()
     
     }

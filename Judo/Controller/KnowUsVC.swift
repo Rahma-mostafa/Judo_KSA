@@ -23,7 +23,7 @@ class KnowUsVC: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hiddenNav = false
-        setupLocalization()
+//        setupLocalization()
         retreiveContent()
         retreivehistory()
         retreiveadvantages()

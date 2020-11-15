@@ -18,7 +18,7 @@ class FederationTargetsVC: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hiddenNav = false
-        setLocalize()
+//        setLocalize()
         retreiveContent()
        
 

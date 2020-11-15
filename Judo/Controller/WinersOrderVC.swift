@@ -26,7 +26,7 @@ class WinersOrderVC: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hiddenNav = false
-        setupLocalization()
+//        setupLocalization()
         reteriveOrder()
 
     }

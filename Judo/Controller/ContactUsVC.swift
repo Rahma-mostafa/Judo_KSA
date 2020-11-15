@@ -32,7 +32,7 @@ class ContactUsVC: BaseController,UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupLocalization()
+//        setupLocalization()
         setup()
         setCornerRadius()
         setContacts()

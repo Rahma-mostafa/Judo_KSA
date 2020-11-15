@@ -48,7 +48,7 @@ class ChampDetailsVC: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideView()
-        setupLocalization()
+//        setupLocalization()
         setContacts()
         reteriveChampDetails()
     }

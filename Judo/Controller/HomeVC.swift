@@ -39,7 +39,7 @@ class HomeVC: BaseController {
         super.viewDidLoad()
         self.hiddenNav = true
         rounded()
-        setupLocalication()
+//        setupLocalication()
         setup()
         retreiveLatestNews()
         
