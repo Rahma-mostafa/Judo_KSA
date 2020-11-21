@@ -25,6 +25,7 @@ class NewsDetailsVC: BaseController {
     }
     
     func retreiveLatestNews(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("news").getDocuments() { (querySnapshot, err) in
             print("1")
@@ -44,6 +45,8 @@ class NewsDetailsVC: BaseController {
                         self.descLabel.text = desc!
                     }
                 }
+                self.activityIndicator.stopAnimating()
+
             }
         }
     }

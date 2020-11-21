@@ -40,6 +40,7 @@ class FederationEstablishersVC: BaseController {
     }
 
     func retreiveEstalisher(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("establishers").getDocuments() { (querySnapshot, err) in
             print("1")
@@ -55,6 +56,8 @@ class FederationEstablishersVC: BaseController {
                     self.stablisher.append(latestnewsObj)
                     self.establisherTableView.reloadData()
                 }
+                self.activityIndicator.stopAnimating()
+
             }
         }
     }

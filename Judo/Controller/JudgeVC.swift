@@ -41,6 +41,7 @@ class JudgeVC: BaseController {
      self.navigationController?.popViewController(animated: true)
   }
     func retreiveLatestNews(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("refereesSection").getDocuments() { (querySnapshot, err) in
             print("1")
@@ -52,11 +53,11 @@ class JudgeVC: BaseController {
                     let imageURL = document["avatarUrl"] as? String
                     let title = document["name"] as? String
                     let club = document["club"] as? String
-                    let url = URL(string: imageURL!)
                     let latestnewsObj = Managers(image: imageURL!, name: title!, role: club!)
                     self.manager.append(latestnewsObj)
                     self.TableView.reloadData()
                 }
+                self.activityIndicator.stopAnimating()
             }
         }
     }

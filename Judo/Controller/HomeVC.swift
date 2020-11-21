@@ -30,6 +30,9 @@ class HomeVC: BaseController {
     @IBOutlet weak var contentView3: GradientView!
     @IBOutlet weak var contentView4: GradientView!
     
+    @IBOutlet weak var indicatorView: UIView!
+    
+    @IBOutlet weak var topViewConstraint: NSLayoutConstraint!
     //variables
     var latestNewsArray:[LatestNews] = [LatestNews]()
     var newsID = ""
@@ -41,6 +44,7 @@ class HomeVC: BaseController {
         rounded()
 //        setupLocalication()
         setup()
+        activityIndicator.startAnimating()
         retreiveLatestNews()
         
     }
@@ -81,6 +85,7 @@ class HomeVC: BaseController {
                     self.latestNewsArray.append(latestnewsObj)
                     self.latestNewCollectionView.reloadData()
                 }
+                self.activityIndicator.stopAnimating()
             }
         }
     }

@@ -304,7 +304,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Tq-5S-by5">
                                                                 <rect key="frame" x="26.5" y="17.5" width="130" height="140"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الدورات التدريبه " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNX-BS-L7g">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الدورات التدريبية " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNX-BS-L7g">
                                                                         <rect key="frame" x="0.0" y="94" width="130" height="26"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="26" id="eyQ-Jv-7t6"/>
@@ -1131,20 +1131,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="Kcr-kg-6Z6"/>
                                                 </constraints>
-                                                <state key="normal" title="الاتصال">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="onCallButtonTapped:" destination="Z7B-UC-hNa" eventType="touchUpInside" id="3kg-Fh-52V"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Page-1" translatesAutoresizingMaskIntoConstraints="NO" id="hTv-7l-WKK">
-                                                <rect key="frame" x="244" y="913" width="24" height="24"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="24" id="pwJ-nN-aAG"/>
-                                                    <constraint firstAttribute="width" constant="24" id="zoO-1a-BFj"/>
-                                                </constraints>
-                                            </imageView>
                                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lXT-zy-cTp" userLabel="First Container View">
                                                 <rect key="frame" x="0.0" y="364" width="414" height="168"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1174,6 +1168,23 @@
                                                     <segue destination="XBx-tu-dbz" kind="embed" identifier="organiser" id="jnq-wa-8TV"/>
                                                 </connections>
                                             </containerView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Seh-oO-djr">
+                                                <rect key="frame" x="164" y="915" width="86" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاتصال" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkZ-le-mZy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="TyB-CQ-UXF"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Page-1" translatesAutoresizingMaskIntoConstraints="NO" id="hTv-7l-WKK">
+                                                        <rect key="frame" x="68" y="0.0" width="18" height="20"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -1195,6 +1206,7 @@
                                             <constraint firstItem="PB6-7o-ISC" firstAttribute="top" secondItem="vYF-hy-pJ6" secondAttribute="bottom" constant="16" id="Rfd-0L-Hh9"/>
                                             <constraint firstItem="xz3-Rb-Ptb" firstAttribute="leading" secondItem="FUw-Fu-fdp" secondAttribute="leading" constant="16" id="T9m-EY-RDh"/>
                                             <constraint firstItem="yCS-UN-V7d" firstAttribute="top" secondItem="Xsb-Eb-WB0" secondAttribute="bottom" constant="18" id="TIH-0i-Q4i"/>
+                                            <constraint firstItem="Seh-oO-djr" firstAttribute="centerY" secondItem="hj4-B1-gJO" secondAttribute="centerY" id="Ttg-z2-Fg9"/>
                                             <constraint firstItem="6vg-Dq-Qh6" firstAttribute="top" secondItem="PB6-7o-ISC" secondAttribute="bottom" constant="16" id="UEY-XI-ggh"/>
                                             <constraint firstItem="PB6-7o-ISC" firstAttribute="leading" secondItem="FUw-Fu-fdp" secondAttribute="leading" id="UMg-6C-Yw7"/>
                                             <constraint firstItem="zgl-9l-PiQ" firstAttribute="centerX" secondItem="FUw-Fu-fdp" secondAttribute="centerX" id="Y97-1k-pkh"/>
@@ -1202,6 +1214,7 @@
                                             <constraint firstItem="xoE-Ev-4aS" firstAttribute="centerX" secondItem="FUw-Fu-fdp" secondAttribute="centerX" id="YVB-ps-Nyf"/>
                                             <constraint firstItem="6vg-Dq-Qh6" firstAttribute="leading" secondItem="FUw-Fu-fdp" secondAttribute="leading" constant="16" id="YtK-j9-WjT"/>
                                             <constraint firstItem="b7h-vs-rsz" firstAttribute="top" secondItem="kby-ZO-ihg" secondAttribute="bottom" constant="1" id="ZCo-oU-8AD"/>
+                                            <constraint firstItem="Seh-oO-djr" firstAttribute="centerX" secondItem="FUw-Fu-fdp" secondAttribute="centerX" id="aAL-e2-Vh7"/>
                                             <constraint firstAttribute="trailing" secondItem="7GZ-G7-moo" secondAttribute="trailing" id="bNT-qK-6fl"/>
                                             <constraint firstAttribute="trailing" secondItem="vYF-hy-pJ6" secondAttribute="trailing" constant="16" id="bY5-Hc-k6R"/>
                                             <constraint firstItem="zgl-9l-PiQ" firstAttribute="top" secondItem="xz3-Rb-Ptb" secondAttribute="bottom" constant="8" id="coo-Wb-g2u"/>
@@ -1211,6 +1224,7 @@
                                             <constraint firstItem="uFf-wE-3uj" firstAttribute="leading" secondItem="FUw-Fu-fdp" secondAttribute="leading" constant="28" id="dgs-tq-h3x"/>
                                             <constraint firstAttribute="trailing" secondItem="b7h-vs-rsz" secondAttribute="trailing" constant="30" id="fIS-pc-AnV"/>
                                             <constraint firstItem="SJv-gG-jXP" firstAttribute="top" secondItem="7GZ-G7-moo" secondAttribute="bottom" constant="16" id="fIV-FI-jZP"/>
+                                            <constraint firstItem="hj4-B1-gJO" firstAttribute="centerX" secondItem="FUw-Fu-fdp" secondAttribute="centerX" id="fhq-Ih-k1o"/>
                                             <constraint firstItem="Xsb-Eb-WB0" firstAttribute="top" secondItem="FUw-Fu-fdp" secondAttribute="top" id="hba-AO-KFz"/>
                                             <constraint firstItem="xoE-Ev-4aS" firstAttribute="top" secondItem="zgl-9l-PiQ" secondAttribute="bottom" constant="24" id="iUW-tj-KwM"/>
                                             <constraint firstAttribute="trailing" secondItem="8XI-Ld-E5b" secondAttribute="trailing" constant="-10" id="iWH-lf-wQ1"/>
@@ -1227,8 +1241,6 @@
                                             <constraint firstItem="hj4-B1-gJO" firstAttribute="leading" secondItem="FUw-Fu-fdp" secondAttribute="leading" constant="40" id="vnI-OO-DUv"/>
                                             <constraint firstAttribute="trailing" secondItem="uFf-wE-3uj" secondAttribute="trailing" constant="28" id="wGS-rg-8lT"/>
                                             <constraint firstItem="vYF-hy-pJ6" firstAttribute="leading" secondItem="FUw-Fu-fdp" secondAttribute="leading" constant="16" id="wVG-MZ-mFv"/>
-                                            <constraint firstItem="hTv-7l-WKK" firstAttribute="centerY" secondItem="hj4-B1-gJO" secondAttribute="centerY" id="xNj-be-zs4"/>
-                                            <constraint firstItem="hTv-7l-WKK" firstAttribute="leading" secondItem="hj4-B1-gJO" secondAttribute="trailing" constant="-130" id="y77-SB-yGP"/>
                                             <constraint firstItem="SJv-gG-jXP" firstAttribute="leading" secondItem="FUw-Fu-fdp" secondAttribute="leading" constant="16" id="yr1-3e-1ld"/>
                                         </constraints>
                                     </view>
@@ -1288,11 +1300,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="168"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="Juc-D2-Vr6" userLabel="First Stack View">
-                                <rect key="frame" x="16" y="20" width="382" height="60"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Juc-D2-Vr6" userLabel="First Stack View">
+                                <rect key="frame" x="32" y="20" width="350" height="60"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uwb-nw-NYY">
-                                        <rect key="frame" x="0.0" y="0.0" width="174" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="60"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="data" translatesAutoresizingMaskIntoConstraints="NO" id="yUK-41-GvP">
                                                 <rect key="frame" x="3" y="3" width="44" height="44"/>
@@ -1334,14 +1346,13 @@
                                         <constraints>
                                             <constraint firstItem="yUK-41-GvP" firstAttribute="top" secondItem="Uwb-nw-NYY" secondAttribute="top" constant="3" id="2nD-YU-BVu"/>
                                             <constraint firstAttribute="height" constant="60" id="5og-qV-oc0"/>
-                                            <constraint firstAttribute="width" constant="174" id="mT5-tt-Pl3"/>
                                             <constraint firstItem="ah0-dw-bfE" firstAttribute="centerY" secondItem="yUK-41-GvP" secondAttribute="centerY" id="nim-QK-lts"/>
                                             <constraint firstItem="ah0-dw-bfE" firstAttribute="leading" secondItem="yUK-41-GvP" secondAttribute="trailing" constant="16" id="qXn-sW-Oiz"/>
                                             <constraint firstItem="yUK-41-GvP" firstAttribute="leading" secondItem="Uwb-nw-NYY" secondAttribute="leading" constant="3" id="uaO-yY-S3Y"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ucm-b8-m3m">
-                                        <rect key="frame" x="208" y="0.0" width="174" height="60"/>
+                                        <rect key="frame" x="175" y="0.0" width="175" height="60"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="year" translatesAutoresizingMaskIntoConstraints="NO" id="TYU-5q-kce">
                                                 <rect key="frame" x="3" y="3" width="44" height="44"/>
@@ -1384,19 +1395,18 @@
                                             <constraint firstItem="oQJ-Gt-6AM" firstAttribute="centerY" secondItem="TYU-5q-kce" secondAttribute="centerY" id="2du-kg-rMw"/>
                                             <constraint firstItem="oQJ-Gt-6AM" firstAttribute="leading" secondItem="TYU-5q-kce" secondAttribute="trailing" constant="16" id="IMI-kv-Rmo"/>
                                             <constraint firstItem="TYU-5q-kce" firstAttribute="leading" secondItem="Ucm-b8-m3m" secondAttribute="leading" constant="3" id="b0v-MY-ZjG"/>
-                                            <constraint firstAttribute="width" constant="174" id="hOU-b7-hdm"/>
                                             <constraint firstItem="TYU-5q-kce" firstAttribute="top" secondItem="Ucm-b8-m3m" secondAttribute="top" constant="3" id="jBL-V6-crQ"/>
                                             <constraint firstAttribute="height" constant="60" id="sWY-Gc-RLC"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Ucm-b8-m3m" firstAttribute="width" secondItem="Uwb-nw-NYY" secondAttribute="width" id="Hfg-bO-ade"/>
                                     <constraint firstAttribute="height" constant="60" id="Mbo-R7-Lmt"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="vZG-wq-ZVr"/>
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebk-Rf-GTa">
-                                <rect key="frame" x="16" y="80" width="382" height="60"/>
+                                <rect key="frame" x="32" y="80" width="350" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map- 1" translatesAutoresizingMaskIntoConstraints="NO" id="1V4-Ox-huB">
                                         <rect key="frame" x="3" y="3" width="44" height="44"/>
@@ -1406,10 +1416,10 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mbr-D4-WEM">
-                                        <rect key="frame" x="63" y="3.5" width="303" height="43"/>
+                                        <rect key="frame" x="63" y="3.5" width="255" height="43"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مكان البطولة" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxK-Ef-zkS">
-                                                <rect key="frame" x="0.0" y="0.0" width="303" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="255" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="kZ0-ou-aAg"/>
                                                 </constraints>
@@ -1418,7 +1428,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" نادي مكة الرياضي الأول - مكة -شارع المؤمن" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS0-0L-qtl">
-                                                <rect key="frame" x="0.0" y="22" width="303" height="21"/>
+                                                <rect key="frame" x="0.0" y="22" width="255" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="Ty6-pM-Mdg"/>
                                                 </constraints>
@@ -1432,8 +1442,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="0rB-hp-aC3"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="F1M-Tq-CJY"/>
-                                    <constraint firstAttribute="trailing" secondItem="Mbr-D4-WEM" secondAttribute="trailing" constant="16" id="IeJ-vo-Gvm"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mbr-D4-WEM" secondAttribute="trailing" constant="32" id="IeJ-vo-Gvm"/>
                                     <constraint firstItem="Mbr-D4-WEM" firstAttribute="centerY" secondItem="1V4-Ox-huB" secondAttribute="centerY" id="QU0-j7-Ldo"/>
                                     <constraint firstItem="Mbr-D4-WEM" firstAttribute="leading" secondItem="1V4-Ox-huB" secondAttribute="trailing" constant="16" id="ZxG-qf-l9I"/>
                                     <constraint firstItem="1V4-Ox-huB" firstAttribute="top" secondItem="Ebk-Rf-GTa" secondAttribute="top" constant="3" id="sc8-r5-bCY"/>
@@ -1444,11 +1453,11 @@
                         <viewLayoutGuide key="safeArea" id="yKS-kH-L4H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ebk-Rf-GTa" firstAttribute="leading" secondItem="yKS-kH-L4H" secondAttribute="leading" constant="16" id="EAw-EB-txw"/>
-                            <constraint firstItem="yKS-kH-L4H" firstAttribute="trailing" secondItem="Juc-D2-Vr6" secondAttribute="trailing" constant="16" id="SIS-T2-5t4"/>
-                            <constraint firstItem="Juc-D2-Vr6" firstAttribute="leading" secondItem="yKS-kH-L4H" secondAttribute="leading" constant="16" id="Yls-4w-E1y"/>
+                            <constraint firstItem="yKS-kH-L4H" firstAttribute="trailing" secondItem="Juc-D2-Vr6" secondAttribute="trailing" constant="32" id="SIS-T2-5t4"/>
+                            <constraint firstItem="Juc-D2-Vr6" firstAttribute="leading" secondItem="yKS-kH-L4H" secondAttribute="leading" constant="32" id="Yls-4w-E1y"/>
                             <constraint firstItem="Juc-D2-Vr6" firstAttribute="top" secondItem="Xal-V7-0NX" secondAttribute="top" constant="20" id="ZoL-Vn-cFn"/>
-                            <constraint firstItem="yKS-kH-L4H" firstAttribute="trailing" secondItem="Ebk-Rf-GTa" secondAttribute="trailing" constant="16" id="e1R-dA-wAF"/>
+                            <constraint firstItem="yKS-kH-L4H" firstAttribute="trailing" secondItem="Ebk-Rf-GTa" secondAttribute="trailing" constant="32" id="e1R-dA-wAF"/>
+                            <constraint firstItem="Ebk-Rf-GTa" firstAttribute="centerX" secondItem="Xal-V7-0NX" secondAttribute="centerX" id="egM-PR-iKP"/>
                             <constraint firstItem="Ebk-Rf-GTa" firstAttribute="top" secondItem="Juc-D2-Vr6" secondAttribute="bottom" id="xFh-hU-6Eo"/>
                         </constraints>
                     </view>
@@ -1483,138 +1492,143 @@
                                             <constraint firstAttribute="height" constant="376" id="cY1-W5-Fo2"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJL-xA-dCK">
-                                        <rect key="frame" x="16" y="20" width="382" height="60"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="q8B-1B-rDy">
+                                        <rect key="frame" x="32" y="20" width="366" height="180"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="I2G-z7-ZXs">
-                                                <rect key="frame" x="3" y="3" width="44" height="44"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="fhC-2f-wJE"/>
-                                                    <constraint firstAttribute="width" constant="44" id="p2D-vC-we1"/>
-                                                </constraints>
-                                            </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Yu8-Aq-aMk">
-                                                <rect key="frame" x="63" y="3.5" width="303" height="43"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJL-xA-dCK">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="60"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المركز الاول" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExM-bB-Es6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="303" height="21"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="I2G-z7-ZXs">
+                                                        <rect key="frame" x="3" y="3" width="44" height="44"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="21" id="fty-8T-0et"/>
+                                                            <constraint firstAttribute="height" constant="44" id="fhC-2f-wJE"/>
+                                                            <constraint firstAttribute="width" constant="44" id="p2D-vC-we1"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="12"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" نادي مكة الرياضي الأول - مكة -شارع المؤمن" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wak-Zm-1B0">
-                                                        <rect key="frame" x="0.0" y="22" width="303" height="21"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="21" id="ysM-cj-pio"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="12"/>
-                                                        <color key="textColor" red="0.37643486259999998" green="0.37649339440000001" blue="0.37642204759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Yu8-Aq-aMk">
+                                                        <rect key="frame" x="63" y="3.5" width="287" height="43"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المركز الاول" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExM-bB-Es6">
+                                                                <rect key="frame" x="0.0" y="0.0" width="287" height="21"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="21" id="fty-8T-0et"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="12"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" نادي مكة الرياضي الأول - مكة -شارع المؤمن" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wak-Zm-1B0">
+                                                                <rect key="frame" x="0.0" y="22" width="287" height="21"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="21" id="ysM-cj-pio"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="12"/>
+                                                                <color key="textColor" red="0.37643486259999998" green="0.37649339440000001" blue="0.37642204759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="I2G-z7-ZXs" firstAttribute="leading" secondItem="BJL-xA-dCK" secondAttribute="leading" constant="3" id="0LL-5R-gwf"/>
-                                            <constraint firstItem="Yu8-Aq-aMk" firstAttribute="centerY" secondItem="I2G-z7-ZXs" secondAttribute="centerY" id="47z-Ve-HQL"/>
-                                            <constraint firstItem="Yu8-Aq-aMk" firstAttribute="leading" secondItem="I2G-z7-ZXs" secondAttribute="trailing" constant="16" id="GZz-ck-hE4"/>
-                                            <constraint firstItem="I2G-z7-ZXs" firstAttribute="top" secondItem="BJL-xA-dCK" secondAttribute="top" constant="3" id="iyB-OI-aHc"/>
-                                            <constraint firstAttribute="height" constant="60" id="mos-Me-xwS"/>
-                                            <constraint firstAttribute="trailing" secondItem="Yu8-Aq-aMk" secondAttribute="trailing" constant="16" id="mvn-6j-xUk"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zC-XW-5DE">
-                                        <rect key="frame" x="16" y="80" width="382" height="60"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first-1" translatesAutoresizingMaskIntoConstraints="NO" id="LkP-oF-tLX">
-                                                <rect key="frame" x="3" y="3" width="44" height="44"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="cWy-Jo-GqG"/>
-                                                    <constraint firstAttribute="width" constant="44" id="otE-JI-A0u"/>
+                                                    <constraint firstItem="I2G-z7-ZXs" firstAttribute="leading" secondItem="BJL-xA-dCK" secondAttribute="leading" constant="3" id="0LL-5R-gwf"/>
+                                                    <constraint firstItem="Yu8-Aq-aMk" firstAttribute="centerY" secondItem="I2G-z7-ZXs" secondAttribute="centerY" id="47z-Ve-HQL"/>
+                                                    <constraint firstItem="Yu8-Aq-aMk" firstAttribute="leading" secondItem="I2G-z7-ZXs" secondAttribute="trailing" constant="16" id="GZz-ck-hE4"/>
+                                                    <constraint firstItem="I2G-z7-ZXs" firstAttribute="top" secondItem="BJL-xA-dCK" secondAttribute="top" constant="3" id="iyB-OI-aHc"/>
+                                                    <constraint firstAttribute="height" constant="60" id="mos-Me-xwS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Yu8-Aq-aMk" secondAttribute="trailing" constant="16" id="mvn-6j-xUk"/>
                                                 </constraints>
-                                            </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="FHr-VQ-cou">
-                                                <rect key="frame" x="63" y="3.5" width="303" height="43"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zC-XW-5DE">
+                                                <rect key="frame" x="0.0" y="60" width="366" height="60"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المركز الثاني" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P98-vM-zuc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="303" height="21"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first-1" translatesAutoresizingMaskIntoConstraints="NO" id="LkP-oF-tLX">
+                                                        <rect key="frame" x="3" y="3" width="44" height="44"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="21" id="Az4-NS-akZ"/>
+                                                            <constraint firstAttribute="height" constant="44" id="cWy-Jo-GqG"/>
+                                                            <constraint firstAttribute="width" constant="44" id="otE-JI-A0u"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="12"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" نادي مكة الرياضي الأول - مكة -شارع المؤمن" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caf-kE-r01">
-                                                        <rect key="frame" x="0.0" y="22" width="303" height="21"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="21" id="0yl-qx-ejC"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="12"/>
-                                                        <color key="textColor" red="0.37643486259999998" green="0.37649339440000001" blue="0.37642204759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="FHr-VQ-cou">
+                                                        <rect key="frame" x="63" y="3.5" width="287" height="43"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المركز الثاني" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P98-vM-zuc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="287" height="21"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="21" id="Az4-NS-akZ"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="12"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" نادي مكة الرياضي الأول - مكة -شارع المؤمن" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caf-kE-r01">
+                                                                <rect key="frame" x="0.0" y="22" width="287" height="21"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="21" id="0yl-qx-ejC"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="12"/>
+                                                                <color key="textColor" red="0.37643486259999998" green="0.37649339440000001" blue="0.37642204759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="FHr-VQ-cou" secondAttribute="trailing" constant="16" id="2TJ-6w-cf0"/>
-                                            <constraint firstItem="FHr-VQ-cou" firstAttribute="leading" secondItem="LkP-oF-tLX" secondAttribute="trailing" constant="16" id="4Ww-1y-QyD"/>
-                                            <constraint firstItem="LkP-oF-tLX" firstAttribute="leading" secondItem="3zC-XW-5DE" secondAttribute="leading" constant="3" id="NDl-gn-aog"/>
-                                            <constraint firstItem="LkP-oF-tLX" firstAttribute="top" secondItem="3zC-XW-5DE" secondAttribute="top" constant="3" id="Uld-nP-rZv"/>
-                                            <constraint firstItem="FHr-VQ-cou" firstAttribute="centerY" secondItem="LkP-oF-tLX" secondAttribute="centerY" id="bMR-Rc-cxC"/>
-                                            <constraint firstAttribute="height" constant="60" id="qnD-Uv-r4M"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnT-zo-m6G">
-                                        <rect key="frame" x="16" y="140" width="382" height="60"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first-2" translatesAutoresizingMaskIntoConstraints="NO" id="d1f-bZ-Vip">
-                                                <rect key="frame" x="3" y="3" width="44" height="44"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="kmd-ex-vI7"/>
-                                                    <constraint firstAttribute="width" constant="44" id="n8j-X5-FNc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="FHr-VQ-cou" secondAttribute="trailing" constant="16" id="2TJ-6w-cf0"/>
+                                                    <constraint firstItem="FHr-VQ-cou" firstAttribute="leading" secondItem="LkP-oF-tLX" secondAttribute="trailing" constant="16" id="4Ww-1y-QyD"/>
+                                                    <constraint firstItem="LkP-oF-tLX" firstAttribute="leading" secondItem="3zC-XW-5DE" secondAttribute="leading" constant="3" id="NDl-gn-aog"/>
+                                                    <constraint firstItem="LkP-oF-tLX" firstAttribute="top" secondItem="3zC-XW-5DE" secondAttribute="top" constant="3" id="Uld-nP-rZv"/>
+                                                    <constraint firstItem="FHr-VQ-cou" firstAttribute="centerY" secondItem="LkP-oF-tLX" secondAttribute="centerY" id="bMR-Rc-cxC"/>
+                                                    <constraint firstAttribute="height" constant="60" id="qnD-Uv-r4M"/>
                                                 </constraints>
-                                            </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="jsy-40-8Wu">
-                                                <rect key="frame" x="63" y="3.5" width="303" height="43"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnT-zo-m6G">
+                                                <rect key="frame" x="0.0" y="120" width="366" height="60"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المكز الثالث" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WK-IQ-022">
-                                                        <rect key="frame" x="0.0" y="0.0" width="303" height="21"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="first-2" translatesAutoresizingMaskIntoConstraints="NO" id="d1f-bZ-Vip">
+                                                        <rect key="frame" x="3" y="3" width="44" height="44"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="21" id="dlL-cm-fPD"/>
+                                                            <constraint firstAttribute="height" constant="44" id="kmd-ex-vI7"/>
+                                                            <constraint firstAttribute="width" constant="44" id="n8j-X5-FNc"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="12"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" نادي مكة الرياضي الأول - مكة -شارع المؤمن" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trd-5M-4Sd">
-                                                        <rect key="frame" x="0.0" y="22" width="303" height="21"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="21" id="DQE-JU-9QA"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="12"/>
-                                                        <color key="textColor" red="0.37643486259999998" green="0.37649339440000001" blue="0.37642204759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="jsy-40-8Wu">
+                                                        <rect key="frame" x="63" y="3.5" width="287" height="43"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المكز الثالث" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WK-IQ-022">
+                                                                <rect key="frame" x="0.0" y="0.0" width="287" height="21"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="21" id="dlL-cm-fPD"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="12"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" نادي مكة الرياضي الأول - مكة -شارع المؤمن" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trd-5M-4Sd">
+                                                                <rect key="frame" x="0.0" y="22" width="287" height="21"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="21" id="DQE-JU-9QA"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="12"/>
+                                                                <color key="textColor" red="0.37643486259999998" green="0.37649339440000001" blue="0.37642204759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
-                                            </stackView>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="jsy-40-8Wu" secondAttribute="trailing" constant="16" id="4jq-8L-UA9"/>
+                                                    <constraint firstItem="jsy-40-8Wu" firstAttribute="centerY" secondItem="d1f-bZ-Vip" secondAttribute="centerY" id="F9S-EZ-vFn"/>
+                                                    <constraint firstItem="d1f-bZ-Vip" firstAttribute="leading" secondItem="dnT-zo-m6G" secondAttribute="leading" constant="3" id="fI4-c6-w5D"/>
+                                                    <constraint firstItem="jsy-40-8Wu" firstAttribute="leading" secondItem="d1f-bZ-Vip" secondAttribute="trailing" constant="16" id="hsq-7T-G7m"/>
+                                                    <constraint firstItem="d1f-bZ-Vip" firstAttribute="top" secondItem="dnT-zo-m6G" secondAttribute="top" constant="3" id="nvT-EH-ouh"/>
+                                                    <constraint firstAttribute="height" constant="60" id="sIE-FX-xWJ"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="jsy-40-8Wu" secondAttribute="trailing" constant="16" id="4jq-8L-UA9"/>
-                                            <constraint firstItem="jsy-40-8Wu" firstAttribute="centerY" secondItem="d1f-bZ-Vip" secondAttribute="centerY" id="F9S-EZ-vFn"/>
-                                            <constraint firstItem="d1f-bZ-Vip" firstAttribute="leading" secondItem="dnT-zo-m6G" secondAttribute="leading" constant="3" id="fI4-c6-w5D"/>
-                                            <constraint firstItem="jsy-40-8Wu" firstAttribute="leading" secondItem="d1f-bZ-Vip" secondAttribute="trailing" constant="16" id="hsq-7T-G7m"/>
-                                            <constraint firstItem="d1f-bZ-Vip" firstAttribute="top" secondItem="dnT-zo-m6G" secondAttribute="top" constant="3" id="nvT-EH-ouh"/>
-                                            <constraint firstAttribute="height" constant="60" id="sIE-FX-xWJ"/>
-                                        </constraints>
-                                    </view>
+                                    </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWw-ZM-oGW">
                                         <rect key="frame" x="0.0" y="205" width="414" height="8"/>
                                         <color key="backgroundColor" red="0.85090553759999998" green="0.85102838280000004" blue="0.8508786559" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1622,46 +1636,43 @@
                                             <constraint firstAttribute="height" constant="8" id="Jkx-eI-acS"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الجوائز" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHd-4m-DEU">
-                                        <rect key="frame" x="16" y="229" width="76" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="684-oF-Auv"/>
-                                            <constraint firstAttribute="height" constant="26" id="aRP-De-myu"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="characterWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peZ-RH-V8B">
-                                        <rect key="frame" x="16" y="263" width="382" height="68"/>
-                                        <string key="text">يتم هنا كتابة تفاصيل عن جوائز الاعبين مثل حصل  المركز الأول على كأس لامع يلمع في الشمس وبراق و المكز الثاني على كأس غير لا مع
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dQR-Xt-QJ3">
+                                        <rect key="frame" x="32" y="229" width="350" height="102"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الجوائز" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHd-4m-DEU">
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="684-oF-Auv"/>
+                                                    <constraint firstAttribute="height" constant="26" id="aRP-De-myu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="characterWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peZ-RH-V8B">
+                                                <rect key="frame" x="0.0" y="34" width="350" height="68"/>
+                                                <string key="text">يتم هنا كتابة تفاصيل عن جوائز الاعبين مثل حصل  المركز الأول على كأس لامع يلمع في الشمس وبراق و المكز الثاني على كأس غير لا مع
 و المركز الثالث  على لاشيء</string>
-                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                                <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="RMY-pG-WXq" secondAttribute="bottom" id="03H-Ve-qIw"/>
                                     <constraint firstItem="MWw-ZM-oGW" firstAttribute="leading" secondItem="RYE-SA-8qs" secondAttribute="leading" id="3O6-BR-ma3"/>
-                                    <constraint firstItem="BJL-xA-dCK" firstAttribute="top" secondItem="RYE-SA-8qs" secondAttribute="top" constant="20" id="4pX-r0-LzR"/>
                                     <constraint firstItem="RMY-pG-WXq" firstAttribute="top" secondItem="RYE-SA-8qs" secondAttribute="top" id="FDv-tP-vAs"/>
-                                    <constraint firstItem="mHd-4m-DEU" firstAttribute="top" secondItem="MWw-ZM-oGW" secondAttribute="bottom" constant="16" id="Fg3-Ee-aVH"/>
+                                    <constraint firstItem="dQR-Xt-QJ3" firstAttribute="top" secondItem="MWw-ZM-oGW" secondAttribute="bottom" constant="16" id="Jak-sw-4HP"/>
                                     <constraint firstItem="RMY-pG-WXq" firstAttribute="leading" secondItem="RYE-SA-8qs" secondAttribute="leading" id="MQG-OV-ZCw"/>
-                                    <constraint firstItem="peZ-RH-V8B" firstAttribute="top" secondItem="mHd-4m-DEU" secondAttribute="bottom" constant="8" id="U8L-Kj-27Q"/>
-                                    <constraint firstItem="BJL-xA-dCK" firstAttribute="leading" secondItem="RYE-SA-8qs" secondAttribute="leading" constant="16" id="XAf-nU-WVO"/>
-                                    <constraint firstItem="3zC-XW-5DE" firstAttribute="top" secondItem="BJL-xA-dCK" secondAttribute="bottom" id="cnt-cs-sxR"/>
+                                    <constraint firstItem="MWw-ZM-oGW" firstAttribute="top" secondItem="q8B-1B-rDy" secondAttribute="bottom" constant="5" id="WfR-ad-cf4"/>
+                                    <constraint firstItem="q8B-1B-rDy" firstAttribute="top" secondItem="RYE-SA-8qs" secondAttribute="top" constant="20" symbolic="YES" id="Yym-uO-5sE"/>
+                                    <constraint firstItem="dQR-Xt-QJ3" firstAttribute="leading" secondItem="RYE-SA-8qs" secondAttribute="leading" constant="32" id="aJt-qJ-aKM"/>
                                     <constraint firstAttribute="trailing" secondItem="MWw-ZM-oGW" secondAttribute="trailing" id="cqe-Ak-5iC"/>
-                                    <constraint firstItem="dnT-zo-m6G" firstAttribute="top" secondItem="3zC-XW-5DE" secondAttribute="bottom" id="g22-IG-8K9"/>
-                                    <constraint firstItem="3zC-XW-5DE" firstAttribute="leading" secondItem="RYE-SA-8qs" secondAttribute="leading" constant="16" id="mbq-dq-X5j"/>
-                                    <constraint firstAttribute="trailing" secondItem="peZ-RH-V8B" secondAttribute="trailing" constant="16" id="mtm-aN-IYb"/>
-                                    <constraint firstAttribute="trailing" secondItem="dnT-zo-m6G" secondAttribute="trailing" constant="16" id="n0j-6H-8yf"/>
-                                    <constraint firstAttribute="trailing" secondItem="BJL-xA-dCK" secondAttribute="trailing" constant="16" id="nhu-u9-5ZY"/>
-                                    <constraint firstItem="mHd-4m-DEU" firstAttribute="leading" secondItem="RYE-SA-8qs" secondAttribute="leading" constant="16" id="oMM-T3-zzd"/>
-                                    <constraint firstAttribute="trailing" secondItem="3zC-XW-5DE" secondAttribute="trailing" constant="16" id="qTP-Le-Gqg"/>
-                                    <constraint firstItem="MWw-ZM-oGW" firstAttribute="top" secondItem="dnT-zo-m6G" secondAttribute="bottom" constant="5" id="r0f-Zt-OBX"/>
-                                    <constraint firstItem="dnT-zo-m6G" firstAttribute="leading" secondItem="RYE-SA-8qs" secondAttribute="leading" constant="16" id="sfQ-6p-0Tr"/>
-                                    <constraint firstItem="peZ-RH-V8B" firstAttribute="leading" secondItem="RYE-SA-8qs" secondAttribute="leading" constant="16" id="uk2-ro-UZi"/>
+                                    <constraint firstItem="q8B-1B-rDy" firstAttribute="leading" secondItem="RYE-SA-8qs" secondAttribute="leading" constant="32" id="ecO-Su-vG9"/>
+                                    <constraint firstAttribute="trailing" secondItem="q8B-1B-rDy" secondAttribute="trailing" constant="16" id="leZ-sd-U3y"/>
+                                    <constraint firstAttribute="trailing" secondItem="dQR-Xt-QJ3" secondAttribute="trailing" constant="32" id="x1B-f5-3iL"/>
                                     <constraint firstAttribute="trailing" secondItem="RMY-pG-WXq" secondAttribute="trailing" id="yVH-ui-QNs"/>
                                 </constraints>
                             </scrollView>
@@ -1700,9 +1711,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="168"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="e_scusn_1_uea_ac_8_kp" translatesAutoresizingMaskIntoConstraints="NO" id="MrM-re-BFW">
-                                <rect key="frame" x="62" y="182" width="290" height="440"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="e_scusn_1_uea_ac_8_kp" translatesAutoresizingMaskIntoConstraints="NO" id="MrM-re-BFW">
+                                <rect key="frame" x="20" y="64" width="374" height="84"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeh-Kt-f4p">
                                 <rect key="frame" x="16" y="60" width="24" height="24"/>
@@ -1722,7 +1732,11 @@
                         <viewLayoutGuide key="safeArea" id="Kxo-u2-8CT"/>
                         <color key="backgroundColor" red="0.67052823305130005" green="0.67062669992446899" blue="0.67050671577453613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="MrM-re-BFW" firstAttribute="leading" secondItem="Q1m-xB-eNk" secondAttribute="leading" constant="20" id="HQO-DS-CFb"/>
+                            <constraint firstAttribute="bottom" secondItem="MrM-re-BFW" secondAttribute="bottom" constant="20" id="Sh6-AU-Sgi"/>
                             <constraint firstItem="aeh-Kt-f4p" firstAttribute="leading" secondItem="Kxo-u2-8CT" secondAttribute="leading" constant="16" id="gK0-VV-54W"/>
+                            <constraint firstItem="MrM-re-BFW" firstAttribute="top" secondItem="Kxo-u2-8CT" secondAttribute="top" constant="20" id="jiY-YF-Qk8"/>
+                            <constraint firstAttribute="trailing" secondItem="MrM-re-BFW" secondAttribute="trailing" constant="20" id="nZa-17-rMS"/>
                             <constraint firstItem="aeh-Kt-f4p" firstAttribute="top" secondItem="Kxo-u2-8CT" secondAttribute="top" constant="16" id="v3T-ZC-Ash"/>
                         </constraints>
                     </view>
@@ -1824,13 +1838,13 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wtj-X8-e71">
-                                                            <rect key="frame" x="16" y="8" width="44" height="44"/>
+                                                            <rect key="frame" x="32" y="8" width="44" height="44"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="44" id="sxW-LM-E2D"/>
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ovm-Zw-p60">
-                                                            <rect key="frame" x="76" y="8" width="322" height="44"/>
+                                                            <rect key="frame" x="92" y="8" width="306" height="44"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="ك/ محمد بن علاء الكبير" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxJ-Yl-DaG">
                                                                     <rect key="frame" x="0.0" y="0.0" width="113" height="29"/>
@@ -1852,7 +1866,7 @@
                                                         <constraint firstItem="Ovm-Zw-p60" firstAttribute="top" secondItem="Hst-FN-K3x" secondAttribute="top" constant="8" id="1yT-uZ-mbY"/>
                                                         <constraint firstAttribute="trailing" secondItem="Ovm-Zw-p60" secondAttribute="trailing" constant="16" id="4KW-Iz-gvD"/>
                                                         <constraint firstItem="Wtj-X8-e71" firstAttribute="top" secondItem="Hst-FN-K3x" secondAttribute="top" constant="8" id="AiN-By-ZDa"/>
-                                                        <constraint firstItem="Wtj-X8-e71" firstAttribute="leading" secondItem="Hst-FN-K3x" secondAttribute="leading" constant="16" id="BBT-ZM-1hn"/>
+                                                        <constraint firstItem="Wtj-X8-e71" firstAttribute="leading" secondItem="Hst-FN-K3x" secondAttribute="leading" constant="32" id="BBT-ZM-1hn"/>
                                                         <constraint firstItem="Ovm-Zw-p60" firstAttribute="leading" secondItem="Wtj-X8-e71" secondAttribute="trailing" constant="16" id="EUW-Rb-f3T"/>
                                                         <constraint firstAttribute="bottom" secondItem="Ovm-Zw-p60" secondAttribute="bottom" constant="8" id="GMD-jw-ehG"/>
                                                         <constraint firstAttribute="bottom" secondItem="Wtj-X8-e71" secondAttribute="bottom" constant="8" id="Uhl-f4-sjk"/>
@@ -1944,7 +1958,7 @@
         <image name="Path 3393" width="9.5" height="16"/>
         <image name="cancel" width="24" height="24"/>
         <image name="data" width="44" height="44"/>
-        <image name="e_scusn_1_uea_ac_8_kp" width="1440" height="880"/>
+        <image name="e_scusn_1_uea_ac_8_kp" width="112" height="112"/>
         <image name="first" width="32" height="44"/>
         <image name="first-1" width="32" height="44"/>
         <image name="first-2" width="32" height="44"/>

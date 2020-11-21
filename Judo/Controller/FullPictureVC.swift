@@ -29,6 +29,7 @@ class FullPictureVC: BaseController {
 
     }
     func reterivePhoto(){
+        self.activityIndicator.startAnimating()
     let db = Firestore.firestore()
         db.collection("cships").document("\(champID)").collection("csPhotos").getDocuments()  { (querySnapshot, err) in
         print("connected")
@@ -43,6 +44,7 @@ class FullPictureVC: BaseController {
                         }
                     }
                 }
+            self.activityIndicator.stopAnimating()
             }
         }
     }

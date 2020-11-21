@@ -95,6 +95,7 @@ extension PlayersVC :UITableViewDelegate,UITableViewDataSource,UICollectionViewD
 }
 extension PlayersVC{
     func playersMainList(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("players").getDocuments() { (querySnapshot, err) in
             print("1")
@@ -108,10 +109,13 @@ extension PlayersVC{
                     self.players.append(playerList)
                     self.mainCollectionView.reloadData()
                 }
+                self.activityIndicator.stopAnimating()
+
             }
         }
     }
     func retreivePlayersDetails(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
     db.collection("players").document("\(userSelectedCategory)").collection("playerDetails").getDocuments() { (querySnapshot, err) in
             print("1")
@@ -128,6 +132,8 @@ extension PlayersVC{
                     self.manager.append(obj)
                     self.TableView.reloadData()
                 }
+                self.activityIndicator.stopAnimating()
+
             }
         }
     }

@@ -204,20 +204,13 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="XWR-aS-yrH"/>
                                                 </constraints>
-                                                <state key="normal" title="الاتصال">
+                                                <state key="normal">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="onCallButtonTapped:" destination="MPP-cv-EXg" eventType="touchUpInside" id="Hvz-IA-wlN"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Page-1" translatesAutoresizingMaskIntoConstraints="NO" id="GH5-IY-MUD">
-                                                <rect key="frame" x="244" y="763.5" width="24" height="24"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="24" id="iIi-7t-VKX"/>
-                                                    <constraint firstAttribute="height" constant="24" id="wPj-A8-jaT"/>
-                                                </constraints>
-                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1U-bB-Bwk">
                                                 <rect key="frame" x="16" y="491.5" width="382" height="48"/>
                                                 <color key="backgroundColor" name="App Color"/>
@@ -232,11 +225,28 @@
                                                     <action selector="onLocationButtonTapped:" destination="MPP-cv-EXg" eventType="touchUpInside" id="cvR-Gb-G75"/>
                                                 </connections>
                                             </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="oLL-ux-449">
+                                                <rect key="frame" x="167" y="765.5" width="80" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاتصال" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf9-0t-v1i">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="20"/>
+                                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Page-1" translatesAutoresizingMaskIntoConstraints="NO" id="GH5-IY-MUD">
+                                                        <rect key="frame" x="62" y="0.0" width="18" height="20"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="oDl-nu-DtG"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="o1Y-qF-Udh" firstAttribute="top" secondItem="xWF-Dt-Vex" secondAttribute="bottom" constant="20" id="0Gi-Td-XMz"/>
-                                            <constraint firstItem="GH5-IY-MUD" firstAttribute="centerY" secondItem="X8C-f5-d9K" secondAttribute="centerY" id="5I1-OD-gVZ"/>
+                                            <constraint firstItem="oLL-ux-449" firstAttribute="centerX" secondItem="X8C-f5-d9K" secondAttribute="centerX" id="6Ds-dp-BVb"/>
                                             <constraint firstItem="Vnu-RB-1a8" firstAttribute="top" secondItem="W1U-bB-Bwk" secondAttribute="bottom" constant="20" id="8RQ-th-N08"/>
                                             <constraint firstItem="MI7-eR-JVE" firstAttribute="centerX" secondItem="khd-gJ-fx5" secondAttribute="centerX" id="DNe-Al-Nhm"/>
                                             <constraint firstItem="hnR-fL-mQL" firstAttribute="leading" secondItem="vme-Kt-b7L" secondAttribute="trailing" constant="8" id="DeC-S2-uTA"/>
@@ -253,6 +263,7 @@
                                             <constraint firstItem="X8C-f5-d9K" firstAttribute="leading" secondItem="khd-gJ-fx5" secondAttribute="leading" constant="40" id="TBk-CF-IYr"/>
                                             <constraint firstItem="xWF-Dt-Vex" firstAttribute="leading" secondItem="khd-gJ-fx5" secondAttribute="leading" constant="16" id="THq-7e-KdO"/>
                                             <constraint firstItem="LXM-mk-w0B" firstAttribute="centerY" secondItem="vme-Kt-b7L" secondAttribute="centerY" id="UH0-sW-EtT"/>
+                                            <constraint firstItem="oLL-ux-449" firstAttribute="centerY" secondItem="X8C-f5-d9K" secondAttribute="centerY" id="VVI-ls-aJk"/>
                                             <constraint firstAttribute="trailing" secondItem="xWF-Dt-Vex" secondAttribute="trailing" constant="16" id="WS4-x9-kg7"/>
                                             <constraint firstItem="W1U-bB-Bwk" firstAttribute="leading" secondItem="khd-gJ-fx5" secondAttribute="leading" constant="16" id="XEz-8b-lBD"/>
                                             <constraint firstItem="HxR-W3-zle" firstAttribute="leading" secondItem="khd-gJ-fx5" secondAttribute="leading" constant="16" id="YKd-0o-UMl"/>
@@ -265,7 +276,6 @@
                                             <constraint firstItem="DyB-nA-Idk" firstAttribute="top" secondItem="o1Y-qF-Udh" secondAttribute="bottom" constant="16" id="lwj-2e-nft"/>
                                             <constraint firstAttribute="trailing" secondItem="DyB-nA-Idk" secondAttribute="trailing" constant="16" id="m4t-lY-bjT"/>
                                             <constraint firstAttribute="trailing" secondItem="W1U-bB-Bwk" secondAttribute="trailing" constant="16" id="n2A-LZ-i2t"/>
-                                            <constraint firstItem="GH5-IY-MUD" firstAttribute="leading" secondItem="X8C-f5-d9K" secondAttribute="trailing" constant="-130" id="pp5-t0-kY4"/>
                                             <constraint firstAttribute="height" constant="900" id="qfb-BY-xwi"/>
                                             <constraint firstItem="LXM-mk-w0B" firstAttribute="leading" secondItem="khd-gJ-fx5" secondAttribute="leading" constant="40" id="vZp-vn-CDc"/>
                                             <constraint firstItem="o1Y-qF-Udh" firstAttribute="leading" secondItem="khd-gJ-fx5" secondAttribute="leading" constant="16" id="x4Q-RZ-bnS"/>

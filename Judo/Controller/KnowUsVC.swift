@@ -39,6 +39,7 @@ class KnowUsVC: BaseController {
     }
 
     func retreivehistory(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("history").getDocuments() { (querySnapshot, err) in
             if let err = err {
@@ -49,10 +50,12 @@ class KnowUsVC: BaseController {
                     let message = document["message"] as? String
                     self.contentLabel.text = message
                 }
+                self.activityIndicator.stopAnimating()
             }
         }
     }
     func retreiveContent(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("achievements").getDocuments() { (querySnapshot, err) in
             if let err = err {
@@ -63,10 +66,12 @@ class KnowUsVC: BaseController {
                     let message = document["message"] as? String
                     self.content2Label.text = message
                 }
+                self.activityIndicator.stopAnimating()
             }
         }
     }
     func retreiveadvantages(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("advantages").getDocuments() { (querySnapshot, err) in
             if let err = err {
@@ -77,6 +82,7 @@ class KnowUsVC: BaseController {
                     let message = document["message"] as? String
                     self.content3Label.text = message
                 }
+                self.activityIndicator.stopAnimating()
             }
         }
     }

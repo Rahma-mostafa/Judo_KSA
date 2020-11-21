@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -25,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="878"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGB-Me-eTl" customClass="ShadowView" customModule="Judo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="4" width="414" height="1443"/>
+                                        <rect key="frame" x="0.0" y="4" width="414" height="1062"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1Y5-cB-EeX">
                                                 <rect key="frame" x="147" y="16" width="120" height="128"/>
@@ -35,42 +37,42 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bsx-rB-Z1a">
-                                                <rect key="frame" x="20" y="164" width="374" height="1279"/>
+                                                <rect key="frame" x="20" y="164" width="374" height="898"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تاريخ الاتحاد" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufp-aO-H5V">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="23.5"/>
                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="20"/>
                                                         <color key="textColor" red="0.038859415799999998" green="0.27470943330000003" blue="0.19682469960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQC-oe-BjT">
-                                                        <rect key="frame" x="0.0" y="52.5" width="374" height="360.5"/>
+                                                        <rect key="frame" x="0.0" y="43.5" width="374" height="242.5"/>
                                                         <string key="text">بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفان</string>
                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" انجازات الاتحاد" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKa-XQ-Dbm">
-                                                        <rect key="frame" x="0.0" y="433" width="374" height="32.5"/>
+                                                        <rect key="frame" x="0.0" y="306" width="374" height="23.5"/>
                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="20"/>
                                                         <color key="textColor" red="0.038859415799999998" green="0.27470943330000003" blue="0.19682469960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k45-JR-KZd">
-                                                        <rect key="frame" x="0.0" y="485.5" width="374" height="360.5"/>
+                                                        <rect key="frame" x="0.0" y="349.5" width="374" height="242.5"/>
                                                         <string key="text">بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفان</string>
                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ما يميز الاتحاد" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mic-px-Yb3">
-                                                        <rect key="frame" x="0.0" y="866" width="374" height="32.5"/>
+                                                        <rect key="frame" x="0.0" y="612" width="374" height="23.5"/>
                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="20"/>
                                                         <color key="textColor" red="0.038859415799999998" green="0.27470943330000003" blue="0.19682469960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vO-mC-5Pw">
-                                                        <rect key="frame" x="0.0" y="918.5" width="374" height="360.5"/>
+                                                        <rect key="frame" x="0.0" y="655.5" width="374" height="242.5"/>
                                                         <string key="text">بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفان</string>
                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
                                                         <nil key="textColor"/>
@@ -83,7 +85,7 @@
                                                 </constraints>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="1Y5-cB-EeX" firstAttribute="top" secondItem="fGB-Me-eTl" secondAttribute="top" constant="16" id="Gbt-z6-JkR"/>
                                             <constraint firstItem="bsx-rB-Z1a" firstAttribute="top" secondItem="1Y5-cB-EeX" secondAttribute="bottom" constant="20" id="c3j-Ot-72V"/>
@@ -102,7 +104,8 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vJi-mK-NzU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="FKL-Ci-tcP" firstAttribute="bottom" secondItem="vJi-mK-NzU" secondAttribute="bottom" id="8ul-bR-tt4"/>
                             <constraint firstItem="fGB-Me-eTl" firstAttribute="width" secondItem="mYu-qB-DBo" secondAttribute="width" id="Hey-uv-dAn"/>
@@ -111,7 +114,6 @@
                             <constraint firstItem="fGB-Me-eTl" firstAttribute="height" secondItem="mYu-qB-DBo" secondAttribute="height" multiplier="0.957" priority="250" id="gop-VW-5Kc"/>
                             <constraint firstItem="FKL-Ci-tcP" firstAttribute="top" secondItem="vJi-mK-NzU" secondAttribute="top" id="vlR-97-DkF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="vJi-mK-NzU"/>
                     </view>
                     <navigationItem key="navigationItem" id="EL1-fX-0Pn">
                         <leftBarButtonItems>
@@ -175,7 +177,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="878"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTP-Hc-0TY" customClass="ShadowView" customModule="Judo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="4" width="414" height="577"/>
+                                        <rect key="frame" x="0.0" y="4" width="414" height="450"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="msg-1" translatesAutoresizingMaskIntoConstraints="NO" id="vwB-xN-TQy">
                                                 <rect key="frame" x="147" y="16" width="120" height="128"/>
@@ -185,16 +187,16 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4ys-Mg-LAW">
-                                                <rect key="frame" x="20" y="164" width="374" height="413"/>
+                                                <rect key="frame" x="20" y="164" width="374" height="286"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ماهي  رسالتنا ؟" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCX-M1-WSG">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="23.5"/>
                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="20"/>
                                                         <color key="textColor" red="0.038859415799999998" green="0.27470943330000003" blue="0.19682469960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypE-0b-KjV">
-                                                        <rect key="frame" x="0.0" y="52.5" width="374" height="360.5"/>
+                                                        <rect key="frame" x="0.0" y="43.5" width="374" height="242.5"/>
                                                         <string key="text">بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفان</string>
                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
                                                         <nil key="textColor"/>
@@ -203,7 +205,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="vwB-xN-TQy" firstAttribute="centerX" secondItem="RTP-Hc-0TY" secondAttribute="centerX" id="01m-HB-Q3S"/>
                                             <constraint firstItem="4ys-Mg-LAW" firstAttribute="top" secondItem="vwB-xN-TQy" secondAttribute="bottom" constant="20" id="4ny-X5-FE7"/>
@@ -222,7 +224,8 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="B0n-rS-Bbr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jFM-bm-DHV" firstAttribute="top" secondItem="B0n-rS-Bbr" secondAttribute="top" id="74d-FU-gkE"/>
                             <constraint firstItem="jFM-bm-DHV" firstAttribute="leading" secondItem="B0n-rS-Bbr" secondAttribute="leading" id="A07-Aj-hB1"/>
@@ -231,7 +234,6 @@
                             <constraint firstItem="RTP-Hc-0TY" firstAttribute="height" secondItem="fJ7-fw-B8D" secondAttribute="height" multiplier="1.443" priority="250" id="SxN-M6-n2f"/>
                             <constraint firstItem="RTP-Hc-0TY" firstAttribute="width" secondItem="fJ7-fw-B8D" secondAttribute="width" id="VtW-LK-Meh"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="B0n-rS-Bbr"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bqc-7O-1Pb">
                         <leftBarButtonItems>
@@ -272,7 +274,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="878"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SrB-Tb-cvk" customClass="ShadowView" customModule="Judo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="4" width="414" height="577"/>
+                                        <rect key="frame" x="0.0" y="4" width="414" height="450"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="target-1" translatesAutoresizingMaskIntoConstraints="NO" id="vai-JZ-a2f">
                                                 <rect key="frame" x="147" y="16" width="120" height="128"/>
@@ -282,16 +284,16 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LxG-Qp-x0V">
-                                                <rect key="frame" x="20" y="164" width="374" height="413"/>
+                                                <rect key="frame" x="20" y="164" width="374" height="286"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ماهي  هدفنا ؟" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JO2-E6-dXe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="23.5"/>
                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="20"/>
                                                         <color key="textColor" red="0.038859415799999998" green="0.27470943330000003" blue="0.19682469960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYh-Yg-2La">
-                                                        <rect key="frame" x="0.0" y="52.5" width="374" height="360.5"/>
+                                                        <rect key="frame" x="0.0" y="43.5" width="374" height="242.5"/>
                                                         <string key="text">بطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفانبطولة المملكة للاندية والهئيات والجامعات للدرجة الأولى بمكة و المفاجأة سعفان</string>
                                                         <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="16"/>
                                                         <nil key="textColor"/>
@@ -300,7 +302,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="vai-JZ-a2f" firstAttribute="top" secondItem="SrB-Tb-cvk" secondAttribute="top" constant="16" id="3lk-Xd-ZGG"/>
                                             <constraint firstAttribute="bottom" secondItem="LxG-Qp-x0V" secondAttribute="bottom" id="KpU-Nx-mPs"/>
@@ -319,7 +321,8 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="a2Q-B7-hVC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mU2-5L-ncj" firstAttribute="leading" secondItem="a2Q-B7-hVC" secondAttribute="leading" id="LxV-bR-L4d"/>
                             <constraint firstItem="mU2-5L-ncj" firstAttribute="bottom" secondItem="a2Q-B7-hVC" secondAttribute="bottom" id="Q8W-rz-9vP"/>
@@ -328,7 +331,6 @@
                             <constraint firstItem="SrB-Tb-cvk" firstAttribute="height" secondItem="Co5-rG-BEy" secondAttribute="height" multiplier="1.443" priority="250" id="hM7-EW-BUC"/>
                             <constraint firstItem="mU2-5L-ncj" firstAttribute="top" secondItem="a2Q-B7-hVC" secondAttribute="top" id="yf6-qN-H3e"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="a2Q-B7-hVC"/>
                     </view>
                     <navigationItem key="navigationItem" id="pXf-gh-vc6">
                         <leftBarButtonItems>
@@ -373,7 +375,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="شكر وتقدير" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rh1-TA-vKg">
-                                        <rect key="frame" x="20" y="20" width="82" height="32.5"/>
+                                        <rect key="frame" x="20" y="20" width="82" height="23.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="TLK-AZ-dWj"/>
                                         </constraints>
@@ -382,7 +384,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لكل من ساهم في تطوير وبناء الاتحاد" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msV-NQ-VHe">
-                                        <rect key="frame" x="20" y="72.5" width="272" height="23"/>
+                                        <rect key="frame" x="20" y="63.5" width="272" height="16.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="272" id="iIe-hE-35g"/>
                                         </constraints>
@@ -391,8 +393,8 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4W2-TX-Ayb">
-                                        <rect key="frame" x="0.0" y="115.5" width="414" height="692.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <rect key="frame" x="0.0" y="100" width="414" height="708"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EstablisherCell" rowHeight="75" id="8AI-nG-K16" customClass="EstablisherCell" customModule="Judo" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="75"/>
@@ -412,13 +414,13 @@
                                                             <rect key="frame" x="93" y="16" width="296" height="52"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="لكل من ساهم في تطوير وبناء الاتحاد" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcE-FL-HFO">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="182.5" height="28.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="34"/>
                                                                     <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="14"/>
                                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لكل من ساهم في تطوير وبناء الاتحاد" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CX-9b-fcP">
-                                                                    <rect key="frame" x="0.0" y="32.5" width="156.5" height="19.5"/>
+                                                                    <rect key="frame" x="0.0" y="38" width="154" height="14"/>
                                                                     <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="12"/>
                                                                     <color key="textColor" red="0.37643486261367798" green="0.37649339437484741" blue="0.37642204761505127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -427,7 +429,7 @@
                                                         </stackView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cm2-hT-KDj">
                                                             <rect key="frame" x="93" y="73" width="296" height="2"/>
-                                                            <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="2" id="tCz-QY-4Ul"/>
                                                             </constraints>
@@ -455,7 +457,7 @@
                                         </prototypes>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="4W2-TX-Ayb" secondAttribute="bottom" id="3kK-jf-VcB"/>
                                     <constraint firstItem="Rh1-TA-vKg" firstAttribute="top" secondItem="zvD-7j-g7t" secondAttribute="top" constant="20" id="Jir-OL-NUt"/>
@@ -468,14 +470,14 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="b1j-n0-rxT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zvD-7j-g7t" firstAttribute="trailing" secondItem="b1j-n0-rxT" secondAttribute="trailing" id="9U2-jp-Keg"/>
                             <constraint firstAttribute="bottom" secondItem="zvD-7j-g7t" secondAttribute="bottom" id="G5X-kd-NEV"/>
                             <constraint firstItem="zvD-7j-g7t" firstAttribute="leading" secondItem="b1j-n0-rxT" secondAttribute="leading" id="NZD-Wf-JFJ"/>
                             <constraint firstItem="zvD-7j-g7t" firstAttribute="top" secondItem="b1j-n0-rxT" secondAttribute="top" id="PjG-oV-s9Z"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="b1j-n0-rxT"/>
                     </view>
                     <navigationItem key="navigationItem" id="8oz-dP-iqh">
                         <leftBarButtonItems>
@@ -511,7 +513,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSv-h2-XZH">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zcg-z9-s8P">
                                 <rect key="frame" x="20" y="113" width="374" height="444"/>
@@ -530,7 +532,7 @@
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="wxY-wF-iEe" secondAttribute="trailing" constant="16" id="6hf-7u-pJU"/>
                                                     <constraint firstAttribute="width" constant="96" id="uB8-h4-1ab"/>
@@ -561,7 +563,7 @@
                                                     <constraint firstAttribute="height" constant="16" id="q10-hv-KX4"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWi-jX-1Uq">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWi-jX-1Uq">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="96"/>
                                                 <connections>
                                                     <action selector="onDeclerationButtonTapped:" destination="Juq-x2-Aex" eventType="touchUpInside" id="oSi-LD-CjY"/>
@@ -599,7 +601,7 @@
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="4o0-Mv-Nzd" secondAttribute="trailing" constant="16" id="84h-8X-LFC"/>
                                                     <constraint firstAttribute="width" constant="96" id="Oj3-dT-Rkk"/>
@@ -625,7 +627,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWq-WV-f8w">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWq-WV-f8w">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="96"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
@@ -666,7 +668,7 @@
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="96" id="FvR-Fg-i8K"/>
                                                     <constraint firstAttribute="bottom" secondItem="Hr2-nH-CXY" secondAttribute="bottom" constant="26" id="KMc-Fg-x3d"/>
@@ -699,7 +701,7 @@
                                                     <constraint firstAttribute="width" constant="10" id="mkn-ID-TsT"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKr-VE-1p0">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKr-VE-1p0">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="96"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
@@ -733,7 +735,7 @@
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="Oa4-Xg-3VT" firstAttribute="top" secondItem="uIA-vl-38v" secondAttribute="top" constant="26" id="F9P-rx-G3p"/>
                                                     <constraint firstAttribute="trailing" secondItem="Oa4-Xg-3VT" secondAttribute="trailing" constant="16" id="o8V-Gt-lkK"/>
@@ -766,7 +768,7 @@
                                                     <constraint firstAttribute="width" constant="10" id="qVD-JP-BHa"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o26-Ee-tMw">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o26-Ee-tMw">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="96"/>
                                                 <connections>
                                                     <action selector="onGroupButtonTapped:" destination="Juq-x2-Aex" eventType="touchUpInside" id="Q1y-Ag-D7h"/>
@@ -792,6 +794,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="kgd-oV-C6H"/>
                         <color key="backgroundColor" name="App Color"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -803,7 +806,6 @@
                             <constraint firstItem="CSv-h2-XZH" firstAttribute="top" secondItem="kgd-oV-C6H" secondAttribute="top" id="hzP-7c-Sr1"/>
                             <constraint firstItem="kgd-oV-C6H" firstAttribute="trailing" secondItem="CSv-h2-XZH" secondAttribute="trailing" id="l90-33-M6d"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="kgd-oV-C6H"/>
                     </view>
                     <navigationItem key="navigationItem" id="8qD-eQ-wbF">
                         <leftBarButtonItems>
@@ -934,5 +936,11 @@
         <namedColor name="App Color">
             <color red="0.21600000560283661" green="0.69999998807907104" blue="0.289000004529953" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

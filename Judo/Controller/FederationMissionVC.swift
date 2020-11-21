@@ -26,6 +26,7 @@ class FederationMissionVC: BaseController {
 
     }
     func retreiveContent(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("ourMessage").getDocuments() { (querySnapshot, err) in
             if let err = err {
@@ -36,6 +37,7 @@ class FederationMissionVC: BaseController {
                     let message = document["message"] as? String
                     self.contentLabel.text = message
                 }
+                self.activityIndicator.stopAnimating()
             }
         }
     }

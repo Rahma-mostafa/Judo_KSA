@@ -19,6 +19,7 @@ class FederationTargetsVC: BaseController {
         super.viewDidLoad()
         self.hiddenNav = false
 //        setLocalize()
+
         retreiveContent()
        
 
@@ -28,6 +29,7 @@ class FederationTargetsVC: BaseController {
         titleLabel.title = "federation_targets".localized()
     }
     func retreiveContent(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("ourGoal").getDocuments() { (querySnapshot, err) in
             if let err = err {
@@ -38,6 +40,8 @@ class FederationTargetsVC: BaseController {
                     let message = document["message"] as? String
                     self.contentLabel.text = message
                 }
+                self.activityIndicator.stopAnimating()
+
             }
         }
     }

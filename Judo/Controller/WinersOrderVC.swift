@@ -37,6 +37,7 @@ class WinersOrderVC: BaseController {
         giftsLabel.text = "gift".localized()
     }
     func reteriveOrder(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("cships").getDocuments() { (querySnapshot, err) in
             print("connected")
@@ -57,6 +58,7 @@ class WinersOrderVC: BaseController {
                         self.giftsDescLabel.text = gift
                     }
                 }
+                self.activityIndicator.stopAnimating()
             }
         }
     }

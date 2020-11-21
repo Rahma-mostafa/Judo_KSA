@@ -124,6 +124,7 @@ extension TrainingCoursesVC :UICollectionViewDataSource,UICollectionViewDelegate
 }
 extension TrainingCoursesVC{
     func retreiveAmateurTrainings(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("amateurTrainings").getDocuments() { (querySnapshot, err) in
                print("fireStore is connected")
@@ -141,10 +142,12 @@ extension TrainingCoursesVC{
                        self.cources.append(latestnewsObj)
                        self.traingCourcesCollectionView.reloadData()
                    }
+                self.activityIndicator.stopAnimating()
                }
            }
        }
        func retreiveOldTrainings(){
+        self.activityIndicator.startAnimating()
            let db = Firestore.firestore()
            db.collection("oldTrainings").getDocuments() { (querySnapshot, err) in
                if let err = err {
@@ -160,10 +163,12 @@ extension TrainingCoursesVC{
                        self.cources.append(latestnewsObj)
                        self.traingCourcesCollectionView.reloadData()
                    }
+                self.activityIndicator.stopAnimating()
                }
            }
        }
        func retreiveProTrainings(){
+        self.activityIndicator.startAnimating()
               let db = Firestore.firestore()
               db.collection("proTrainings").getDocuments() { (querySnapshot, err) in
                   if let err = err {
@@ -179,10 +184,13 @@ extension TrainingCoursesVC{
                           self.cources.append(latestnewsObj)
                           self.traingCourcesCollectionView.reloadData()
                       }
+                    self.activityIndicator.stopAnimating()
+
                   }
               }
           }
        func retreiveYoungTrainings(){
+        self.activityIndicator.startAnimating()
            let db = Firestore.firestore()
            db.collection("youngTrainings").getDocuments() { (querySnapshot, err) in
                if let err = err {
@@ -197,6 +205,8 @@ extension TrainingCoursesVC{
                        self.cources.append(latestnewsObj)
                        self.traingCourcesCollectionView.reloadData()
                    }
+                self.activityIndicator.stopAnimating()
+
                }
            }
        }

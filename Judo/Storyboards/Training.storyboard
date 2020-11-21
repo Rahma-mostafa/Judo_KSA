@@ -203,7 +203,7 @@
                                     <action selector="backButton:" destination="KIf-fY-FpF" id="8C5-gy-gbu"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="الدورات التدربية" id="84W-qo-K6I">
+                            <barButtonItem title="الدورات التدريبية" id="84W-qo-K6I">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="localization" value="training_courses"/>
@@ -639,30 +639,39 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="vhd-3V-sm4"/>
                                                 </constraints>
-                                                <state key="normal" title="الاتصال">
+                                                <state key="normal">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="onCallButtonTapped:" destination="2MH-Qj-HPP" eventType="touchUpInside" id="sSL-kG-Mjt"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Page-1" translatesAutoresizingMaskIntoConstraints="NO" id="lix-Ip-6SE">
-                                                <rect key="frame" x="244" y="923" width="24" height="24"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="24" id="OSs-p8-IMv"/>
-                                                    <constraint firstAttribute="height" constant="24" id="xPU-En-3V5"/>
-                                                </constraints>
-                                            </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle_217" translatesAutoresizingMaskIntoConstraints="NO" id="HL5-L8-kkr">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="4Ks-aJ-iMK"/>
                                                 </constraints>
                                             </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OuM-gp-fDu">
+                                                <rect key="frame" x="170" y="925" width="74" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاتصال" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1Q-3h-idN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="20"/>
+                                                        <fontDescription key="fontDescription" name="HaniArb-SemiBold" family="Hanimation Arabic" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Page-1" translatesAutoresizingMaskIntoConstraints="NO" id="lix-Ip-6SE">
+                                                        <rect key="frame" x="56" y="0.0" width="18" height="20"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="0se-Qc-lrU"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="lix-Ip-6SE" firstAttribute="leading" secondItem="8qn-8M-2nk" secondAttribute="trailing" constant="-130" id="0z0-99-IwS"/>
                                             <constraint firstItem="Xz2-Lw-5QK" firstAttribute="leading" secondItem="HEs-AS-urT" secondAttribute="leading" constant="16" id="2OT-P3-Pst"/>
                                             <constraint firstItem="hTA-L3-0Sl" firstAttribute="top" secondItem="HEs-AS-urT" secondAttribute="top" id="2Ya-Kc-isy"/>
                                             <constraint firstItem="n9L-D7-6bh" firstAttribute="centerX" secondItem="HEs-AS-urT" secondAttribute="centerX" id="2ui-YW-cTV"/>
@@ -682,11 +691,11 @@
                                             <constraint firstItem="HL5-L8-kkr" firstAttribute="leading" secondItem="HEs-AS-urT" secondAttribute="leading" id="H5F-zC-Lkv"/>
                                             <constraint firstAttribute="trailing" secondItem="a37-dZ-V0W" secondAttribute="trailing" constant="16" id="J2d-6E-hu8"/>
                                             <constraint firstItem="qVP-pa-SmL" firstAttribute="top" secondItem="hTA-L3-0Sl" secondAttribute="bottom" constant="20" id="Jan-oM-yJK"/>
+                                            <constraint firstItem="OuM-gp-fDu" firstAttribute="centerX" secondItem="8qn-8M-2nk" secondAttribute="centerX" id="JfN-Fb-Kbi"/>
                                             <constraint firstAttribute="trailing" secondItem="STC-mV-rfH" secondAttribute="trailing" constant="16" id="PHx-hF-bgh"/>
                                             <constraint firstAttribute="trailing" secondItem="l3Q-qd-9lJ" secondAttribute="trailing" constant="16" id="PKi-eO-Mgn"/>
                                             <constraint firstItem="lgo-kR-AbW" firstAttribute="centerY" secondItem="5qk-kJ-ZJw" secondAttribute="centerY" id="Puw-jY-NpU"/>
                                             <constraint firstAttribute="trailing" secondItem="xa1-VJ-zuF" secondAttribute="trailing" id="QA3-ka-hLV"/>
-                                            <constraint firstItem="lix-Ip-6SE" firstAttribute="centerY" secondItem="8qn-8M-2nk" secondAttribute="centerY" id="RiQ-By-CuI"/>
                                             <constraint firstItem="5qk-kJ-ZJw" firstAttribute="top" secondItem="n9L-D7-6bh" secondAttribute="bottom" constant="24" id="S1z-0N-pDH"/>
                                             <constraint firstItem="hTA-L3-0Sl" firstAttribute="leading" secondItem="HEs-AS-urT" secondAttribute="leading" id="Sfa-JV-E3P"/>
                                             <constraint firstAttribute="trailing" secondItem="qVP-pa-SmL" secondAttribute="trailing" constant="16" id="TbQ-jL-Sak"/>
@@ -696,6 +705,7 @@
                                             <constraint firstItem="huF-Ti-bbw" firstAttribute="leading" secondItem="HEs-AS-urT" secondAttribute="leading" id="b82-FZ-O1d"/>
                                             <constraint firstItem="ehf-FQ-Wiv" firstAttribute="centerY" secondItem="5qk-kJ-ZJw" secondAttribute="centerY" id="dMP-EX-eT3"/>
                                             <constraint firstItem="l3Q-qd-9lJ" firstAttribute="top" secondItem="ShT-Ym-xVU" secondAttribute="bottom" constant="16" id="dgr-Xf-PRz"/>
+                                            <constraint firstItem="OuM-gp-fDu" firstAttribute="centerY" secondItem="8qn-8M-2nk" secondAttribute="centerY" id="dkc-N3-0Bb"/>
                                             <constraint firstItem="STC-mV-rfH" firstAttribute="leading" secondItem="HEs-AS-urT" secondAttribute="leading" constant="16" id="e75-cc-ScJ"/>
                                             <constraint firstItem="lgo-kR-AbW" firstAttribute="leading" secondItem="5qk-kJ-ZJw" secondAttribute="trailing" constant="8" id="fwA-zi-8kn"/>
                                             <constraint firstItem="ubp-DJ-sWU" firstAttribute="leading" secondItem="HEs-AS-urT" secondAttribute="leading" constant="16" id="gZF-1V-Gs8"/>
@@ -786,7 +796,7 @@
     <resources>
         <image name="Page-1" width="18" height="18"/>
         <image name="data" width="44" height="44"/>
-        <image name="e_scusn_1_uea_ac_8_kp" width="1440" height="880"/>
+        <image name="e_scusn_1_uea_ac_8_kp" width="112" height="112"/>
         <image name="left" width="29" height="24"/>
         <image name="map" width="44" height="44"/>
         <image name="money" width="44" height="44"/>

@@ -28,6 +28,7 @@ class OrganiserVC: BaseController {
         TableView.dataSource = self
     }
     func reteriveOrganiser(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("cships").document("\(champID)").collection("csOrganizers").getDocuments() { (querySnapshot, err) in
             print("connected")
@@ -47,6 +48,7 @@ class OrganiserVC: BaseController {
                             }
                         }
                 }
+                self.activityIndicator.stopAnimating()
             }
         }
     }

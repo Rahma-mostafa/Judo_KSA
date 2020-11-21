@@ -47,6 +47,7 @@ class ManagersVC: BaseController {
 
     }
     func retreiveLatestNews(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("adminsSection").getDocuments() { (querySnapshot, err) in
             print("1")
@@ -62,6 +63,8 @@ class ManagersVC: BaseController {
                     self.manager.append(latestnewsObj)
                     self.TableView.reloadData()
                 }
+                self.activityIndicator.stopAnimating()
+
             }
         }
     }

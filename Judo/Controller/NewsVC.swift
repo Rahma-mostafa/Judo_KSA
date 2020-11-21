@@ -31,6 +31,7 @@ class NewsVC: BaseController {
         
     }
     func retreiveLatestNews(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("news").getDocuments() { (querySnapshot, err) in
             print("connected")
@@ -47,6 +48,8 @@ class NewsVC: BaseController {
                     self.news.append(latestnewsObj)
                     self.newsCollectionView.reloadData()
                 }
+                self.activityIndicator.stopAnimating()
+
             }
         }
     }
@@ -90,4 +93,11 @@ extension NewsVC : UICollectionViewDelegate,UICollectionViewDataSource,UICollect
          let vc = segue.destination as! NewsDetailsVC
          vc.newsID = self.newsID
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+
+        return CGSize(width: self.view.frame.size.width, height: 290)
+
+    }
+    
 }

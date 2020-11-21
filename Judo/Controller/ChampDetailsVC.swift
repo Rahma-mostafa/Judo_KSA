@@ -89,6 +89,7 @@ class ChampDetailsVC: BaseController {
         }
     }
     func reteriveChampDetails(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("cships").getDocuments() { (querySnapshot, err) in
             print("connected2")
@@ -114,6 +115,7 @@ class ChampDetailsVC: BaseController {
 //                               }
                     }
                 }
+                self.activityIndicator.stopAnimating()
             }
         }
     }

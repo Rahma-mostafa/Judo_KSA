@@ -37,6 +37,7 @@ class TrainerVC: BaseController {
         EachLabel.text = "greeting_for_each".localized()
     }
     func retreiveCoacehsList(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("coacehsSection").getDocuments() { (querySnapshot, err) in
             print("1")
@@ -52,6 +53,7 @@ class TrainerVC: BaseController {
                     self.manager.append(latestnewsObj)
                     self.TableView.reloadData()
                 }
+                self.activityIndicator.stopAnimating()
             }
         }
     }

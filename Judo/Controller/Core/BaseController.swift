@@ -11,9 +11,20 @@ import SafariServices
 
 class BaseController: UIViewController {
     var hiddenNav: Bool = false
+    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
+        setActivityIndicator()
+        
+    }
+    func setActivityIndicator(){
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.style = UIActivityIndicatorView.Style.medium
+        activityIndicator.color = .black
+        self.view.addSubview(activityIndicator)
+        
     }
     override func viewWillAppear(_ animated: Bool) {
            super.viewWillAppear(animated)
@@ -25,6 +36,8 @@ class BaseController: UIViewController {
            } else {
                self.navigationController?.setNavigationBarHidden(false, animated: false)
            }
+    
+        
        }
 
        override func viewWillDisappear(_ animated: Bool) {

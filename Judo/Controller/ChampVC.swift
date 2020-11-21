@@ -39,6 +39,7 @@ class ChampVC: BaseController {
 
     }
     func retreiveChampShips(){
+           self.activityIndicator.startAnimating()
            let db = Firestore.firestore()
            db.collection("cships").getDocuments() { (querySnapshot, err) in
                print("connected")
@@ -55,7 +56,9 @@ class ChampVC: BaseController {
                        let champObj = Champ(image: imageURL!, title: title!,date: date!,type: type!, id: id)
                        self.champArray.append(champObj)
                        self.champCollectionView.reloadData()
+
                    }
+                self.activityIndicator.stopAnimating()
                }
            }
        }

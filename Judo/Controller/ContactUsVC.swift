@@ -122,6 +122,7 @@ class ContactUsVC: BaseController,UITextFieldDelegate {
         }
     }
     func setContacts(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("contacts").getDocuments() { (querySnapshot, err) in
             print("connected")
@@ -136,6 +137,8 @@ class ContactUsVC: BaseController,UITextFieldDelegate {
                     self.location = document["location"] as? String
                     self.addressDetailsLabel.text = self.location
                 }
+                self.activityIndicator.stopAnimating()
+
             }
         }
     } 

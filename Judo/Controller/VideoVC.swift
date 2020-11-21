@@ -28,6 +28,7 @@ class VideoVC: BaseController {
         videoCollectionView.delegate = self
     }
     func retreiveChampShips(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("videos").getDocuments() { (querySnapshot, err) in
             if let err = err {
@@ -44,6 +45,8 @@ class VideoVC: BaseController {
                     self.videos.append(videoObj)
                     self.videoCollectionView.reloadData()
                 }
+                self.activityIndicator.stopAnimating()
+
             }
         }
     }

@@ -9,16 +9,21 @@
 import UIKit
 import MapKit
 import CoreLocation
+import FirebaseFirestore
 
 class MapVC: BaseController,CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     var locationManager = CLLocationManager()
+    var latitude: Double = 29.97648
+    var longitude: Double = 31.131302
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-//        cameraZoomRange()
+        setLocation()
+//        cameraZomRange()
        
     }
     func setup(){
@@ -26,23 +31,35 @@ class MapVC: BaseController,CLLocationManagerDelegate {
           locationManager.requestAlwaysAuthorization()
           locationManager.startUpdatingLocation()
           locationManager.delegate = self
-          mapView.centerToLocation(initialLocation)
+
     }
-    // Set initial location
-    let initialLocation = CLLocation(latitude: 29.976480 , longitude: 31.131302)
-//    func cameraZoomRange(){
-//           let oahuCenter = CLLocation(l          atitude: 29.976480, longitude: 31.131302)
-//                  let region = MKCoordinateRegion(
-//                    center: oahuCenter.coordinate,
-//                    latitudinalMeters: 50000,
-//                    longitudinalMeters: 60000)
-//                  mapView.setCameraBoundary(
-//                    MKMapView.CameraBoundary(coordinateRegion: region),
-//                    animated: true)
-//
-//                  let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 200000)
-//                  mapView.setCameraZoomRange(zoomRange, animated: true)
-    //       }
+
+    func setLocation(){
+        self.activityIndicator.startAnimating()
+        let db = Firestore.firestore()
+        db.collection("location").getDocuments() { [self] (querySnapshot, err) in
+            print("connected")
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                    self.latitude = document["latitude"] as? Double ?? 29.97648
+                    self.longitude = document["longitude"] as? Double ?? 31.131302
+                    let initialLocation = CLLocation(latitude: latitude , longitude: longitude)
+                    mapView.centerToLocation(initialLocation)
+
+
+                }
+                self.activityIndicator.stopAnimating()
+
+            }
+        }
+    }
+
+
+
+       
     @IBAction func onCancel(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }

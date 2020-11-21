@@ -45,8 +45,11 @@ class ChampPictureVC: BaseController {
                             let obj = Picture(name: gPhoto, id: id)
                             self.champPicture.append(obj)
                             self.pictureCollectionView.reloadData()
+
                         }
                     }
+                self.activityIndicator.startAnimating()
+
                 }
             }
         }

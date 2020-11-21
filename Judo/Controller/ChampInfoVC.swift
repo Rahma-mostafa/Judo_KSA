@@ -38,6 +38,7 @@ class ChampInfoVC: BaseController {
         champLocationLabel.text = "champ_location".localized()
     }
     func reteriveChampInfo(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("cships").getDocuments() { (querySnapshot, err) in
             print("connected")
@@ -56,6 +57,7 @@ class ChampInfoVC: BaseController {
                         self.locationDecsLabel.text = location
                     }
                 }
+                self.activityIndicator.stopAnimating()
             }
         }
     }

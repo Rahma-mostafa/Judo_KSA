@@ -106,6 +106,7 @@ class CourseDetailsVC: BaseController {
 }
 extension CourseDetailsVC{
     func retreiveAmateurTrainings(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("amateurTrainings").getDocuments() { (querySnapshot, err) in
             print("firestore is connected")
@@ -134,10 +135,13 @@ extension CourseDetailsVC{
                         self.additionalDetails2Label.text = otherDetails
                     }
                 }
+                self.activityIndicator.stopAnimating()
+
             }
         }
     }
     func retreiveOldTrainings(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("oldTrainings").getDocuments() { (querySnapshot, err) in
             print("firestore is connected")
@@ -166,10 +170,13 @@ extension CourseDetailsVC{
                         self.additionalDetails2Label.text = otherDetails
                     }
                 }
+                self.activityIndicator.stopAnimating()
+
             }
         }
     }
     func retreiveProTrainings(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("proTrainings").getDocuments() { (querySnapshot, err) in
             print("firestore is connected")
@@ -198,10 +205,13 @@ extension CourseDetailsVC{
                         self.additionalDetails2Label.text = otherDetails
                     }
                 }
+                self.activityIndicator.stopAnimating()
+
             }
         }
     }
     func retreiveYoungTrainings(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("youngTrainings").getDocuments() { (querySnapshot, err) in
             print("firestore is connected")
@@ -230,10 +240,13 @@ extension CourseDetailsVC{
                         self.additionalDetails2Label.text = otherDetails
                     }
                 }
+                self.activityIndicator.stopAnimating()
+
             }
         }
     }
     func setContacts(){
+        self.activityIndicator.startAnimating()
         let db = Firestore.firestore()
         db.collection("contacts").getDocuments() { (querySnapshot, err) in
             print("connected")
@@ -247,6 +260,8 @@ extension CourseDetailsVC{
                     self.snapChatUrl = document["snapChatUrl"] as? String
                     self.location = document["location"] as? String
                 }
+                self.activityIndicator.stopAnimating()
+
             }
         }
     }
